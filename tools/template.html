@@ -1,0 +1,1473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Old Money — Europe's Great Fortunes, 1066 to Today</title>
+<meta name="description" content="An interactive, sourced map of how Europe's largest family fortunes were made, from the Norman Conquest of 1066 to today: the land grants, banks, colonial companies and industries behind them, where the money sits now, and how published net worth compares with what each family controls.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+/* ============ TOKENS — paper (light) / ink (dark) ============ */
+:root{
+  --bg:#FAFAF7; --bg2:#F3F2EC; --text:#1F1D18; --text2:#1f1d18d9; --muted:#6B6960; --dim:#9C998E;
+  --line:#E8E6DF; --line2:#D8D5CB; --accent:#8A5A2B; --accent-soft:#8a5a2b1a;
+  --edge:#C4C1B6; --edge-strong:#8F8C82;
+  --c-eu:#2a78d6; --c-co:#eb6834; --c-af:#1baf7a; --c-cr:#eda100; --c-am:#6250d6; --c-en:#e87ba4; --c-ar:#008300; --c-xx:#e34948;
+  --doc:#3C7A5E; --pattern:#8A5A2B; --scrim:#1f1d1826; --bar:#8A5A2B;
+  --serif:'Iowan Old Style','Apple Garamond',Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  --mono:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E0E10; --bg2:#151518; --text:#E8E6DF; --text2:#e8e6dfd9; --muted:#8A8A92; --dim:#5E5E66;
+    --line:#26262B; --line2:#34343A; --accent:#C9A875; --accent-soft:#c9a8751f;
+    --edge:#36363D; --edge-strong:#5E5E66;
+    --c-eu:#3987e5; --c-co:#d95926; --c-af:#199e70; --c-cr:#c98500; --c-am:#9085e9; --c-en:#d55181; --c-ar:#008300; --c-xx:#e66767;
+    --doc:#7FB89B; --pattern:#C9A875; --scrim:#00000099; --bar:#C9A875;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E0E10; --bg2:#151518; --text:#E8E6DF; --text2:#e8e6dfd9; --muted:#8A8A92; --dim:#5E5E66;
+  --line:#26262B; --line2:#34343A; --accent:#C9A875; --accent-soft:#c9a8751f;
+  --edge:#36363D; --edge-strong:#5E5E66;
+  --c-eu:#3987e5; --c-co:#d95926; --c-af:#199e70; --c-cr:#c98500; --c-am:#9085e9; --c-en:#d55181; --c-ar:#008300; --c-xx:#e66767;
+  --doc:#7FB89B; --pattern:#C9A875; --scrim:#00000099; --bar:#C9A875;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--text);font:14px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent);text-underline-offset:2px}
+::selection{background:#c9a87533}
+#app{display:flex;flex-direction:column;height:100vh;height:100dvh}
+.lbl{font:500 10px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.14em;flex:none}
+
+/* ============ HEADER ============ */
+header.top{border-bottom:1px solid var(--line);background:var(--bg);padding:16px 24px 0;flex:none;z-index:5}
+.row1{display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap}
+.brand{min-width:0}
+.brand h1{font:400 22px/1.15 var(--serif);margin:0;letter-spacing:-.01em;white-space:nowrap}
+.brand small{display:block;margin-top:4px;font:500 10px var(--mono);color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.search{flex:1;min-width:200px;max-width:420px;position:relative;margin-left:auto}
+.search input{width:100%;background:transparent;border:1px solid var(--line);border-radius:2px;padding:7px 10px 7px 30px;color:var(--text);font:13px var(--sans);outline:none;transition:border-color .15s}
+.search input:focus{border-color:var(--edge-strong)}
+.search input::placeholder{color:var(--dim)}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.search kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);font:500 10px var(--mono);color:var(--dim);border:1px solid var(--line);border-radius:2px;padding:0 5px}
+.tabs{display:flex;gap:14px}
+.tabs button,.theme{background:none;border:0;border-bottom:1px solid transparent;padding:4px 0;font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.tabs button:hover,.theme:hover{color:var(--text)}
+.tabs button[aria-pressed="true"]{color:var(--text);border-bottom-color:var(--accent)}
+.row2{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 26px;padding:12px 0 11px}
+.fgroup{display:flex;align-items:baseline;gap:12px}
+.seg,.chips{display:inline-flex;flex-wrap:wrap;gap:3px 13px}
+.seg button,.chip{background:none;border:0;border-bottom:1px solid transparent;padding:1px 0;font:400 12.5px var(--sans);color:var(--muted);white-space:nowrap;display:inline-flex;align-items:center;gap:6px;transition:color .15s}
+.seg button:hover,.chip:hover{color:var(--text)}
+.seg button[aria-pressed="true"],.chip[aria-pressed="true"]{color:var(--text);border-bottom-color:var(--accent)}
+.chip .d{width:6px;height:6px;border-radius:50%;background:var(--c,var(--muted))}
+.seg .n,.chip .n{font:500 9.5px var(--mono);color:var(--dim)}
+select.nsel{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:2px;font:12.5px var(--sans);padding:2px 6px;max-width:220px}
+
+/* ============ STAGE ============ */
+main{flex:1;min-height:0;position:relative}
+#map,#grid,#atlas{position:absolute;inset:0}
+#map{background:var(--bg)}
+#map svg{display:block;width:100%;height:100%;cursor:grab}
+#map svg:active{cursor:grabbing}
+#grid{overflow:auto;padding:40px 24px 64px}
+[hidden]{display:none!important}
+
+/* graph */
+.link{fill:none;stroke:var(--edge);stroke-width:.9;transition:opacity .18s}
+.link.dashed{stroke-dasharray:5 4}
+.link.dotted{stroke-dasharray:1 3.5;stroke-linecap:round}
+.link.t-trade{stroke:var(--edge-strong)}
+.link.hot{stroke:var(--accent);stroke-width:1.3;opacity:1}
+.arrow{fill:var(--edge-strong)}
+.elabel{font:500 8.5px var(--mono);letter-spacing:.06em;fill:var(--muted);paint-order:stroke;stroke:var(--bg);stroke-width:3px;opacity:0;pointer-events:none;transition:opacity .2s}
+svg.zoomed .elabel{opacity:.85}
+.node{cursor:pointer;transition:opacity .18s}
+.node text{pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.node.profile text{font:400 12.5px var(--serif);fill:var(--text)}
+.node.profile .ring{fill:var(--bg);stroke:var(--c);stroke-width:1.2}
+.node.profile .core{fill:var(--c)}
+.node.profile .ring2{fill:none;stroke:var(--c);stroke-width:.8}
+.node.profile.co .ring{stroke-width:2.2}
+.node.profile.est .ring{stroke-dasharray:3 2.5}
+.node.entity .box{fill:var(--bg);stroke:var(--edge-strong);stroke-width:1}
+.node.entity text{font:500 8.5px var(--mono);letter-spacing:.08em;fill:var(--muted)}
+.node.hub .box{stroke:var(--accent)}
+.node.hub text{fill:var(--text);stroke:none}
+.node .minor{opacity:0;transition:opacity .2s}
+svg.zoomed .node .minor,.node:hover .minor,.node.nb .minor,.node.sel .minor{opacity:1}
+.node:hover .ring,.node:hover .box{stroke-width:1.8}
+.node.sel .ring,.node.sel .box{stroke:var(--accent);stroke-width:2.4}
+.faded{opacity:.1!important}
+.axis line{stroke:var(--line2)}
+.axis line.era{stroke:var(--edge-strong);stroke-dasharray:2 4}
+.axis text{font:500 10px var(--mono);letter-spacing:.1em;fill:var(--muted)}
+.axis text.era{font:400 15px var(--serif);letter-spacing:0;fill:var(--text2)}
+.axis text.band{font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+
+/* overlays */
+.overlay{position:absolute;background:color-mix(in srgb,var(--bg) 94%,transparent);border:1px solid var(--line);border-radius:2px;padding:12px 14px;font-size:12px}
+.legend{left:20px;bottom:20px;max-width:260px}
+.legend h4,.ctrls h4{margin:0 0 6px;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.legend .it{display:flex;align-items:center;gap:9px;color:var(--text2);line-height:1.85;font-size:11.5px}
+.legend .sw{width:7px;height:7px;border-radius:50%;flex:none}
+.legend .sq{width:7px;height:7px;border:1px solid var(--edge-strong);flex:none}
+.legend .hb{width:16px;height:8px;border:1px solid var(--accent);flex:none}
+.legend .ln{width:22px;height:0;border-top:1px solid var(--edge-strong);flex:none}
+.legend .extra{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.legend .sizes{display:flex;gap:10px;align-items:flex-end;color:var(--muted);font:500 8.5px var(--mono);margin-bottom:10px}
+.legend .sz{display:flex;flex-direction:column;align-items:center;gap:4px}
+.legend .sz i{display:block;border:1px solid var(--muted);border-radius:50%}
+.ctrls{right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px}
+.ctrls .btns{display:flex;gap:16px}
+.ibtn{background:none;border:0;padding:2px 0;font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.ibtn:hover{color:var(--text)}
+.ibtn.ovl[aria-pressed="true"]{color:var(--accent)}
+.hint{left:50%;top:14px;transform:translateX(-50%);border:0;background:none;padding:0;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);white-space:nowrap}
+.empty{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);text-align:center;pointer-events:none;font-family:var(--serif)}
+
+/* ============ GRID ============ */
+.gridhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;max-width:1120px;margin:0 auto 22px;flex-wrap:wrap}
+.gridhead h2{margin:0;font:400 32px/1.15 var(--serif);letter-spacing:-.015em}
+.gridhead .meta{font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));max-width:1120px;margin:0 auto;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 18px 16px;cursor:pointer;outline:none;transition:background .15s}
+.card:hover,.card:focus-visible{background:var(--bg2)}
+.ctop{display:flex;align-items:center;gap:8px;font:500 9.5px var(--mono);text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.ctop .d{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.ctop .era{margin-left:auto;color:var(--dim)}
+.card h3{margin:10px 0 2px;font:400 21px/1.2 var(--serif);letter-spacing:-.01em}
+.life{font-size:12px;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.kpi{min-width:0}
+.kpi label,.bt label{display:block;font:500 9px var(--mono);text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:3px}
+.kpi b{font-size:12.5px;font-weight:500;display:block;line-height:1.35}
+.kpi b.mono{font-family:var(--mono);color:var(--accent)}
+.bt{margin:0;font-size:13px;color:var(--text2)}
+.badges{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:12px}
+.badge{font:500 9.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.badge::before{content:"› ";color:var(--accent)}
+mark{background:var(--accent-soft);color:inherit;border-radius:1px;padding:0 1px}
+.foot{max-width:1120px;margin:28px auto 0;font-size:11.5px;color:var(--dim)}
+.subh{max-width:1120px;margin:44px auto 14px;font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;gap:12px;align-items:center}
+.subh::after{content:"";flex:1;height:1px;background:var(--line)}
+.subh .n{color:var(--dim)}
+.subh.sech{margin-top:36px}
+.subh.sech:first-of-type{margin-top:8px}
+.subh .d{width:7px;height:7px;border-radius:50%;background:var(--c)}
+.fnote{max-width:1120px;margin:-6px auto 22px;font:500 10.5px/1.7 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fnote button,.clearf{background:none;border:0;border-bottom:1px solid var(--accent);padding:0;color:var(--accent);font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer}
+.clearf{font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;align-self:center}
+.empty-sec{max-width:1120px;margin:0 auto;font:italic 400 14.5px var(--serif);color:var(--dim)}
+.lede{max-width:1120px;margin:0 auto 26px;color:var(--text2);font:400 16.5px/1.6 var(--serif)}
+.lede.small{font-size:15px;margin-bottom:14px}
+
+/* overlaps */
+.hubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));max-width:1120px;margin:0 auto;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.hub{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px;min-width:0}
+.hub .hh{display:flex;align-items:flex-start;gap:10px}
+.hub .hh button{background:none;border:0;padding:0;text-align:left;font:400 19px/1.2 var(--serif);color:var(--text)}
+.hub .hh button:hover{color:var(--accent)}
+.hub .kind{display:block;font:500 9px/1.6 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-top:4px}
+.hub .cnt{margin-left:auto;flex:none;font:500 9.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:1px 6px}
+.who{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.who button{display:flex;align-items:baseline;gap:9px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:7px 0;min-width:0}
+.who button:hover .nm{color:var(--accent)}
+.who .d{width:6px;height:6px;border-radius:50%;flex:none;align-self:center}
+.who .nm{font:400 14.5px var(--serif);flex:0 1 auto;min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.who .via{flex:1 1 0}
+.who .via{font-size:11.5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.who li.out{padding:8px 0 2px;font-size:11.5px;line-height:1.7;color:var(--dim)}
+.who li.out button{display:inline;width:auto;border:0;padding:0;background:none;color:var(--muted);font:inherit}
+.ties{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.tie{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;border-bottom:1px solid var(--line);padding:11px 0;font-size:13px}
+.tie button{background:none;border:0;padding:0;font:400 14.5px var(--serif);color:var(--text)}
+.tie button:hover{color:var(--accent)}
+.tie .rel{color:var(--muted);font-size:12px}
+
+/* ============ CHRONOLOGY ============ */
+.chron{max-width:1120px;margin:0 auto}
+.ev{display:grid;grid-template-columns:86px 1fr;gap:4px 22px;border-bottom:1px solid var(--line);padding:16px 0}
+.ev .yr{font:500 15px var(--mono);color:var(--accent);padding-top:2px}
+.ev h4{margin:0;font:400 19px/1.25 var(--serif);letter-spacing:-.005em}
+.ev p{margin:4px 0 0;color:var(--text2);font-size:13.5px}
+.ev .ppl{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px}
+.ev .ppl button{background:none;border:0;padding:0;font:400 13px var(--serif);color:var(--text);display:inline-flex;align-items:center;gap:6px}
+.ev .ppl button:hover{color:var(--accent)}
+.ev .ppl .d{width:6px;height:6px;border-radius:50%}
+.ev .src{font:500 9.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-top:6px;display:inline-block;text-decoration:none}
+.trails{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));max-width:1120px;margin:0 auto;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.trail{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px;cursor:pointer;text-align:left;background:none;border-top:0;border-left:0;color:inherit;font:inherit}
+.trail:hover,.trail[aria-pressed="true"]{background:var(--bg2)}
+.trail .rg{font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.trail h4{margin:6px 0 4px;font:400 19px/1.25 var(--serif)}
+.trail p{margin:0;font-size:12.5px;color:var(--text2)}
+.trail .span{display:block;margin-top:8px;font:500 10px var(--mono);letter-spacing:.08em;color:var(--muted)}
+.flow{max-width:1120px;margin:30px auto 0;position:relative;padding-left:118px}
+.flow::before{content:"";position:absolute;left:96px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--c-co))}
+.step{position:relative;padding:0 0 26px}
+.step .yr{position:absolute;left:-118px;width:84px;text-align:right;font:500 15px var(--mono);color:var(--accent);top:1px}
+.step::before{content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.step.k-money::before{background:var(--accent)}
+.step.k-law::before,.step.k-structure::before{border-radius:2px}
+.step.k-land::before{background:var(--c-eu)}
+.step.k-today::before{background:var(--c-am)}
+.step .kd{font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.step h4{margin:2px 0 4px;font:400 20px/1.25 var(--serif)}
+.step p{margin:0;color:var(--text2);font-size:14px;max-width:760px}
+.step .amt{display:inline-block;margin-top:6px;font:500 11px var(--mono);color:var(--text);border:1px solid var(--line2);border-radius:2px;padding:1px 7px}
+.step .ppl{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px}
+.step .ppl button{background:none;border:0;padding:0;font:400 13.5px var(--serif);color:var(--text);display:inline-flex;align-items:center;gap:6px;border-bottom:1px solid var(--line2)}
+.step .ppl button:hover{color:var(--accent);border-color:var(--accent)}
+.step .ppl .d{width:6px;height:6px;border-radius:50%}
+.step .src{font:500 9.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;margin-top:6px;display:inline-block}
+.step .basis{float:none;margin:0 0 0 8px;vertical-align:middle}
+.step.end h4::after{content:" · today";font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--c-co)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px 40px;max-width:1120px;margin:0 auto 10px}
+.hero{display:flex;gap:40px;flex-wrap:wrap;max-width:1120px;margin:0 auto 26px}
+.hero div{min-width:0}
+.hero b{display:block;font:400 40px/1.05 var(--serif);letter-spacing:-.02em}
+.hero span{font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.bars h5{margin:0 0 8px;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.bar{display:grid;grid-template-columns:150px 1fr 76px;align-items:center;gap:10px;padding:4px 0;font-size:12.5px;color:var(--text2);border-radius:2px}
+.bar:hover{background:var(--bg2)}
+.bar i{display:block;height:8px;background:var(--bar);border-radius:0 4px 4px 0;min-width:2px}
+.bar em{font:500 11px var(--mono);font-style:normal;color:var(--text);text-align:right}
+details.tbl{max-width:1120px;margin:6px auto 0;font-size:12px;color:var(--muted)}
+details.tbl summary{cursor:pointer;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+details.tbl table{border-collapse:collapse;margin-top:8px}
+details.tbl td,details.tbl th{border-bottom:1px solid var(--line);padding:4px 14px 4px 0;text-align:left;font-weight:400}
+details.tbl td.r{text-align:right;font-family:var(--mono)}
+
+/* ============ DRAWER ============ */
+.scrim{position:fixed;inset:0;background:var(--scrim);opacity:0;pointer-events:none;transition:opacity .25s;z-index:20}
+.scrim.on{opacity:1;pointer-events:auto}
+aside#drawer{position:fixed;top:0;right:0;height:100vh;height:100dvh;width:min(620px,100vw);background:var(--bg);border-left:1px solid var(--line);z-index:21;transform:translateX(102%);transition:transform .3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+aside#drawer.open{transform:none}
+.dhead{padding:24px 32px 20px;border-bottom:1px solid var(--line);position:relative}
+.dclose{position:absolute;right:22px;top:18px;width:30px;height:30px;border:0;background:none;color:var(--muted);font-size:15px;display:grid;place-items:center}
+.dclose:hover{color:var(--text)}
+.eyebrow{font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.eyebrow span:first-child{color:var(--text)}
+.eyebrow .d{width:7px;height:7px;border-radius:50%;background:var(--c);display:inline-block}
+.eyebrow span+span::before{content:"";display:inline-block;width:24px;height:1px;background:var(--line2);vertical-align:middle;margin-right:12px}
+.dhead h2{margin:12px 40px 6px 0;font:400 38px/1.08 var(--serif);letter-spacing:-.02em}
+.dbody{flex:1;overflow:auto;padding:24px 32px 52px}
+.dbadges{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.dbadge{font:400 13px/1.35 var(--sans);color:var(--text)}
+.dbadge label{display:block;font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.dbody .kpis{grid-template-columns:repeat(3,1fr);margin:0 0 18px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.note{font-size:12px;color:var(--muted);margin:0 0 16px;padding:1px 0 1px 12px;border-left:1px solid var(--accent)}
+blockquote.callout{margin:0 0 14px;padding:0;border:0;font:400 17px/1.55 var(--serif);color:var(--text)}
+.sec{margin-top:32px}
+.sec h3{display:flex;align-items:center;gap:12px;margin:0 0 12px;font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.sec h3::after{content:"";flex:1;height:1px;background:var(--line)}
+.sec h3 .num{color:var(--accent)}
+.sec p{margin:0;color:var(--text2)}
+ol.steps,ul.bul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+ol.steps li,ul.bul li{padding:10px 0 10px 18px;border-bottom:1px solid var(--line);color:var(--text2);font-size:13.5px;position:relative}
+ol.steps li::before,ul.bul li::before{content:"›";position:absolute;left:3px;top:9px;color:var(--accent);font-family:var(--mono)}
+ol.steps li b,ul.bul li b{color:var(--text);font-weight:600}
+.basis{float:right;margin:3px 0 4px 10px;font:500 8.5px var(--mono);letter-spacing:.12em;padding:0 5px;border-radius:2px;text-transform:uppercase;cursor:help;border:1px solid currentColor}
+.basis.documented{color:var(--doc)}
+.basis.interpretive{color:var(--pattern)}
+.net{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.net button{display:flex;align-items:center;gap:12px;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 0}
+.net button:hover .nm{color:var(--accent)}
+.net .d{width:6px;height:6px;border-radius:50%;flex:none}
+.net .nm{font:400 15px var(--serif)}
+.net .rel{font-size:12px;color:var(--muted);margin-left:auto;text-align:right}
+.net .ar{font:500 9px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.lin{list-style:none;margin:0;padding:0 0 0 14px;border-left:1px solid var(--line2)}
+.lin li{position:relative;padding:8px 0 10px 8px;font-size:13.5px;color:var(--text2)}
+.lin li::before{content:"";position:absolute;left:-18.5px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--bg);border:1px solid var(--edge-strong)}
+.lin li.self::before{background:var(--accent);border-color:var(--accent)}
+.lin .rl{display:block;font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lin .nm{font:400 15.5px var(--serif);color:var(--text)}
+.lin button.nm{background:none;border:0;padding:0;border-bottom:1px solid var(--accent);cursor:pointer}
+.lin button.nm:hover{color:var(--accent)}
+.lin .yr{font:500 11px var(--mono);color:var(--muted);margin-left:6px}
+.today{margin-top:14px;padding:12px 14px;background:var(--bg2);border-radius:2px;font-size:13.5px;color:var(--text2)}
+.ow{margin:0 0 18px;border:1px solid var(--line2);border-radius:2px;padding:14px 16px}
+.ow h4{margin:0 0 8px;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;align-items:center}
+.ow .v{font:500 9.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;border-radius:2px;padding:1px 6px}
+.ow .v.documented{color:var(--c-xx)} .ow .v.indirect{color:var(--pattern)} .ow .v.none{color:var(--doc)}
+.ow dl{display:grid;grid-template-columns:110px 1fr;gap:4px 12px;margin:0;font-size:13px}
+.ow dt{font:500 9px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.ow dd{margin:0;color:var(--text2)}
+table.owt{width:100%;max-width:1120px;margin:0 auto;border-collapse:collapse;font-size:13px}
+table.owt th{font:500 9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;border-bottom:1px solid var(--line2);padding:8px 10px 8px 0}
+table.owt td{border-bottom:1px solid var(--line);padding:9px 10px 9px 0;vertical-align:top;color:var(--text2)}
+table.owt td button{background:none;border:0;padding:0;font:400 15px var(--serif);color:var(--text);text-align:left}
+table.owt td button:hover{color:var(--accent)}
+.owwrap{max-width:1120px;margin:0 auto;overflow-x:auto}
+.named{margin-top:10px;font-size:12px;color:var(--muted)}
+.named span{font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-right:6px}
+.tp{list-style:none;margin:10px 0 0;padding:0;border-top:1px solid var(--line)}
+.tp li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.tp .nm{font:400 15px var(--serif);color:var(--text)}
+.tp .sec2{font:500 9px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-align:right;white-space:nowrap}
+.tp .rl2{grid-column:1/-1;font-size:12.5px;color:var(--text2)}
+.tp .rel2{grid-column:1/-1;font-size:11.5px;color:var(--muted)}
+.tp a{font:500 9.5px var(--mono);letter-spacing:.06em;text-decoration:none}
+.today b{display:block;font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.dev{border-top:1px solid var(--line)}
+.dev div{display:grid;grid-template-columns:56px 1fr;gap:10px;border-bottom:1px solid var(--line);padding:9px 0;font-size:13px;color:var(--text2)}
+.dev b{font:500 12px var(--mono);color:var(--accent);font-weight:500}
+.srcs{display:flex;flex-direction:column;gap:6px;font-size:12.5px}
+.disc{margin-top:30px;font-size:11px;color:var(--dim);border-top:1px solid var(--line);padding-top:12px}
+
+/* ============ ATLAS ============ */
+#atlasMap{position:absolute;inset:0;background:var(--bg);z-index:0}
+.atlas-bar{left:20px;top:16px;max-width:calc(100% - 40px);z-index:500;display:flex;flex-direction:column;gap:9px;padding:11px 14px}
+.atlas-bar .seg button{font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.atlas-status{margin:0;font:500 9.5px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:520px}
+.atlas-key{left:20px;bottom:24px;z-index:500;max-width:330px;font-size:11.5px;color:var(--text2)}
+.atlas-key h4{margin:0 0 6px;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.atlas-key .it{display:flex;align-items:center;gap:9px;line-height:1.8}
+.atlas-key .ln{width:24px;height:0;border-top:2px solid;flex:none}
+.apin{background:none;border:0}
+.apin span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;box-sizing:border-box;font:600 9.5px var(--mono);color:#fff;transition:transform .15s;background:var(--c);border:1.5px solid var(--bg);box-shadow:0 0 0 1px var(--c)}
+.apin.ent span{border-radius:1px;background:var(--bg);border:1.5px solid var(--edge-strong);box-shadow:none}
+.apin:hover span{transform:scale(1.25)}
+.apop .leaflet-popup-content-wrapper{background:var(--bg);color:var(--text);border:1px solid var(--line2);border-radius:2px;box-shadow:0 10px 30px -12px #0005}
+.apop .leaflet-popup-tip{background:var(--bg);border:1px solid var(--line2);box-shadow:none}
+.apop .leaflet-popup-content{margin:16px 18px 14px;font:13px/1.5 var(--sans);min-width:220px}
+.apop a.leaflet-popup-close-button{color:var(--muted);top:6px;right:6px}
+.pop-k{display:flex;align-items:center;gap:8px;font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pop h4{margin:8px 0 4px;font:400 21px/1.15 var(--serif);letter-spacing:-.01em}
+.pop p{margin:0;color:var(--text2)}
+.pop .who{max-height:240px;overflow:auto}
+.pop .who .nm{font-size:14px}
+.leaflet-container{font:13px var(--sans);background:var(--bg)}
+.leaflet-control-zoom a{background:var(--bg)!important;color:var(--text)!important;border-color:var(--line)!important;border-radius:2px!important}
+.leaflet-bar{border:1px solid var(--line2)!important;box-shadow:none!important;border-radius:2px!important}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--bg) 85%,transparent)!important;color:var(--dim)!important;font:9.5px var(--sans)}
+.leaflet-control-attribution a{color:var(--muted)!important}
+.leaflet-tooltip.rtip{background:var(--bg);color:var(--text);border:1px solid var(--line2);border-radius:2px;box-shadow:none;font:12px var(--sans)}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:760px){
+  header.top{padding:12px 16px 0}
+  .row1{gap:10px 16px}
+  .search{order:3;flex-basis:100%;max-width:none;margin-left:0}
+  .search kbd{display:none}
+  .brand small{display:none}
+  .tabs{gap:14px;overflow-x:auto;max-width:100%;scrollbar-width:none}
+  .row2{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .row2::-webkit-scrollbar{display:none}
+  .seg,.chips{flex-wrap:nowrap}
+  #grid{padding:22px 16px 44px}
+  .legend .extra{display:none}
+  .legend{left:10px;top:10px;bottom:auto;padding:8px 10px}
+  .legend h4{display:none}
+  .ctrls{right:10px;left:10px;bottom:10px;flex-direction:row;flex-wrap:wrap;justify-content:space-between;padding:8px 10px}
+  .ctrls h4{display:none}
+  .hint{display:none}
+  .dhead,.dbody{padding-left:16px;padding-right:16px}
+  .dbadges{grid-template-columns:1fr}
+  .dbody .kpis{grid-template-columns:1fr 1fr}
+  .dhead h2{font-size:29px}
+  .gridhead h2{font-size:26px}
+  .ev{grid-template-columns:1fr}
+  .flow{padding-left:26px}.flow::before{left:6px}.step .yr{position:static;display:block;text-align:left;width:auto}.step::before{left:-25px}
+  .bar{grid-template-columns:110px 1fr 64px}
+  .atlas-bar{left:10px;right:10px;top:10px;max-width:none}
+  .atlas-key{left:10px;right:58px;bottom:16px;max-width:none}
+  .hero b{font-size:30px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ============ WEALTH LAYERS ============ */
+.wl{margin:0 0 22px;border:1px solid var(--line2);border-radius:2px}
+.wl h4{margin:0;padding:10px 14px;border-bottom:1px solid var(--line);font:500 9.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;align-items:center;justify-content:space-between}
+.wl .lay{display:grid;grid-template-columns:22px 1fr;gap:4px 10px;padding:11px 14px;border-bottom:1px solid var(--line)}
+.wl .lay:last-child{border-bottom:0}
+.wl .lay .ix{font:500 11px var(--mono);color:var(--accent);padding-top:1px}
+.wl .lay b{display:block;font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.wl .lay p{margin:0;font-size:13px;color:var(--text2)}
+.wl .lay .fig{font:400 19px/1.3 var(--serif);color:var(--text)}
+.wl .lay .src{font-size:11.5px}
+.wl .gap{background:var(--bg2)}
+.vd{font:500 9px var(--mono);letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;border-radius:2px;padding:1px 6px;white-space:nowrap}
+.vd.documented{color:var(--c-xx)} .vd.reported{color:var(--pattern)} .vd.none{color:var(--doc)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tags span{font:500 9.5px var(--mono);letter-spacing:.06em;color:var(--text2);border:1px solid var(--line2);border-radius:2px;padding:1px 7px}
+.tags span::before{content:"› ";color:var(--accent)}
+ul.hold{list-style:none;margin:0;padding:0}
+ul.hold li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.hold .nm{font:400 15px var(--serif);color:var(--text)}
+ul.hold .k{font:500 9px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-align:right;white-space:nowrap}
+ul.hold .dt{grid-column:1/-1;font-size:12.5px;color:var(--text2)}
+ul.hold .dt a{font-size:11.5px}
+.sister{display:block;margin:0 0 18px;padding:10px 14px;border-left:2px solid var(--c-xx);background:var(--bg2);font-size:12.5px;color:var(--text2)}
+.wtwrap{max-width:1120px;margin:0 auto;overflow-x:auto}
+table.wt{width:100%;min-width:980px;border-collapse:collapse;font-size:12.5px}
+table.wt th{font:500 9.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;border-bottom:1px solid var(--line2);padding:8px 12px 8px 0;vertical-align:bottom;position:sticky;top:0;background:var(--bg)}
+table.wt td{border-bottom:1px solid var(--line);padding:10px 12px 10px 0;vertical-align:top;color:var(--text2)}
+table.wt td button{background:none;border:0;padding:0;font:400 15px var(--serif);color:var(--text);text-align:left}
+table.wt td button:hover{color:var(--accent)}
+table.wt .fig{font:400 16px var(--serif);color:var(--text);white-space:nowrap}
+table.wt .pub{display:block;font:500 9.5px var(--mono);letter-spacing:.06em;color:var(--muted);margin-top:2px}
+table.wt .none{color:var(--dim);font-style:italic}
+.wkey{max-width:1120px;margin:0 auto 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line2)}
+.wkey div{padding:12px 16px 12px 0;border-right:1px solid var(--line);margin-right:16px}
+.wkey div:last-child{border-right:0}
+.wkey b{display:block;font:500 11px var(--mono);color:var(--accent)}
+.wkey h5{margin:2px 0 4px;font:400 16px var(--serif);color:var(--text)}
+.wkey p{margin:0;font-size:12px;color:var(--muted)}
+@media (max-width:760px){ .wkey{grid-template-columns:1fr 1fr} }
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="row1">
+      <div class="brand"><h1>Old Money</h1><small>Europe’s Great Fortunes · Estates · Banks · Trusts · 1066–Today</small></div>
+      <label class="search" aria-label="Search">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search families, estates, banks, trusts, holdings…" autocomplete="off" spellcheck="false">
+        <kbd>/</kbd>
+      </label>
+      <nav class="tabs" role="group" aria-label="View">
+        <button data-view="map" aria-pressed="true" title="Network graph of families, estates, banks, companies and vehicles">Web</button>
+        <button data-view="grid" aria-pressed="false">Directory</button>
+        <button data-view="chron" aria-pressed="false" title="Dated events from 1066 to today">Chronology</button>
+        <button data-view="money" aria-pressed="false" title="Follow one fortune step by step, from its origin to today's holding vehicle">Money Trail</button>
+        <button data-view="wealth" aria-pressed="false" title="Published net worth compared with what each family controls">Claimed vs Controlled</button>
+        <button data-view="overlaps" aria-pressed="false">Overlaps</button>
+        <button data-view="atlas" aria-pressed="false" title="Geographic map of family seats, estates, banks and offshore centres">Map</button>
+      </nav>
+      <button class="theme" id="themeBtn" type="button">☾ Dark</button>
+    </div>
+    <div class="row2">
+      <div class="fgroup"><span class="lbl">Period</span><div class="seg" id="eraSeg" role="group" aria-label="Period"></div></div>
+      <div class="fgroup"><span class="lbl">Group</span><div class="chips" id="catChips"></div></div>
+      <div class="fgroup"><span class="lbl">Made from</span><select class="nsel" id="roleSel" aria-label="Main source of the fortune"></select></div>
+      <div class="fgroup"><span class="lbl">Country</span><select class="nsel" id="natSel" aria-label="Country"></select></div>
+      <button class="clearf" id="clearBtn" data-clear hidden>Clear filters ✕</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="map" aria-label="Mind map">
+      <div class="overlay hint">Drag · Scroll to zoom · Click for dossier</div>
+      <div class="overlay legend" id="legend"></div>
+      <div class="overlay ctrls">
+        <h4>Layout</h4>
+        <div class="seg" id="layoutSeg" role="group" aria-label="Layout">
+          <button data-layout="force" aria-pressed="true">Organic</button>
+          <button data-layout="cluster" aria-pressed="false">Clusters</button>
+          <button data-layout="timeline" aria-pressed="false" title="Left to right from 1066 to today">Timeline</button>
+        </div>
+        <div class="btns">
+          <button class="ibtn" id="fitBtn">Fit view</button>
+          <button class="ibtn" id="shakeBtn">Re‑run layout</button>
+        </div>
+        <button class="ibtn ovl" id="ovlBtn" aria-pressed="false" title="Show only families that share a company, bank, estate or vehicle with another family, and the paths that connect them">Overlaps only</button>
+      </div>
+      <div class="empty" id="mapEmpty" hidden>No families match these filters.</div>
+    </section>
+    <section id="grid" aria-label="Directory" hidden></section>
+    <section id="atlas" aria-label="Map" hidden>
+      <div id="atlasMap"></div>
+      <div class="overlay atlas-bar">
+        <div class="seg" id="atlasLayer" role="group" aria-label="Map layer">
+          <button data-layer="players" aria-pressed="true" title="Every family pinned to its seat or headquarters, plus estates and institutions">Families &amp; Places</button>
+          <button data-layer="routes" aria-pressed="false" title="Only where the money sits: estate companies, banks, holding companies, foundations and offshore centres">Where the Money Sits</button>
+        </div>
+        <p class="atlas-status" id="atlasStatus" aria-live="polite"></p>
+      </div>
+      <div class="overlay atlas-key" id="atlasKey"></div>
+    </section>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside id="drawer" aria-hidden="true" aria-label="Dossier"></aside>
+
+<script>
+/* =====================================================================
+   DATASET — {records:[...], events:[...]}. See README.md for the schema.
+   If a data.json sits next to this page, it is loaded instead of this copy.
+   ===================================================================== */
+const EMBEDDED_DATA = /*DATA-START*/{"records":[],"events":[]}/*DATA-END*/;
+
+const SITE = 'Old Money';
+const SISTER = {name:'The Triangle Trade', url:'https://alxndrhq.github.io/triangle-trade-mind-map/#/p/'};
+const META = {
+  disclaimer: "Educational dossiers compiled from public sources: company accounts and registers, the Land Registry, the ICIJ Offshore Leaks database, published rich lists (always named with the publisher and year), historians and the press. No family total is invented: where trusts, foundations or private companies keep values private, the dossier says so. Trusts, foundations and offshore companies are mostly legal; being listed in ICIJ data does not imply wrongdoing. Living people are named only as public figures. “Interp.” marks a historian’s reading, a family tradition or a hedged inference."
+};
+/* Guy Shrubsole, Who Owns England? (2019): who owns the land of England, share of area */
+const LANDSHARE = {
+  url:'https://www.lovemoney.com/news/amp/84194/who-owns-englands-land-ownership-biggest-owners',
+  label:'Guy Shrubsole, Who Owns England? (2019), as reported by lovemoney.com',
+  rows:[['Aristocracy & gentry',30],['Corporations',18],['Oligarchs & City financiers',17],['Unaccounted (unregistered)',17],['Public sector',8.5],['Homeowners',5],['Conservation bodies',2],['The Crown',1.4],['The Church of England',.5]]
+};
+
+/* =====================================================================
+   CONFIG
+   ===================================================================== */
+const CATS = {
+  'Landed Aristocracy & Gentry':  {short:'Landed',        color:'var(--c-eu)'},
+  'Princely & Noble Houses':      {short:'Princely house',color:'var(--c-co)', shape:'diamond'},
+  'Banking & Merchant Dynasties': {short:'Banking',       color:'var(--c-af)', shape:'square'},
+  'Colonial Companies & Investors':{short:'Colonial',     color:'var(--c-cr)', shape:'double'},
+  'Industrial Dynasties':         {short:'Industrial',    color:'var(--c-en)'},
+  'Crown & Church':               {short:'Crown / Church',color:'var(--c-ar)', shape:'diamond'},
+  'Holding Structures':           {short:'Holding vehicle',color:'var(--c-am)', shape:'double'}
+};
+const isLife = n => false;
+const LBL = n => ({role:'How the Money Was Made', legacy:'Where the Money Is Today', scale:'Economic weight', eyebrow:''});
+const BANDS = ['Crown & Church','Landed Aristocracy & Gentry','Princely & Noble Houses','Banking & Merchant Dynasties','Colonial Companies & Investors','Industrial Dynasties','Holding Structures'];
+const ROLES = ['Conquest & Royal Grant','Church Land & Dissolution','Agricultural Land & Enclosure','Urban Ground Rents','Mining & Mineral Royalties','Sovereign & Princely Rule','Banking & Sovereign Lending','Trade & Chartered Monopoly','Colonial Extraction','Industry & Manufacturing','Arms & Armaments','Modern Finance & Holding'];
+const SCALE = {Minor:{r:9,rank:0}, Significant:{r:12,rank:1}, Major:{r:17,rank:2}, Dominant:{r:24,rank:3}};
+const PERIODS = [
+  {k:'p1', label:'1066–1300', from:1000, to:1299, title:'Conquest: the Norman Conquest, Domesday, the baronies and Church land'},
+  {k:'p2', label:'1300–1530', from:1300, to:1529, title:'Credit: wool, the Hanse, Italian banking, the Fuggers'},
+  {k:'p3', label:'1530–1700', from:1530, to:1699, title:'Seizure: the Dissolution, enclosure, the EIC and VOC, the first London estates'},
+  {k:'p4', label:'1700–1850', from:1700, to:1849, title:'Empire: the South Sea Company, the slave economy, canals and coal, the Rothschilds and Barings'},
+  {k:'p5', label:'1850–1945', from:1850, to:1944, title:'Industry: rail, steel, arms, mining and the Scramble for Africa'},
+  {k:'p6', label:'1945–Today',from:1945, to:2100, title:'Structures: death duties, trusts, offshore centres and family offices'}
+];
+const NOW = new Date().getFullYear();
+const EDGE = {
+  ownership: {label:'Owns / founded / controls'},
+  trade:     {label:'Trade / merchant partner'},
+  finance:   {label:'Finance / credit / invested'},
+  charter:   {label:'Charter / grant / licence'},
+  family:    {label:'Family tie'},
+  'marriage-settlement': {label:'Came by marriage'},
+  inheritance:{label:'Inheritance'},
+  'enclosure-or-grant': {label:'Feudal grant / enclosure'},
+  'dissolution-grant':  {label:'Monastic / Church land'},
+  trust:     {label:'Held in trust'},
+  offshore:  {label:'Held via offshore entity'},
+  legacy:    {label:'Successor / money flowed to'},
+  political: {label:'Political / office / war'},
+  parallel:  {label:'Thematic parallel'},
+  connection:{label:'Connection'}
+};
+const SOFT = ['political','legacy','family','inheritance','marriage-settlement'];
+const DASHED = ['political','legacy','charter','trust','offshore'], DOTTED = ['parallel','family','marriage-settlement','inheritance'];
+const ENTITY_COLOR = 'var(--edge-strong)';
+const isCo = n => n?._kind==='profile' && (n.category==='Holding Structures' || n.category==='Colonial Companies & Investors');
+
+const state = {trail:null, cat:'all', role:'all', nation:'all', era:'all', q:'', view:'map', layout:'force', openId:null, overlap:false};
+let DATA;
+
+/* =====================================================================
+   DATA
+   ===================================================================== */
+function normalize(raw){
+  const arr = Array.isArray(raw) ? raw : (raw.records || []);
+  const byId = {}, profiles = [], entities = [];
+  arr.forEach(r=>{
+    if(!r || !r.id || byId[r.id]){ if(r?.id) console.warn('Duplicate id', r.id); return; }
+    const n = {...r};
+    if(n.type === 'entity'){ n._kind='entity'; entities.push(n); }
+    else {
+      n._kind='profile';
+      if(!CATS[n.category]) { console.warn(`${n.id}: unknown category "${n.category}"`); n.category='Landed Aristocracy & Gentry'; }
+      if(!SCALE[n.scale]) n.scale='Significant';
+      profiles.push(n);
+    }
+    n._s = Number.isFinite(+n.start) && n.start!==null ? +n.start : null;
+    n._e = n.end==null ? NOW : +n.end;
+    byId[n.id]=n;
+  });
+  const links = [], seen = new Set();
+  arr.forEach(r=>(r?.connections||[]).forEach(c=>{
+    const o = typeof c==='string' ? {id:c} : c;
+    if(!byId[o.id] || o.id===r.id){ if(!byId[o.id]) console.warn(`${r.id}: connection to unknown id "${o.id}" skipped`); return; }
+    const key=[r.id,o.id].sort().join('|');
+    if(seen.has(key)) return; seen.add(key);
+    links.push({source:r.id, target:o.id, type:EDGE[o.type]?o.type:'connection', label:o.label||''});
+  }));
+  // entities without dates borrow the earliest year of their neighbours, for the period filter & timeline
+  entities.forEach(e=>{ if(e._s!=null) return;
+    const ys=links.filter(l=>l.source===e.id||l.target===e.id).map(l=>byId[l.source===e.id?l.target:l.source]._s).filter(y=>y!=null);
+    if(ys.length){ e._s=Math.min(...ys); e._approx=true; } });
+  const events = (raw.events||[]).filter(ev=>ev && Number.isFinite(+ev.year)).map(ev=>({...ev, year:+ev.year, ids:(ev.ids||[]).filter(id=>byId[id])}))
+    .sort((a,b)=>a.year-b.year);
+  const evBy = new Map(); events.forEach(ev=>ev.ids.forEach(id=>{ if(!evBy.has(id)) evBy.set(id,[]); evBy.get(id).push(ev); }));
+  const nbNames = id => links.filter(l=>l.source===id||l.target===id).map(l=>byId[l.source===id?l.target:l.source].name);
+  profiles.forEach(p=>{ p._hay=[p.name,...(p.aliases||[]),p.category,p.role,p.nation,p.scale,p.base,p.lifespan,
+    p.origins,p.role_summary,p.legacy,p.scaleNote,
+    ...(p.roleDetail||[]).map(x=>x.t+' '+x.d),...(p.legacyDetail||[]).map(x=>x.t+' '+x.d),
+    ...(p.lineage||[]).map(x=>[x.name,x.relation,x.note].join(' ')), p.today,
+    ...(p.placesNamed||[]), ...(p.today_people||[]).map(x=>[x.name,x.role,x.sector].join(' ')),
+    ...(p.moneySources||[]), ...(p.holdingsToday||[]).map(x=>[x.name,x.kind,x.sector,x.where,x.detail].join(' ')),
+    p.wealth?.grossAssets?.text, p.wealth?.controlled?.text, p.wealth?.opaque?.text, p.norman?.text,
+    ...nbNames(p.id)].join(' ').toLowerCase(); });
+  entities.forEach(e=>{ e._hay=[e.name,e.kind,e.description,...(e.placesNamed||[]),...nbNames(e.id)].join(' ').toLowerCase(); });
+  const nations=[...new Set(profiles.map(p=>p.nation).filter(Boolean))].sort();
+  const trails=(raw.trails||[]).map(t=>({...t, steps:(t.steps||[]).map(st=>({...st, ids:(st.ids||[]).filter(id=>byId[id])})).sort((a,b)=>a.year-b.year)}));
+  return {profiles, entities, links, byId, events, evBy, nations, trails};
+}
+/* Overlaps: two players overlap when they reach the same hub (an entity, or a company/bank) through real
+   (non-"parallel") links within OVL_HOPS steps. Paths never pass THROUGH a law/charter/legacy record or a very large hub. */
+const OVL_HOPS = 2, OVL_THROUGH_MAX = 18;
+const NO_PASS = /law|charter|treaty|act|apology|legacy|database|report/i;
+const hubOK = n => n._kind==='entity' || isCo(n);
+function computeOverlaps(D){
+  const adj=new Map(), add=(a,b,l)=>{ if(!adj.has(a)) adj.set(a,[]); adj.get(a).push({id:b,l}); };
+  D.links.forEach(l=>{ if(l.type==='parallel') return; add(l.source,l.target,l); add(l.target,l.source,l); });
+  const players=D.profiles.filter(p=>!isCo(p));
+  const hubs=new Map();
+  players.forEach(p=>{
+    const seen=new Set([p.id]), q=[[p.id]];
+    while(q.length){
+      const path=q.shift(); if(path.length>OVL_HOPS) continue;
+      const cur=path[path.length-1], cn=D.byId[cur];
+      if(path.length>1 && (NO_PASS.test(cn.kind||'') || (adj.get(cur)||[]).length>OVL_THROUGH_MAX)) continue;
+      (adj.get(cur)||[]).forEach(({id})=>{
+        if(seen.has(id)||!hubOK(D.byId[id])) return;
+        seen.add(id); const np=[...path,id]; q.push(np);
+        if(!hubs.has(id)) hubs.set(id,new Map()); hubs.get(id).set(p.id,np);
+      });
+    }
+  });
+  const pairs=new Map(), key=(a,b)=>[a,b].sort().join('|');
+  const deg=id=>adj.get(id)?.length||0;
+  const offer=(a,b,path,hub=null)=>{
+    const k=key(a,b), cur=pairs.get(k);
+    if(!cur||path.length<cur.path.length||(path.length===cur.path.length&&hub&&cur.hub&&deg(hub)>deg(cur.hub))) pairs.set(k,{a,b,path,hub}); };
+  D.links.forEach(l=>{ const a=D.byId[l.source], b=D.byId[l.target];
+    if(l.type!=='parallel' && a._kind==='profile' && b._kind==='profile' && !isCo(a) && !isCo(b)) offer(l.source,l.target,[l.source,l.target]); });
+  hubs.forEach((m,hubId)=>{
+    const ents=[...m.entries()];
+    for(let i=0;i<ents.length;i++) for(let j=i+1;j<ents.length;j++){
+      const [a,pa]=ents[i], [b,pb]=ents[j];
+      if(pa.some((x,k)=>k>0&&pb.includes(x)&&x!==pa[pa.length-1])) continue;
+      offer(a,b,[...pa,...pb.slice(0,-1).reverse()],hubId);
+    }
+  });
+  const meet=new Map();
+  pairs.forEach(({a,b,path,hub})=>{ if(!hub) return; if(!meet.has(hub)) meet.set(hub,new Map());
+    const i=path.indexOf(hub), m=meet.get(hub), set=(p,pp)=>{ if(!m.has(p)||pp.length<m.get(p).length) m.set(p,pp); };
+    set(a,path.slice(0,i+1)); set(b,path.slice(i).reverse()); });
+  [...D.entities,...D.profiles.filter(isCo)].forEach(e=>{
+    const direct=(adj.get(e.id)||[]).map(x=>x.id).filter(id=>D.byId[id]._kind==='profile'&&!isCo(D.byId[id]));
+    if(new Set(direct).size<2 && !meet.has(e.id)) return;
+    if(!meet.has(e.id)) meet.set(e.id,new Map());
+    direct.forEach(p=>meet.get(e.id).set(p,[p,e.id]));
+  });
+  const byProfile=new Map(D.profiles.map(p=>[p.id,[]]));
+  pairs.forEach(pr=>{ byProfile.get(pr.a).push({other:pr.b,path:pr.path}); byProfile.get(pr.b).push({other:pr.a,path:[...pr.path].reverse()}); });
+  byProfile.forEach(l=>l.sort((x,y)=>x.path.length-y.path.length));
+  [...D.entities,...D.profiles].forEach(e=>{ e._shared=meet.get(e.id)?.size||0; });
+  return {hubs:meet, pairs, byProfile};
+}
+/* Map regions for the Organic layout: each player joins the largest shared hub (3+) they belong to. */
+function computeCommunities(D){
+  const H=D.ovl.hubs, hubs=[...H.entries()].filter(([,m])=>m.size>=3).sort((a,b)=>b[1].size-a[1].size).map(([id])=>id);
+  const comm=new Map();
+  D.profiles.forEach(p=>{ if(H.has(p.id)&&H.get(p.id).size>=3){ comm.set(p.id,p.id); return; } const h=hubs.find(h=>H.get(h).has(p.id)); if(h) comm.set(p.id,h); });
+  const members=c=>D.profiles.filter(p=>comm.get(p.id)===c).length;
+  D.profiles.forEach(p=>{
+    if(comm.has(p.id)&&members(comm.get(p.id))>1) return;
+    const tie=(D.ovl.byProfile.get(p.id)||[]).find(o=>o.path.length===2&&comm.has(o.other)&&comm.get(o.other)!==comm.get(p.id));
+    if(tie) comm.set(p.id,comm.get(tie.other));
+  });
+  H.forEach((m,h)=>{ if(comm.has(h)&&D.byId[h]._kind==='profile') return; const c=new Map(); m.forEach((_,p)=>{ if(comm.has(p)) c.set(comm.get(p),(c.get(comm.get(p))||0)+1); });
+    if(c.size) comm.set(h,[...c.entries()].sort((x,y)=>y[1]-x[1])[0][0]); });
+  const nb=new Map(), add=(a,b)=>{ if(!nb.has(a)) nb.set(a,[]); nb.get(a).push(b); };
+  D.links.forEach(l=>{ if(l.type!=='parallel'){ add(l.source,l.target); add(l.target,l.source); } });
+  let frontier=[...comm.keys()];
+  while(frontier.length){
+    const next=[];
+    frontier.forEach(id=>(nb.get(id)||[]).forEach(o=>{ if(!comm.has(o)){ comm.set(o,comm.get(id)); next.push(o); } }));
+    frontier=next;
+  }
+  const regions=[...new Set(D.profiles.map(p=>comm.get(p.id)).filter(Boolean))], idx=new Map(regions.map((c,i)=>[c,i]));
+  Object.values(D.byId).forEach(n=>{ n._comm=idx.has(comm.get(n.id))?idx.get(comm.get(n.id)):-1; });
+  return regions.length;
+}
+const commCenter = (i,w,h) => { const n=DATA.nComm||1, a=-Math.PI/2+2*Math.PI*i/n, R=Math.min(w,h)*.36;
+  return i<0 ? [w/2,h/2] : [w/2+Math.cos(a)*R*1.15, h/2+Math.sin(a)*R*.9]; };
+const linkBetween = (a,b) => DATA.links.find(l=>(l.source===a&&l.target===b)||(l.source===b&&l.target===a));
+const viaText = path => path.length<=2 ? 'direct: '+(linkBetween(path[0],path[1])?.label||'linked')
+  : 'via '+path.slice(1,-1).map(id=>DATA.byId[id].name).join(' → ');
+const catColor = n => CATS[n.category]?.color || 'var(--muted)';
+const colorOf = n => n._kind==='profile' ? catColor(n) : ENTITY_COLOR;
+const period = k => PERIODS.find(p=>p.k===k);
+const passCat = p => state.cat==='all' || p.category===state.cat;
+const passRole = p => state.role==='all' || p.role===state.role;
+const passNat = p => state.nation==='all' || p.nation===state.nation;
+const passEra = p => { if(state.era==='all') return true; const P=period(state.era); return p._s==null || (p._s<=P.to && p._e>=P.from); };
+const terms = () => state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+const matchQ = n => { const t=terms(); return !t.length || t.every(w=>n._hay.includes(w)); };
+const narrowedNow = () => state.cat!=='all'||state.role!=='all'||state.nation!=='all'||state.era!=='all'||terms().length>0;
+function filterNote(noun='families'){
+  if(!narrowedNow()) return '';
+  const bits=[state.era!=='all'?period(state.era).label:'', state.cat!=='all'?state.cat:'', state.role!=='all'?state.role:'',
+    state.nation!=='all'?state.nation:'', terms().length?'search “'+state.q.trim()+'”':''].filter(Boolean);
+  return `<p class="fnote">Filtered to ${esc(bits.join(' · '))}: showing ${visibleProfiles().length} of ${DATA.profiles.length} ${noun}. <button data-clear>Clear filters</button></p>`;
+}
+function clearFilters(){
+  state.cat='all'; state.role='all'; state.nation='all'; state.era='all'; state.q=''; document.getElementById('q').value=''; refresh();
+}
+document.addEventListener('click',e=>{ if(e.target.closest('[data-clear]')) clearFilters(); });
+const visibleProfiles = () => DATA.profiles.filter(p=>passCat(p)&&passRole(p)&&passNat(p)&&passEra(p)&&matchQ(p));
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function hl(text){
+  const t=terms(); let out=esc(text); if(!t.length) return out;
+  t.forEach(w=>{ const re=new RegExp('('+esc(w).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'); out=out.replace(re,'<mark>$1</mark>'); });
+  return out;
+}
+function neighbors(id){
+  return DATA.links.filter(l=>l.source===id||l.target===id).map(l=>{
+    const out=l.source===id; return {link:l, other:DATA.byId[out?l.target:l.source], out};
+  });
+}
+const scaleLabel = p => (p.scale||'—') + (p.scaleBasis==='estimated'?' est.':'');
+const activeLabel = n => n._s==null ? '—' : n._s + '–' + (n.end==null ? 'today' : n.end);
+const fmtN = v => v>=1e6 ? (v/1e6).toFixed(v>=1e7?1:2).replace(/\.?0+$/,'')+'M' : v>=1e3 ? Math.round(v/1e3)+'K' : String(v);
+
+/* Visible subgraph: filtered profiles + entities reachable through entities (≤2 hops) */
+function subgraph(){
+  const profs = visibleProfiles();
+  if(state.overlap){
+    const ok=new Set(profs.map(p=>p.id)), vis=new Map(), edges=new Set();
+    DATA.ovl.pairs.forEach(({a,b,path})=>{
+      if(!ok.has(a)||!ok.has(b)) return;
+      const home=DATA.byId[a];
+      path.forEach(id=>{ if(!vis.has(id)){ const n=DATA.byId[id]; vis.set(id,{cat:n._kind==='profile'?n.category:home.category}); } });
+      path.slice(1).forEach((id,i)=>edges.add([path[i],id].sort().join('|')));
+    });
+    return {vis, links: DATA.links.filter(l=>edges.has([l.source,l.target].sort().join('|')))};
+  }
+  const vis = new Map(profs.map(p=>[p.id,{cat:p.category}]));
+  let frontier = profs.map(p=>p.id);
+  for(let hop=0; hop<2; hop++){
+    const next=[];
+    frontier.forEach(id=>{
+      const home=vis.get(id);
+      DATA.links.forEach(l=>{
+        if(l.type==='parallel') return;
+        const other = l.source===id ? l.target : l.target===id ? l.source : null;
+        if(!other || vis.has(other) || DATA.byId[other]._kind!=='entity') return;
+        if(state.era!=='all' && !passEra(DATA.byId[other])) return;
+        vis.set(other,home); next.push(other);
+      });
+    });
+    frontier=next;
+  }
+  return {vis, links: DATA.links.filter(l=>vis.has(l.source)&&vis.has(l.target))};
+}
+
+/* =====================================================================
+   FILTER UI
+   ===================================================================== */
+function renderChips(){
+  const base = DATA.profiles.filter(p=>passRole(p)&&passNat(p)&&passEra(p)&&matchQ(p));
+  const items = [['all','All','var(--text)',base.length], ...Object.entries(CATS).map(([k,c])=>[k,k,c.color,base.filter(p=>p.category===k).length])];
+  document.getElementById('catChips').innerHTML = items.map(([k,l,c,n])=>
+    `<button class="chip" data-cat="${esc(k)}" aria-pressed="${state.cat===k}" style="--c:${c}">${k==='all'?'':'<span class="d"></span>'}${esc(l)} <span class="n">${n}</span></button>`).join('');
+  const rb = DATA.profiles.filter(p=>passCat(p)&&passNat(p)&&passEra(p)&&matchQ(p));
+  document.getElementById('roleSel').innerHTML = `<option value="all">All (${rb.length})</option>`+ROLES.filter(k=>DATA.profiles.some(p=>p.role===k)).map(k=>
+    `<option value="${esc(k)}" ${state.role===k?'selected':''}>${esc(k)} (${rb.filter(p=>p.role===k).length})</option>`).join('');
+  const eb = DATA.profiles.filter(p=>passCat(p)&&passRole(p)&&passNat(p)&&matchQ(p));
+  const inP = (p,P) => p._s==null || (p._s<=P.to && p._e>=P.from);
+  document.getElementById('eraSeg').innerHTML = [['all','All',eb.length,'Every period'],...PERIODS.map(P=>[P.k,P.label,eb.filter(p=>inP(p,P)).length,P.title])].map(([k,l,n,t])=>
+    `<button data-era="${k}" aria-pressed="${state.era===k}" title="${esc(t)}">${esc(l)} <span class="n">${n}</span></button>`).join('');
+  const nb = DATA.profiles.filter(p=>passCat(p)&&passRole(p)&&passEra(p)&&matchQ(p));
+  document.getElementById('natSel').innerHTML = `<option value="all">All (${nb.length})</option>`+DATA.nations.map(n=>{ const c=nb.filter(p=>p.nation===n).length;
+    return `<option value="${esc(n)}" ${state.nation===n?'selected':''}>${esc(n)} (${c})</option>`; }).join('');
+  document.getElementById('clearBtn').hidden=!narrowedNow();
+}
+function bindUI(){
+  const on=(id,attr,key)=>document.getElementById(id).addEventListener('click',e=>{ const b=e.target.closest(`[data-${attr}]`); if(b){ state[key]=b.dataset[attr]; refresh(); } });
+  on('catChips','cat','cat'); on('eraSeg','era','era');
+  document.getElementById('roleSel').addEventListener('change',e=>{ state.role=e.target.value; refresh(); });
+  document.getElementById('natSel').addEventListener('change',e=>{ state.nation=e.target.value; refresh(); });
+  document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{ location.hash='#/'+hashOf(b.dataset.view); }));
+  document.getElementById('ovlBtn').addEventListener('click',e=>{
+    state.overlap=!state.overlap; e.currentTarget.setAttribute('aria-pressed',state.overlap); refresh();
+  });
+  document.getElementById('layoutSeg').addEventListener('click',e=>{
+    const b=e.target.closest('[data-layout]'); if(!b) return; const was=state.layout; state.layout=b.dataset.layout;
+    document.querySelectorAll('#layoutSeg button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+    if(was==='timeline'||state.layout==='timeline'){ G.pos.clear(); renderMap(); } else applyLayout(true);
+  });
+  const tb=document.getElementById('themeBtn'), root=document.documentElement;
+  const curTheme=()=>root.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  const paintTheme=()=>{ const t=curTheme(); tb.textContent=t==='dark'?'☾ Dark':'☀ Light'; tb.title=`Switch to ${t==='dark'?'light':'dark'} mode`; };
+  tb.onclick=()=>{ const t=curTheme()==='dark'?'light':'dark'; root.dataset.theme=t; try{ localStorage.setItem('theme',t); }catch(_){} paintTheme(); };
+  matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',paintTheme);
+  paintTheme();
+  document.getElementById('fitBtn').onclick=()=>fit(600);
+  document.getElementById('shakeBtn').onclick=()=>{ G.nodes.forEach(n=>{n.fx=n.fy=null;}); applyLayout(true); };
+  const q=document.getElementById('q'); let qt;
+  q.addEventListener('input',()=>{ state.q=q.value; clearTimeout(qt); qt=setTimeout(refresh, state.view==='map'?160:0); });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='/' && document.activeElement!==q && !/input|select|textarea/i.test(document.activeElement?.tagName||'')){ e.preventDefault(); q.focus(); }
+    if(e.key==='Escape'){ if(state.openId) closeDrawer(); else if(document.activeElement===q){ q.value=''; state.q=''; refresh(); q.blur(); } }
+  });
+  document.getElementById('scrim').onclick=closeDrawer;
+  let rt; window.addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(state.view==='map') renderMap(); else if(state.view==='atlas') ATLAS.map?.invalidateSize(); },180); });
+  window.addEventListener('hashchange',route);
+}
+function refresh(){
+  renderChips();
+  ({map:renderMap, overlaps:renderOverlaps, atlas:renderAtlas, chron:renderChron, grid:renderGrid, money:renderMoney, wealth:renderWealth})[state.view]();
+}
+
+/* =====================================================================
+   MIND MAP (D3 force graph)
+   ===================================================================== */
+const G = {svg:null, root:null, zoom:null, sim:null, nodes:[], links:[], pos:new Map(), w:0, h:0, fitT:null};
+const isHub = n => n._kind==='entity' && n._shared>=2;
+const rFor = n => n._kind==='entity' ? (isHub(n) ? 8+Math.min(10,2*(n._shared-2)) : 7) : (SCALE[n.scale]?.r || 12);
+/* Timeline layout: piecewise-linear years so the busy centuries get room */
+const TL = {years:[1000,1066,1300,1530,1700,1850,1945,NOW+5], stops:[0,.03,.13,.25,.4,.6,.8,1]};
+const tlWidth = w => Math.max(w*2.4, 2600);
+const TL_H = 1150;
+const tlBandY = cat => { const i=BANDS.indexOf(cat), n=BANDS.length; return TL_H*(.1+.82*(i<0?.5:i/(n-1))); };
+let yearX = null;
+
+function renderLegend(){
+  const sw = c => c.shape==='diamond' ? `<span class="sw" style="background:${c.color};border-radius:1px;transform:rotate(45deg) scale(.85)"></span>`
+    : c.shape==='square' ? `<span class="sw" style="background:${c.color};border-radius:1px"></span>`
+    : c.shape==='double' ? `<span class="sw" style="background:${c.color};box-shadow:0 0 0 1.5px var(--bg),0 0 0 2.5px ${c.color}"></span>` : `<span class="sw" style="background:${c.color}"></span>`;
+  const cats = Object.entries(CATS).map(([k,c])=>`<div class="it">${sw(c)}${esc(k)}</div>`).join('');
+  const sizes = Object.entries(SCALE).map(([k,t])=>`<span class="sz"><i style="width:${t.r}px;height:${t.r}px"></i>${esc(k)}</span>`).join('');
+  document.getElementById('legend').innerHTML = `<h4>Group</h4>${cats}
+    <div class="it"><span class="sq"></span>Estate / company / trust / law</div>
+    <div class="it"><span class="hb"></span>Shared by 2+ families</div>
+    <div class="extra"><h4>Economic weight</h4><div class="sizes">${sizes}</div><h4>Connection</h4>
+    <div class="it"><span class="ln"></span>Ownership · finance · trade · grant</div>
+    <div class="it"><span class="ln" style="border-top-style:dashed"></span>Charter · trust · offshore · legacy</div>
+    <div class="it"><span class="ln" style="border-top-style:dotted"></span>Family · marriage · inheritance</div></div>`;
+}
+
+function renderMap(){
+  const host=document.getElementById('map');
+  host.querySelector('svg')?.remove();
+  if(G.sim) G.sim.stop();
+  const {vis,links}=subgraph();
+  document.getElementById('mapEmpty').hidden = vis.size>0;
+  const w=host.clientWidth, h=host.clientHeight; G.w=w; G.h=h;
+  const TW=tlWidth(w);
+  yearX = d3.scaleLinear().domain(TL.years).range(TL.stops.map(f=>f*TW)).clamp(true);
+  const tl = state.layout==='timeline';
+
+  G.nodes=[...vis.entries()].map(([id,home])=>{
+    const src=DATA.byId[id], p=G.pos.get(id);
+    let [cx,cy]=commCenter(src._comm,w,h);
+    if(tl){ cx=src._s!=null?yearX(src._s):TW/2; cy=tlBandY(src._kind==='profile'?src.category:home.cat); }
+    return {...src, home, r:rFor(src), x:p?.x ?? cx+(Math.random()-.5)*120, y:p?.y ?? cy+(Math.random()-.5)*120};
+  });
+  G.links=links.map(l=>({...l}));
+
+  const svg=d3.select(host).insert('svg',':first-child').attr('viewBox',[0,0,w,h]).attr('role','img').attr('aria-label','Network mind map');
+  G.svg=svg;
+  svg.append('defs').append('marker').attr('id','ar').attr('viewBox','0 -5 10 10').attr('refX',8).attr('refY',0)
+    .attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto')
+    .append('path').attr('class','arrow').attr('d','M0,-3.5L8,0L0,3.5');
+
+  const root=svg.append('g'); G.root=root;
+  G.userZoomed=false;
+  G.zoom=d3.zoom().scaleExtent([.08,4]).on('zoom',ev=>{ if(ev.sourceEvent) G.userZoomed=true; root.attr('transform',ev.transform); svg.classed('zoomed',ev.transform.k>1.25); });
+  svg.call(G.zoom).on('dblclick.zoom',null);
+  svg.on('click',ev=>{ if(ev.target===svg.node()) clearHot(); });
+
+  if(tl){   // year axis, period boundaries and group bands
+    const ax=root.append('g').attr('class','axis'), H=TL_H, top=H*.02, bot=H*.98;
+    const ticks=d3.range(1100,NOW+1,50);
+    ax.selectAll('line.t').data(ticks).join('line').attr('x1',yearX).attr('x2',yearX).attr('y1',top+28).attr('y2',bot);
+    ax.selectAll('text.t').data(ticks).join('text').attr('x',yearX).attr('y',bot+16).attr('text-anchor','middle').text(d=>d);
+    ax.selectAll('line.era').data(PERIODS).join('line').attr('class','era').attr('x1',d=>yearX(Math.max(d.from,1066))).attr('x2',d=>yearX(Math.max(d.from,1066))).attr('y1',top).attr('y2',bot);
+    ax.selectAll('text.era').data(PERIODS).join('text').attr('class','era').attr('x',d=>yearX(Math.max(d.from,1066))+8).attr('y',top+16).text(d=>d.label+' · '+d.title.split(':')[0]);
+    ax.selectAll('text.band').data(BANDS).join('text').attr('class','band').attr('x',yearX(1020)).attr('y',d=>tlBandY(d)-40).attr('text-anchor','start')
+      .style('fill',d=>CATS[d].color).text(d=>d);
+  }
+
+  const crowded=G.nodes.length>60, CH=5.9;
+  G.nodes.forEach(d=>{
+    if(d._kind==='entity'){
+      d.label=d.name.toUpperCase(); if(d.label.length>30) d.label=d.label.slice(0,29)+'…';
+      d.wide=isHub(d)&&!crowded;
+      if(d.wide){ d.hw=d.label.length*CH/2+9; d.hh=9; } else if(isHub(d)){ d.hw=d.hh=6; } else { d.hw=d.hh=3.5; }
+      d.r=Math.max(d.hw,d.hh);
+    }
+  });
+  const reach=(n,ux,uy)=>n.hw ? Math.min(n.hw/Math.max(Math.abs(ux),1e-6), n.hh/Math.max(Math.abs(uy),1e-6)) : n.r;
+
+  const link=root.append('g').selectAll('path').data(G.links).join('path')
+    .attr('class',d=>`link t-${d.type} ${DASHED.includes(d.type)?'dashed':''} ${DOTTED.includes(d.type)?'dotted':''}`)
+    .attr('marker-end',d=>d.type==='parallel'||d.type==='family'?null:'url(#ar)');
+  link.append('title').text(d=>`${DATA.byId[d.source].name} → ${DATA.byId[d.target].name}: ${d.label||EDGE[d.type].label}`);
+  const elabel=root.append('g').selectAll('text').data(G.links).join('text').attr('class','elabel').attr('text-anchor','middle').text(d=>d.label||'');
+
+  const node=root.append('g').selectAll('g').data(G.nodes,d=>d.id).join('g')
+    .attr('class',d=>`node ${d._kind}${isHub(d)?' hub':''}${isCo(d)?' co':''}${d.scaleBasis==='estimated'?' est':''}`)
+    .style('--c',d=>d._kind==='profile'?catColor(d):null)
+    .attr('tabindex',0).attr('role','button').attr('aria-label',d=>d.name)
+    .on('click',(ev,d)=>{ ev.stopPropagation(); openNode(d.id); })
+    .on('keydown',(ev,d)=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); openNode(d.id);} })
+    .on('mouseenter',(ev,d)=>hot(d.id)).on('mouseleave',()=>{ state.openId ? hot(state.openId) : clearHot(); })
+    .call(d3.drag()
+      .on('start',(ev,d)=>{ if(!ev.active) G.sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
+      .on('drag',(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; })
+      .on('end',(ev,d)=>{ if(!ev.active) G.sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+
+  const prof=node.filter(d=>d._kind==='profile');
+  const shp=d=>CATS[d.category]?.shape;
+  prof.filter(d=>shp(d)==='double').append('circle').attr('class','ring2').attr('r',d=>d.r+3.5);
+  prof.filter(d=>shp(d)==='square').append('rect').attr('class','ring').attr('x',d=>-d.r).attr('y',d=>-d.r).attr('width',d=>d.r*2).attr('height',d=>d.r*2);
+  prof.filter(d=>shp(d)!=='diamond'&&shp(d)!=='square').append('circle').attr('class','ring').attr('r',d=>d.r);
+  prof.filter(d=>shp(d)==='diamond').append('rect').attr('class','ring').attr('x',d=>-d.r*.82).attr('y',d=>-d.r*.82).attr('width',d=>d.r*1.64).attr('height',d=>d.r*1.64).attr('transform','rotate(45)');
+  prof.append('circle').attr('class','core').attr('r',d=>Math.max(2.5,d.r*.3));
+  prof.append('text').attr('text-anchor','middle').attr('dy',d=>d.r+15).attr('class',d=>crowded&&(SCALE[d.scale]?.rank||0)<3?'minor':null).text(d=>d.name);
+  const boxed=node.filter(d=>d.hw);
+  boxed.append('rect').attr('class','box').attr('x',d=>-d.hw).attr('y',d=>-d.hh).attr('width',d=>d.hw*2).attr('height',d=>d.hh*2);
+  boxed.filter(d=>d.wide).append('text').attr('text-anchor','middle').attr('dy','.36em').text(d=>d.label);
+  node.filter(d=>d._kind==='entity'&&!d.wide).append('text').attr('text-anchor','middle').attr('dy',d=>d.hh+11)
+    .attr('class',crowded?'minor':null).text(d=>d.label);
+  node.filter(isHub).append('title').text(d=>`${d.name}: shared by ${d._shared} families`);
+
+  G.sim=d3.forceSimulation(G.nodes)
+    .force('link',d3.forceLink(G.links).id(d=>d.id)
+      .distance(l=>l.type==='parallel'?220:(l.source._kind==='profile'&&l.target._kind==='profile')?120:(l.source._kind==='profile'||l.target._kind==='profile')?95:70)
+      .strength(l=>tl?(l.type==='parallel'?0:.04):l.type==='parallel'?.05:SOFT.includes(l.type)?.25:.6))
+    .force('charge',d3.forceManyBody().strength(d=>d._kind==='profile'?-360:isHub(d)?-240:-110).distanceMax(600))
+    .force('collide',d3.forceCollide(d=>d._kind==='profile'?d.r+26:d.hw?d.hw*.7+10:12))
+    .on('tick',()=>{
+      link.attr('d',d=>{
+        const dx=d.target.x-d.source.x, dy=d.target.y-d.source.y, L=Math.hypot(dx,dy)||1, ux=dx/L, uy=dy/L;
+        const s0=reach(d.source,ux,uy), t0=reach(d.target,ux,uy)+(d.type==='parallel'?0:3);
+        return `M${d.source.x+ux*s0},${d.source.y+uy*s0}L${d.target.x-ux*t0},${d.target.y-uy*t0}`;
+      });
+      elabel.attr('x',d=>(d.source.x+d.target.x)/2).attr('y',d=>(d.source.y+d.target.y)/2-4);
+      node.attr('transform',d=>`translate(${d.x},${d.y})`);
+    })
+    .on('end',()=>{ G.nodes.forEach(n=>G.pos.set(n.id,{x:n.x,y:n.y})); if(!G.userZoomed) fit(600); });
+
+  applyLayout(false);
+  if(state.openId) hot(state.openId);
+}
+
+function applyLayout(reheat){
+  if(!G.sim) return;
+  const {w,h}=G, sim=G.sim;
+  const quad={'Crown & Church':[.5,.14],'Landed Aristocracy & Gentry':[.2,.3],'Princely & Noble Houses':[.8,.3],'Banking & Merchant Dynasties':[.5,.52],'Colonial Companies & Investors':[.18,.78],'Industrial Dynasties':[.82,.78],'Holding Structures':[.5,.88]};
+  sim.force('center', state.layout==='force' ? d3.forceCenter(w/2,h/2) : null);
+  if(state.layout==='cluster'){
+    sim.force('x',d3.forceX(d=>w*(quad[d.home?.cat]||[.5,.5])[0]).strength(d=>d._kind==='profile'?.18:.08));
+    sim.force('y',d3.forceY(d=>h*(quad[d.home?.cat]||[.5,.5])[1]).strength(d=>d._kind==='profile'?.18:.08));
+  } else if(state.layout==='timeline'){
+    sim.force('x',d3.forceX(d=>d._s!=null?yearX(d._s):G.w).strength(d=>d._s==null?0:d._kind==='profile'?.9:d._approx?.15:.6));
+    sim.force('y',d3.forceY(d=>tlBandY(d._kind==='profile'?d.category:d.home?.cat)).strength(d=>d._kind==='profile'?.6:.1));
+  } else {
+    sim.force('x',d3.forceX(d=>commCenter(d._comm,w,h)[0]).strength(d=>d._comm<0?.02:.06));
+    sim.force('y',d3.forceY(d=>commCenter(d._comm,w,h)[1]).strength(d=>d._comm<0?.02:.06));
+  }
+  sim.alpha(reheat?.9:1).restart();
+  clearTimeout(G.fitT); G.fitT=setTimeout(()=>fit(500),900);
+}
+
+function fit(dur){
+  if(!G.nodes.length||!G.svg) return;
+  const tl=state.layout==='timeline';
+  const pad=60, q=G.nodes.length>40&&!tl?.04:0, qs=a=>{ a=[...a].sort((x,y)=>x-y); return [a[Math.floor(q*(a.length-1))], a[Math.ceil((1-q)*(a.length-1))]]; };
+  let [xa,xb]=qs(G.nodes.map(n=>n.x)), [ya,yb]=qs(G.nodes.map(n=>n.y));
+  if(tl){ xa=Math.min(xa,yearX(1066)-200); ya=Math.min(ya,0); }
+  const x0=xa-pad, x1=xb+pad, y0=ya-pad, y1=yb+pad+20;
+  const L = G.w>760 ? (document.getElementById('legend').offsetWidth+24) : 0;
+  const aw=G.w-L;
+  if(tl){   // fit the height and open at 1066; later centuries are a pan to the right
+    const k=Math.max(.8,Math.min(1.1,G.h/(y1-y0)));
+    G.svg.transition().duration(dur).call(G.zoom.transform, d3.zoomIdentity.translate(L+10-k*x0, G.h/2-k*(y0+y1)/2).scale(k));
+    return;
+  }
+  const k=Math.max(.25,Math.min(1.6, Math.min(aw/(x1-x0), G.h/(y1-y0))));
+  G.svg.transition().duration(dur).call(G.zoom.transform, d3.zoomIdentity.translate(L+aw/2-k*(x0+x1)/2, G.h/2-k*(y0+y1)/2).scale(k));
+}
+function hot(id){
+  if(!G.root) return;
+  const nb=new Set([id]); G.links.forEach(l=>{ if(l.source.id===id) nb.add(l.target.id); if(l.target.id===id) nb.add(l.source.id); });
+  const on=d=>d.source.id===id||d.target.id===id;
+  G.root.selectAll('.node').classed('faded',d=>!nb.has(d.id)).classed('nb',d=>nb.has(d.id)).classed('sel',d=>d.id===state.openId);
+  G.root.selectAll('.link').classed('faded',d=>!on(d)).classed('hot',on);
+  G.root.selectAll('.elabel').classed('faded',d=>!on(d)).style('opacity',d=>on(d)?.95:null);
+}
+function clearHot(){
+  if(!G.root) return;
+  G.root.selectAll('.node').classed('faded',false).classed('nb',false).classed('sel',d=>d.id===state.openId);
+  G.root.selectAll('.link').classed('faded',false).classed('hot',false);
+  G.root.selectAll('.elabel').classed('faded',false).style('opacity',null);
+}
+
+/* =====================================================================
+   DIRECTORY
+   ===================================================================== */
+function renderGrid(){
+  const list=visibleProfiles().sort((a,b)=>(a._s??9999)-(b._s??9999)||(SCALE[b.scale]?.rank||0)-(SCALE[a.scale]?.rank||0));
+  const groups=Object.keys(CATS).map(c=>[c,list.filter(p=>p.category===c)]).filter(([,ps])=>ps.length);
+  document.getElementById('grid').innerHTML = `
+    <div class="gridhead"><h2>${esc(state.cat==='all'?'All Families & Fortunes':state.cat)}</h2><span class="meta">${list.length} dossier${list.length===1?'':'s'} · ${state.era==='all'?'1066–today':esc(period(state.era).label)} · by group, oldest first</span></div>
+    ${filterNote()}
+    ${groups.map(([c,ps])=>`<h3 class="subh sech" style="--c:${CATS[c].color}"><span class="d"></span>${esc(c)}<span class="n">${ps.length}</span></h3>
+      <div class="cards">${ps.map(card).join('')}</div>`).join('') || '<p class="empty-sec">No families match these filters.</p>'}
+    <p class="foot">${esc(META.disclaimer)}</p>`;
+}
+const pubFig = p => { const w=p.wealth?.published?.[0]; return w ? `${w.figure}${w.year?' ('+w.year+')':''}` : 'Not published'; };
+function card(p){
+  return `<article class="card" tabindex="0" role="button" data-id="${esc(p.id)}" style="--c:${catColor(p)}">
+    <div class="ctop"><span class="d"></span>${esc(p.role||CATS[p.category].short)}<span class="era">${esc(activeLabel(p))}</span></div>
+    <h3>${hl(p.name)}</h3>
+    <div class="life">${hl(p.nation||'')}${p.base?' · '+hl(p.base):''}</div>
+    <div class="kpis">
+      <div class="kpi"><label>Published worth</label><b class="mono">${esc(pubFig(p))}</b></div>
+      <div class="kpi"><label>Opaque layer</label><b>${esc(p.wealth?.opaque?.verdict ? VERD[p.wealth.opaque.verdict]?.[1]||p.wealth.opaque.verdict : '—')}</b></div>
+    </div>
+    <p class="bt"><label>How the money was made</label>${hl(p.role_summary||'')}</p>
+  </article>`;
+}
+document.addEventListener('click',e=>{ const c=e.target.closest('.card[data-id]'); if(c) openNode(c.dataset.id); });
+document.addEventListener('keydown',e=>{ const c=e.target.closest?.('.card[data-id]'); if(c&&(e.key==='Enter'||e.key===' ')){ e.preventDefault(); openNode(c.dataset.id);} });
+
+/* =====================================================================
+   CHRONOLOGY
+   ===================================================================== */
+function barsHTML(title, rows, max){
+  return `<div class="bars"><h5>${esc(title)}</h5>${rows.map(([k,v])=>`<div class="bar" title="${esc(k)}: ~${v.toLocaleString()}"><span>${esc(k)}</span><i style="width:${(100*v/max).toFixed(1)}%"></i><em>${fmtN(v)}</em></div>`).join('')}</div>`;
+}
+function numbersHTML(){
+  const rows=LANDSHARE.rows, max=Math.max(...rows.map(r=>r[1]));
+  return `<h3 class="subh">Who owns England today</h3>
+    <p class="lede small">About half of England is owned by fewer than 1% of the population, roughly 25,000 landowners, mostly aristocrats and gentry plus corporations. Share of England’s land area by type of owner:</p>
+    <div class="nums"><div class="bars"><h5>Share of land area, %</h5>${rows.map(([k,v])=>`<div class="bar" title="${esc(k)}: ${v}% of England's land"><span>${esc(k)}</span><i style="width:${(100*v/max).toFixed(1)}%"></i><em>${v}%</em></div>`).join('')}</div></div>
+    <details class="tbl"><summary>Table view</summary><table><tbody>${rows.map(([k,v])=>`<tr><td>${esc(k)}</td><td class="r">${v}%</td></tr>`).join('')}</tbody></table></details>
+    <p class="foot" style="margin-top:10px">Source: <a href="${LANDSHARE.url}" target="_blank" rel="noopener">${esc(LANDSHARE.label)} ↗</a>. “Unaccounted” is land missing from the Land Registry, much of it thought to be old inherited estates never sold.</p>`;
+}
+function renderChron(){
+  const vis=new Set(visibleProfiles().map(p=>p.id)), t=terms(), people=state.cat!=='all'||state.role!=='all'||state.nation!=='all';
+  const evs=DATA.events.filter(ev=>{
+    if(state.era!=='all'){ const P=period(state.era); if(ev.year<P.from||ev.year>P.to) return false; }
+    const hay=(ev.title+' '+ev.text+' '+ev.ids.map(id=>DATA.byId[id].name).join(' ')).toLowerCase();
+    if(people && !ev.ids.some(id=>vis.has(id))) return false;
+    if(t.length && !t.every(w=>hay.includes(w))) return false;
+    return true;
+  });
+  const ppl=ev=>ev.ids.map(id=>{ const n=DATA.byId[id]; return `<button data-open="${esc(id)}"><span class="d" style="background:${colorOf(n)}"></span>${esc(n.name)}</button>`; }).join('');
+  document.getElementById('grid').innerHTML = `
+    <div class="gridhead"><h2>Chronology, 1066 to Today</h2><span class="meta">${evs.length} of ${DATA.events.length} events</span></div>
+    ${filterNote()}
+    <p class="lede">From the Battle of Hastings and the Domesday survey, through the Dissolution, the chartered companies and the industrial age, to death duties, trusts and the offshore leaks. Each event links to the families and institutions involved, and every entry cites a source.</p>
+    ${PERIODS.map(P=>{ const list=evs.filter(e=>e.year>=P.from&&e.year<=P.to); if(!list.length) return '';
+      return `<h3 class="subh">${esc(P.label)} · ${esc(P.title)}<span class="n">${list.length}</span></h3><div class="chron">${list.map(ev=>`<div class="ev"><div class="yr">${ev.year}</div><div>
+        <h4>${hl(ev.title)}</h4><p>${hl(ev.text||'')}</p>${ev.ids.length?`<div class="ppl">${ppl(ev)}</div>`:''}
+        ${ev.source?.url?`<a class="src" href="${esc(ev.source.url)}" target="_blank" rel="noopener">${esc(ev.source.label||'Source')} ↗</a>`:''}</div></div>`).join('')}</div>`; }).join('') || '<p class="empty-sec">No events match these filters.</p>'}
+    ${numbersHTML()}
+    <p class="foot">${esc(META.disclaimer)}</p>`;
+}
+
+/* =====================================================================
+   MONEY TRAIL: curated chains from the 1400s to institutions that exist today
+   ===================================================================== */
+const KIND = {land:'Land', money:'Money', power:'Power', structure:'Structure', today:'Today', law:'Law', people:'People'};
+function renderMoney(){
+  const t=terms(), hay=tr=>[tr.title,tr.summary,tr.region,...tr.steps.map(s=>[s.title,s.text,...s.ids.map(id=>DATA.byId[id].name)].join(' '))].join(' ').toLowerCase();
+  const list=DATA.trails.filter(tr=>!t.length||t.every(w=>hay(tr).includes(w)));
+  const cur=DATA.trails.find(x=>x.id===state.trail);
+  const chip=id=>{ const n=DATA.byId[id]; return `<button data-open="${esc(id)}"><span class="d" style="background:${colorOf(n)}"></span>${esc(n.name)}</button>`; };
+  const flow=tr=>`<div class="flow">${tr.steps.map((s,i)=>`<div class="step k-${esc(s.kind||'money')}${i===tr.steps.length-1?' end':''}"><span class="yr">${esc(s.year)}</span>
+      <span class="kd">${esc(KIND[s.kind]||'Money')}</span>${s.basis&&s.basis!=='documented'?`<span class="basis interpretive" title="${BASIS_TIP.interpretive}">Interp.</span>`:''}
+      <h4>${hl(s.title)}</h4><p>${hl(s.text||'')}</p>${s.amount?`<span class="amt">${esc(s.amount)}</span>`:''}
+      ${s.ids.length?`<div class="ppl">${s.ids.map(chip).join('')}</div>`:''}
+      ${s.source?.url?`<a class="src" href="${esc(s.source.url)}" target="_blank" rel="noopener">${esc(s.source.label||'Source')} ↗</a>`:''}</div>`).join('')}</div>`;
+  document.getElementById('grid').innerHTML = `
+    <div class="gridhead"><h2>${cur?esc(cur.title):'Follow the Money'}</h2><span class="meta">${cur?`${cur.steps.length} steps · ${cur.steps[0]?.year}–${cur.steps[cur.steps.length-1]?.year}`:`${DATA.trails.length} trails · 1066 to today`}</span></div>
+    ${cur?`<p class="lede">${esc(cur.summary||'')} <a href="#/money" style="font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase">← All trails</a></p>${flow(cur)}
+      <h3 class="subh">Other trails</h3>`
+    :`<p class="lede">Follow one fortune from the hand that first took it to the vehicle that holds it today: a Norman grant becomes a barony, a monastery becomes a country house, a marriage becomes Mayfair, a royal loan becomes a bank, and the bank becomes a trust or family office. Each step links to its dossiers and cites a source; steps marked Interp. are historians’ readings of cause and effect.</p>`}
+    <div class="trails">${list.filter(tr=>tr!==cur).map(tr=>`<a class="trail" href="#/money/${esc(tr.id)}" style="text-decoration:none"><span class="rg">${esc(tr.region||'')}</span><h4>${hl(tr.title)}</h4><p>${hl(tr.summary||'')}</p>
+      <span class="span">${tr.steps[0]?.year}–${tr.steps[tr.steps.length-1]?.year} · ${tr.steps.length} steps · ends at ${esc((tr.steps[tr.steps.length-1]?.ids||[]).map(id=>DATA.byId[id].name).slice(0,2).join(', ')||tr.steps[tr.steps.length-1]?.title||'')}</span></a>`).join('')||'<p class="empty-sec">No trails match this search.</p>'}</div>
+    <p class="foot">${esc(META.disclaimer)}</p>`;
+}
+
+/* =====================================================================
+   OVERLAPS
+   ===================================================================== */
+function renderOverlaps(){
+  const ok=new Set(visibleProfiles().map(p=>p.id));
+  const hubs=[...DATA.ovl.hubs.entries()].map(([id,m])=>({id,ppl:[...m.entries()].filter(([p])=>ok.has(p)),out:[...m.keys()].filter(p=>!ok.has(p))}))
+    .filter(h=>h.ppl.length>=2).sort((a,b)=>b.ppl.length-a.ppl.length||a.id.localeCompare(b.id));
+  const ties=DATA.links.filter(l=>l.type!=='parallel'&&ok.has(l.source)&&ok.has(l.target)&&!isCo(DATA.byId[l.source])&&!isCo(DATA.byId[l.target]));
+  const cross=ties.filter(l=>DATA.byId[l.source].category!==DATA.byId[l.target].category);
+  const people=new Set(); hubs.forEach(h=>h.ppl.forEach(([p])=>people.add(p))); ties.forEach(l=>{people.add(l.source);people.add(l.target);});
+  const who=([p,path])=>{ const n=DATA.byId[p]; return `<li><button data-open="${esc(p)}"><span class="d" style="background:${catColor(n)}"></span><span class="nm">${hl(n.name)}</span>
+    <span class="via">${path.length>2?esc('via '+path.slice(1,-1).map(id=>DATA.byId[id].name).join(' → ')):esc(linkBetween(path[0],path[1])?.label||'')}</span></button></li>`; };
+  const tieRow=l=>`<div class="tie"><button data-open="${esc(l.source)}">${hl(DATA.byId[l.source].name)}</button><span class="rel">— ${esc(l.label||EDGE[l.type].label)} (${esc(EDGE[l.type].label.toLowerCase())}) —</span>
+      <button data-open="${esc(l.target)}">${hl(DATA.byId[l.target].name)}</button></div>`;
+  document.getElementById('grid').innerHTML = `
+    <div class="gridhead"><h2>Where the Families Connect</h2><span class="meta">${hubs.length} shared hub${hubs.length===1?'':'s'} · ${people.size} families connected · ${ties.length} direct tie${ties.length===1?'':'s'}</span></div>
+    ${filterNote()}
+    <p class="lede">The global network: which families meet at the same bank, estate company, foundation, offshore centre or marriage? A company, bank or vehicle counts as shared when two or more families reach it through ownership, finance, trust, offshore, grant or family links, up to ${OVL_HOPS} steps away. Click any name to open its dossier, or switch on “Overlaps only” on the Web to see these paths.</p>
+    ${oldWealthHTML(ok)}
+    ${publicLifeHTML(ok)}
+    ${todayHTML(ok)}
+    <h3 class="subh">Shared hubs</h3>
+    <div class="hubs">${hubs.map(({id,ppl,out})=>{ const e=DATA.byId[id]; return `<article class="hub">
+      <div class="hh"><div><button data-open="${esc(id)}">${hl(e.name)}</button><span class="kind">${esc(e.kind||e.role||'')}${e._s!=null?' · '+e._s:''}</span></div><span class="cnt">${ppl.length} families</span></div>
+      <ul class="who">${ppl.sort((a,b)=>a[1].length-b[1].length).map(who).join('')}${out.length?`<li class="out">Outside current filters: ${out.map(p=>`<button data-open="${esc(p)}">${esc(DATA.byId[p].name)}</button>`).join(', ')}</li>`:''}</ul></article>`; }).join('') || '<p style="color:var(--muted)">No shared hubs among the families that match these filters.</p>'}</div>
+    ${cross.length?`<h3 class="subh">Across groups: direct ties</h3><p class="lede small">Direct links between, for example, a landed family and a bank, a princely house and an industrial dynasty, or a family and a colonial company.</p><div class="ties">${cross.map(tieRow).join('')}</div>`:''}
+    ${ties.length>cross.length?`<h3 class="subh">Direct ties within a group</h3><div class="ties">${ties.filter(l=>!cross.includes(l)).map(tieRow).join('')}</div>`:''}
+    <p class="foot">${esc(META.disclaimer)}</p>`;
+}
+/* Families that also have a dossier on the sister site (the transatlantic slave trade) */
+function oldWealthHTML(ok){
+  const rows=DATA.profiles.filter(n=>n.slaveSiteId && ok.has(n.id)).sort((a,b)=>a.name.localeCompare(b.name));
+  if(!rows.length) return '';
+  return `<h3 class="subh">Also on ${esc(SISTER.name)}<span class="n">${rows.length} families</span></h3>
+    <p class="lede small">These families also have a dossier on the sister site, which checks each one against the slave-trade record (compensation claims, Royal African and South Sea Company shares, Caribbean estates, marriages into slaving fortunes). “No link found” is a real result there too.</p>
+    <div class="hubs"><article class="hub" style="grid-column:1/-1"><ul class="who" style="columns:2 280px">${rows.map(n=>`<li><button data-open="${esc(n.id)}"><span class="d" style="background:${catColor(n)}"></span><span class="nm">${hl(n.name)}</span></button> <a href="${SISTER.url}${encodeURIComponent(n.slaveSiteId)}" target="_blank" rel="noopener" style="font-size:11.5px">slave-trade dossier ↗</a></li>`).join('')}</ul></article></div>`;
+}
+/* Descendants and heirs in public life today, grouped by sector; each person once, with every family they connect to.
+   Current heads of successor firms with no family link are kept apart so they are never read as descendants. */
+const isLeaderOnly = x => { const r=x.relation||''; return /^no (documented )?family link/i.test(r) || (/^(chief executive|current head|leader of)/i.test(r) && !/descend|heir|grand|son of|daughter of/i.test(r)); };
+function publicLifeHTML(ok){
+  const SECT=['Land & estates','Royalty & titles','Banking & finance','Business & industry','Politics & government','Culture & media','Philanthropy'];
+  const LEAD='Leaders of successor institutions (no family link)';
+  const people=new Map();   // key: group|name
+  DATA.profiles.filter(p=>ok.has(p.id)).forEach(p=>(p.today_people||[]).forEach(x=>{
+    if(terms().length && !matchQ(p) && !terms().every(w=>(x.name+' '+x.role).toLowerCase().includes(w))) return;
+    const g=isLeaderOnly(x)?LEAD:(SECT.includes(x.sector)?x.sector:'Other'), k=g+'|'+x.name.trim().toLowerCase();
+    if(!people.has(k)) people.set(k,{g,x,ps:[]}); const e=people.get(k); if(!e.ps.includes(p)) e.ps.push(p);
+    if(x.basis==='documented') e.x={...e.x,basis:'documented'};
+  }));
+  if(!people.size) return '';
+  const by=new Map(); people.forEach(e=>{ (by.get(e.g)||by.set(e.g,[]).get(e.g)).push(e); });
+  const fam=[...people.values()].filter(e=>e.g!==LEAD).length;
+  return `<h3 class="subh">In public life today<span class="n">${fam} people</span></h3>
+    <p class="lede small">The people who hold these fortunes, titles and boards today, grouped by where they hold influence. Only public figures are listed: titleholders, monarchs, office holders and directors on public registers. “Unproven” marks a disputed claim. Heads of successor firms with no family link are listed separately.</p>
+    <div class="hubs">${[...SECT,'Other',LEAD].filter(k=>by.has(k)).map(k=>`<article class="hub"><div class="hh"><div><span style="font:400 19px/1.2 var(--serif)">${esc(k)}</span></div><span class="cnt">${by.get(k).length}</span></div>
+      <ul class="who">${by.get(k).sort((a,b)=>a.x.name.localeCompare(b.x.name)).map(({x,ps})=>`<li><button data-open="${esc(ps[0].id)}"><span class="d" style="background:${catColor(ps[0])}"></span><span class="nm">${esc(x.name)}</span><span class="via">${esc(x.role||'')} · ${esc(ps.map(p=>p.name).join(', '))}${x.basis&&x.basis!=='documented'?' · unproven':''}</span></button></li>`).join('')}</ul></article>`).join('')}</div>`;
+}
+/* Still here today: fortunes founded before 1850 that still exist, and their documented ties */
+function todayHTML(ok){
+  const MONEY=['ownership','finance','trade','legacy','family','charter','trust','offshore','inheritance','marriage-settlement','enclosure-or-grant','dissolution-grant'];
+  const live=DATA.profiles.filter(p=>ok.has(p.id) && p.end==null && p._s!=null && p._s<1850)
+    .map(n=>({n, ties:neighbors(n.id).filter(x=>MONEY.includes(x.link.type))}))
+    .filter(x=>x.ties.length)
+    .sort((a,b)=>a.n._s-b.n._s);
+  if(!live.length) return '';
+  return `<h3 class="subh">Still here today<span class="n">${live.length}</span></h3>
+    <p class="lede small">Fortunes founded before 1850 that still exist, oldest first, with the estates, companies and vehicles they are tied to. This is a historical record, not an accusation against anyone alive today.</p>
+    <div class="hubs">${live.map(({n,ties})=>`<article class="hub">
+      <div class="hh"><div><button data-open="${esc(n.id)}">${hl(n.name)}</button><span class="kind">${esc(n.role||'')} · since ${n._s}${n.nation?' · '+esc(n.nation):''}</span></div><span class="cnt">${ties.length} tie${ties.length===1?'':'s'}</span></div>
+      <ul class="who">${ties.slice(0,6).map(({link,other})=>`<li><button data-open="${esc(other.id)}"><span class="d" style="background:${colorOf(other)}"></span><span class="nm">${esc(other.name)}</span><span class="via">${esc(link.label||EDGE[link.type].label)}</span></button></li>`).join('')}${ties.length>6?`<li class="out">+${ties.length-6} more in the dossier</li>`:''}</ul></article>`).join('')}</div>`;
+}
+document.addEventListener('click',e=>{ const b=e.target.closest('[data-open]'); if(b) openNode(b.dataset.open); });
+
+/* =====================================================================
+   CLAIMED VS CONTROLLED: published net worth beside what filings show each family controls
+   ===================================================================== */
+const usdOf = x => x.usd && x.usd.replace(/^c\.\s*/,'').replace(/\s/g,'')!==String(x.figure||'').replace(/^c\.\s*/,'').replace(/\s/g,'') ? x.usd : '';
+const VERD = {documented:['documented','Documented'], reported:['reported','Reported'], 'none found':['none','None found']};
+const vdBadge = v => { const x=VERD[v]; return x?`<span class="vd ${x[0]}" title="Offshore / trust layer: ${esc(x[1])}">${x[1]}</span>`:''; };
+const short = (t,n=230) => { t=String(t||''); return t.length>n ? t.slice(0,n).replace(/\s+\S*$/,'')+'…' : t; };
+function renderWealth(){
+  const list=visibleProfiles().filter(p=>p.wealth)
+    .sort((a,b)=>(SCALE[b.scale]?.rank||0)-(SCALE[a.scale]?.rank||0)||(b.wealth.published?.length?1:0)-(a.wealth.published?.length?1:0)||a.name.localeCompare(b.name));
+  const all=DATA.profiles.filter(p=>p.wealth);
+  const n=f=>list.filter(f).length;
+  const pub=n(p=>p.wealth.published?.length), ctl=n(p=>p.wealth.controlled?.text), cnt=k=>n(p=>p.wealth.opaque?.verdict===k);
+  const pubCell=p=>{ const w=p.wealth.published||[]; if(!w.length) return `<span class="none">${esc(p.wealth.publishedNote||'No published estimate found')}</span>`;
+    return w.slice(0,2).map(x=>`<span class="fig">${esc(x.figure)}</span>${usdOf(x)?` <span style="color:var(--muted)">${esc(usdOf(x))}</span>`:''}<span class="pub">${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.publisher||'')} ${esc(x.year||'')} ↗</a>`:esc((x.publisher||'')+' '+(x.year||''))}${x.who?' · '+esc(x.who):''}</span>`).join('<br>'); };
+  const txt=o=>o?.text?esc(short(o.text,150)):'<span class="none">—</span>';
+  document.getElementById('grid').innerHTML = `
+    <div class="gridhead"><h2>Claimed vs Controlled</h2><span class="meta">${list.length} of ${all.length} families · ${pub} with a published figure</span></div>
+    ${filterNote('families')}
+    <p class="lede">Are they worth what is claimed? A rich-list figure is an estimate of a family’s <i>net</i> share. It is not the size of what the family controls. This page sets four layers side by side and never adds them up, because they measure different things: managed client money is not family money, and gross assets carry debt. What the filings do show is reach, and what they don’t show is marked as opaque.</p>
+    <div class="wkey">
+      <div><b>01</b><h5>Published net worth</h5><p>Rich List, Forbes or Bloomberg estimate, with the publisher and year.</p></div>
+      <div><b>02</b><h5>Gross assets in accounts</h5><p>What estate and holding companies report, before debt and partners’ shares.</p></div>
+      <div><b>03</b><h5>Controlled or managed</h5><p>Client money, voting control through holding chains, and foundations the family governs.</p></div>
+      <div><b>04</b><h5>Opaque layer</h5><p>Trusts, foundations and offshore vehicles: <b style="display:inline;color:var(--c-xx);font:inherit">${cnt('documented')}</b> documented · <b style="display:inline;color:var(--pattern);font:inherit">${cnt('reported')}</b> reported · <b style="display:inline;color:var(--doc);font:inherit">${cnt('none found')}</b> none found. <i>Documented</i> = named in ICIJ data or an official register or filing; <i>reported</i> = a named press report.</p></div>
+    </div>
+    <div class="wtwrap"><table class="wt"><thead><tr><th style="width:15%">Family</th><th style="width:15%">01 · Published</th><th style="width:19%">02 · Gross assets</th><th style="width:19%">03 · Controlled / managed</th><th style="width:16%">04 · Opaque layer</th><th>Why the gap</th></tr></thead><tbody>
+    ${list.map(p=>{ const w=p.wealth; return `<tr><td><button data-open="${esc(p.id)}">${hl(p.name)}</button><span class="pub">${esc(CATS[p.category].short)} · ${esc(p.nation||'')}</span></td>
+      <td>${pubCell(p)}</td><td>${txt(w.grossAssets)}</td><td>${txt(w.controlled)}</td>
+      <td>${w.opaque?.verdict?vdBadge(w.opaque.verdict)+'<br>':''}${txt(w.opaque)}</td>
+      <td>${w.gapNote?esc(short(w.gapNote,170))+' <span class="basis interpretive" style="float:none" title="'+BASIS_TIP.interpretive+'">Interp.</span>':'<span class="none">—</span>'}</td></tr>`; }).join('') || '<tr><td colspan="6" class="none">No families match these filters.</td></tr>'}
+    </tbody></table></div>
+    <p class="foot">Open a dossier for each layer’s full text and sources. “None found” means the named registers and leak databases were searched and nothing was found; it is a result, not a gap. ${esc(META.disclaimer)}</p>`;
+}
+
+/* =====================================================================
+   DOSSIER DRAWER
+   ===================================================================== */
+function openNode(id){ location.hash='#/p/'+encodeURIComponent(id); }
+function closeDrawer(){ location.hash='#/'+hashOf(state.view); }
+const BASIS_TIP={documented:'Documented in public sources',interpretive:'A historian’s interpretation, or a contested claim'};
+const bullets=(arr,tag)=>!(arr||[]).length?'':`<${tag} class="${tag==='ol'?'steps':'bul'}">${arr.map(x=>`<li><span class="basis ${x.basis==='documented'?'documented':'interpretive'}" title="${BASIS_TIP[x.basis]||BASIS_TIP.interpretive}">${x.basis==='documented'?'Doc':'Interp.'}</span><b>${esc(x.t)}</b> ${esc(x.d)}</li>`).join('')}</${tag}>`;
+function networkList(id){
+  const nb=neighbors(id).sort((a,b)=>(a.other._s??9999)-(b.other._s??9999));
+  if(!nb.length) return '<p>No connections recorded yet.</p>';
+  return `<div class="net">${nb.map(({link,other,out})=>`
+    <button data-go="${esc(other.id)}"><span class="d" style="background:${colorOf(other)}"></span>
+      <span><span class="nm">${esc(other.name)}</span><br><span class="ar">${other._kind==='profile'?esc(other.category):esc(other.kind||'Entity')}</span></span>
+      <span class="rel">${out?'→':'←'} ${esc(link.label||EDGE[link.type].label)}<br><span class="ar">${esc(EDGE[link.type].label)}</span></span>
+    </button>`).join('')}</div>`;
+}
+function eventsList(id, num){
+  const evs=DATA.evBy.get(id)||[]; if(!evs.length) return '';
+  return `<section class="sec"><h3><span class="num">${num}</span>On the Timeline</h3><div class="dev">${evs.map(ev=>`<div><b>${ev.year}</b><span><span style="color:var(--text)">${esc(ev.title)}.</span> ${esc(ev.text||'')}</span></div>`).join('')}</div></section>`;
+}
+const srcList = n => (n.sources||[]).length?`<section class="sec"><h3><span class="num">§</span>Sources</h3><div class="srcs">${n.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a>`).join('')}</div></section>`:'';
+function dossierHTML(n){
+  if(n._kind==='entity'){
+    const sh=DATA.ovl.hubs.get(n.id);
+    return `<div class="dhead" style="--c:var(--muted)">
+      <button class="dclose" aria-label="Close">✕</button>
+      <div class="eyebrow"><span>Estate / Institution / Vehicle</span><span>${esc(n.kind||'')}</span>${n.start!=null?`<span>${esc(n.start)}</span>`:''}</div>
+      <h2>${esc(n.name)}</h2></div>
+      <div class="dbody"><p style="color:var(--text2)">${esc(n.description||'')}</p>
+      ${sh&&sh.size>=2?`<section class="sec"><h3><span class="num">${sh.size}</span>Families Who Share This</h3><ul class="who">${[...sh.entries()].sort((a,b)=>a[1].length-b[1].length).map(([p,path])=>`<li><button data-go="${esc(p)}"><span class="d" style="background:${catColor(DATA.byId[p])}"></span><span class="nm">${esc(DATA.byId[p].name)}</span><span class="via">${path.length>2?esc('via '+path.slice(1,-1).map(id=>DATA.byId[id].name).join(' → ')):'direct'}</span></button></li>`).join('')}</ul></section>`:''}
+      <section class="sec"><h3><span class="num">↔</span>Connected</h3>${networkList(n.id)}</section>
+      ${eventsList(n.id,'⌚')}${srcList(n)}</div>`;
+  }
+  const c=catColor(n), sh=DATA.ovl.hubs.get(n.id), ov=DATA.ovl.byProfile.get(n.id)||[];
+  let k=3; const nx=()=>String(++k).padStart(2,'0');
+  return `<div class="dhead" style="--c:${c}">
+    <button class="dclose" aria-label="Close">✕</button>
+    <div class="eyebrow"><span><span class="d"></span> ${esc(n.category)}</span><span>${esc(n.nation||'')}</span></div>
+    <h2>${esc(n.name)}</h2>
+    <div class="life">${(n.aliases||[]).length?'“'+esc(n.aliases[0])+'” · ':''}${esc(n.lifespan||'')}${n.base?' · '+esc(n.base):''}</div>
+    ${(n.placesNamed||[]).length?`<div class="named"><span>Named after them</span>${n.placesNamed.map(esc).join(' · ')}</div>`:''}
+    ${(n.moneySources||[]).length?`<div class="tags" aria-label="Sources of the fortune">${n.moneySources.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}
+    <div class="dbadges">
+      <div class="dbadge"><label>Main source</label>${esc(n.role||'—')}</div>
+      <div class="dbadge"><label>Fortune since</label>${esc(activeLabel(n))}</div>
+      <div class="dbadge"><label>${LBL(n).scale}</label>${esc(scaleLabel(n))}</div>
+    </div>
+  </div>
+  <div class="dbody">
+    ${n.scaleNote?`<div class="note">${esc(n.scaleNote)}</div>`:''}
+    ${n.slaveSiteId?`<a class="sister" href="${SISTER.url}${encodeURIComponent(n.slaveSiteId)}" target="_blank" rel="noopener">This family also has a dossier on <b>${esc(SISTER.name)}</b>, the sister site on the transatlantic slave trade ↗</a>`:''}
+    ${wealthBox(n)}
+    <section class="sec" style="margin-top:8px"><h3><span class="num">01</span>Origins</h3><p>${esc(n.origins||'')}</p>${normanHTML(n)}</section>
+    <section class="sec"><h3><span class="num">02</span>${LBL(n).role}</h3>
+      <blockquote class="callout">${esc(n.role_summary||'')}</blockquote>${bullets(n.roleDetail,'ol')}</section>
+    <section class="sec"><h3><span class="num">03</span>${LBL(n).legacy}</h3>
+      <blockquote class="callout">${esc(n.legacy||'')}</blockquote>${bullets(n.legacyDetail,'ul')}</section>
+    ${holdingsHTML(n,nx)}
+    ${lineageHTML(n,nx)}
+    <section class="sec"><h3><span class="num">${nx()}</span>Connected Network</h3>${networkList(n.id)}</section>
+    ${sh&&sh.size>=2?`<section class="sec"><h3><span class="num">${nx()}</span>Families Tied to This Vehicle</h3><ul class="who">${[...sh.entries()].sort((a,b)=>a[1].length-b[1].length).map(([p,path])=>`<li><button data-go="${esc(p)}"><span class="d" style="background:${catColor(DATA.byId[p])}"></span><span class="nm">${esc(DATA.byId[p].name)}</span><span class="via">${path.length>2?esc('via '+path.slice(1,-1).map(id=>DATA.byId[id].name).join(' → ')):'direct'}</span></button></li>`).join('')}</ul></section>`:''}
+    ${ov.length?`<section class="sec"><h3><span class="num">${nx()}</span>Overlaps With Other Families</h3><ul class="who">${ov.map(({other,path})=>`<li><button data-go="${esc(other)}"><span class="d" style="background:${catColor(DATA.byId[other])}"></span><span class="nm">${esc(DATA.byId[other].name)}</span><span class="via">${esc(viaText(path))}</span></button></li>`).join('')}</ul></section>`:''}
+    ${eventsList(n.id,nx())}
+    ${srcList(n)}
+    <p class="disc">${esc(META.disclaimer)}</p>
+  </div>`;
+}
+const tpList = arr => (arr||[]).length ? `<h4 class="lbl" style="margin:16px 0 0">In public life today</h4><ul class="tp">${arr.map(x=>`<li>
+  <span class="nm">${esc(x.name)}</span><span class="sec2">${esc(x.sector||'')}</span>
+  <span class="rl2">${esc(x.role||'')}${x.year?` <span style="color:var(--dim)">(${esc(x.year)})</span>`:''}</span>
+  <span class="rel2">${isLeaderOnly(x)?'<b>Leads the successor institution, no family link.</b> ':''}${esc(x.relation||'')}${x.basis&&x.basis!=='documented'?' · <b>claimed / unproven</b>':''}${x.source?.url?` · <a href="${esc(x.source.url)}" target="_blank" rel="noopener">${esc(x.source.label||'source')} ↗</a>`:''}</span></li>`).join('')}</ul>` : '';
+const srcA = s => s?.url ? ` <a class="src" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label||'source')} ↗</a>` : '';
+function wealthBox(n){ const w=n.wealth; if(!w) return '';
+  const pub=(w.published||[]).length ? w.published.map(x=>`<p><span class="fig">${esc(x.figure)}</span>${usdOf(x)?` <span style="color:var(--muted)">${esc(usdOf(x))}</span>`:''}${x.rank?` · ${esc(x.rank)}`:''}<br>${esc(x.who||'')}${x.who?' · ':''}${esc(x.publisher||'')} ${esc(x.year||'')}${srcA({url:x.url,label:'source'})}</p>`).join('')
+    : `<p style="color:var(--dim);font-style:italic">${esc(w.publishedNote||'No published estimate found.')}</p>`;
+  const lay=(i,t,o,extra='')=>o?.text?`<div class="lay"><span class="ix">${i}</span><div><b>${t} ${extra}</b><p>${esc(o.text)}${srcA(o.source)}</p>${o.searched?`<p style="margin-top:4px;font-size:11.5px;color:var(--muted)">Searched: ${esc(o.searched)}</p>`:''}</div></div>`:'';
+  return `<div class="wl"><h4>Claimed vs controlled <a href="#/wealth" style="font:inherit;letter-spacing:inherit">compare all ↗</a></h4>
+    <div class="lay"><span class="ix">01</span><div><b>Published net worth</b>${pub}${(w.published||[]).length&&w.publishedNote?`<p style="margin-top:4px;font-size:11.5px;color:var(--muted)">${esc(w.publishedNote)}</p>`:''}</div></div>
+    ${lay('02','Gross assets in filed accounts',w.grossAssets)}
+    ${lay('03','Controlled or managed beyond the family’s share',w.controlled)}
+    ${lay('04','Opaque layer: trusts, foundations, offshore',w.opaque,vdBadge(w.opaque?.verdict))}
+    ${w.gapNote?`<div class="lay gap"><span class="ix">≠</span><div><b>Why the gap <span class="basis interpretive" style="float:none;margin:0 0 0 6px" title="${BASIS_TIP.interpretive}">Interp.</span></b><p>${esc(w.gapNote)}</p></div></div>`:''}
+  </div>`; }
+function normanHTML(n){ const m=n.norman; if(!m||!m.text) return '';
+  const lab=m.claim==='documented'?'Documented 1066 / Domesday line':m.claim==='none'?'No Norman descent claimed':'Claimed Norman descent (tradition)';
+  return `<p style="margin-top:10px;font-size:13px"><span class="basis ${m.claim==='documented'?'documented':'interpretive'}" style="float:none;margin:0 8px 0 0">${m.claim==='documented'?'Doc':'Interp.'}</span><b style="color:var(--text)">${lab}.</b> ${esc(m.text)}${srcA(m.source)}</p>`; }
+function holdingsHTML(n,nx){ const H=n.holdingsToday||[]; if(!H.length) return '';
+  return `<section class="sec"><h3><span class="num">${nx()}</span>What They Own Today</h3><ul class="hold">${H.map(h=>`<li><span class="nm">${esc(h.name)}</span><span class="k">${esc(h.kind||'')}</span>
+    <span class="dt">${[h.sector,h.where].filter(Boolean).map(esc).join(' · ')}${h.detail?(h.sector||h.where?' — ':'')+esc(h.detail):''}${h.basis&&h.basis!=='documented'?' <span class="basis interpretive" style="float:none">Interp.</span>':''}${srcA(h.source)}</span></li>`).join('')}</ul></section>`; }
+/* Family & lineage: mentors and predecessors → the person → heirs → today (public record only) */
+function lineageHTML(n,nx){
+  const L=n.lineage||[]; if(!L.length && !n.today && !(n.today_people||[]).length) return '';
+  const cut=L.findIndex(x=>/\b(sons?|daughters?|heirs?|grandsons?|granddaughters?|grandchildren|descendants?|successors?|nephews?|nieces?|child|children|widow|great-grandsons?)\b/i.test(x.relation||''));
+  const row=x=>{ const linked=x.id&&DATA.byId[x.id];
+    return `<li><span class="rl">${esc(x.relation||'')}</span>${linked?`<button class="nm" data-go="${esc(x.id)}">${esc(x.name)}</button>`:`<span class="nm">${esc(x.name)}</span>`}${x.years?`<span class="yr">${esc(x.years)}</span>`:''}
+      ${x.basis?`<span class="basis ${x.basis==='documented'?'documented':'interpretive'}" title="${BASIS_TIP[x.basis]||BASIS_TIP.interpretive}">${x.basis==='documented'?'Doc':'Interp.'}</span>`:''}
+      ${x.note?`<div>${esc(x.note)}</div>`:''}</li>`; };
+  const before=cut<0?L:L.slice(0,cut), after=cut<0?[]:L.slice(cut);
+  return `<section class="sec"><h3><span class="num">${nx()}</span>Family &amp; Lineage</h3>
+    ${L.length?`<ul class="lin">${before.map(row).join('')}<li class="self"><span class="rl">this dossier</span><span class="nm">${esc(n.name)}</span><span class="yr">${esc(n.lifespan||'')}</span></li>${after.map(row).join('')}</ul>`:''}
+    ${n.today?`<div class="today"><b>Today</b>${esc(n.today)}</div>`:''}
+    ${tpList(n.today_people)}</section>`;
+}
+function showDrawer(id){
+  const n=DATA.byId[id]; if(!n) return;
+  state.openId=id;
+  const d=document.getElementById('drawer');
+  d.innerHTML=dossierHTML(n);
+  d.classList.add('open'); d.setAttribute('aria-hidden','false');
+  document.getElementById('scrim').classList.add('on');
+  d.querySelector('.dclose').onclick=closeDrawer;
+  d.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>openNode(b.dataset.go));
+  d.querySelector('.dbody').scrollTop=0;
+  document.title=`${n.name} — ${SITE}`;
+  if(state.view==='map'){
+    if(G.root && !G.nodes.some(x=>x.id===id)){ clearFilters(); }
+    hot(id);
+  }
+  setTimeout(()=>d.querySelector('.dclose')?.focus({preventScroll:true}),50);
+}
+function hideDrawer(){
+  state.openId=null;
+  const d=document.getElementById('drawer');
+  d.classList.remove('open'); d.setAttribute('aria-hidden','true');
+  document.getElementById('scrim').classList.remove('on');
+  document.title=`${SITE} — Europe's Great Fortunes, 1066 to Today`;
+  clearHot();
+}
+
+/* =====================================================================
+   MAP (Leaflet) — players by base, and the triangle routes
+   ===================================================================== */
+const MONEY_KIND = /company|bank|wealth|holding|trust|foundation|office|offshore|stichting|listed/i;
+const ATLAS = {map:null, tiles:null, theme:null, layer:'players', group:null, libs:null, booting:null, fitted:{}};
+const ATLAS_LIBS = {css:'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', js:'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'};
+function loadScript(src){ return new Promise((ok,no)=>{ const s=document.createElement('script'); s.src=src; s.onload=ok; s.onerror=()=>no(new Error('Could not load '+src)); document.head.appendChild(s); }); }
+function atlasLibs(){
+  if (ATLAS.libs) return ATLAS.libs;
+  const l=document.createElement('link'); l.rel='stylesheet'; l.href=ATLAS_LIBS.css; document.head.appendChild(l);
+  return ATLAS.libs = window.L ? Promise.resolve() : loadScript(ATLAS_LIBS.js);
+}
+const atlasTheme = () => document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+function atlasTiles(){
+  const t=atlasTheme(); if (ATLAS.tiles && ATLAS.theme===t) return;
+  ATLAS.theme=t; (ATLAS.tiles||[]).forEach(l=>ATLAS.map.removeLayer(l));
+  const v = t==='dark' ? 'Dark' : 'Light', url = k => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_${v}_Gray_${k}/MapServer/tile/{z}/{y}/{x}`;
+  ATLAS.tiles = [
+    L.tileLayer(url('Base'), {maxNativeZoom:16, maxZoom:19, attribution:'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors'}),
+    L.tileLayer(url('Reference'), {maxNativeZoom:16, maxZoom:19, pane:'shadowPane', opacity:.85})
+  ];
+  ATLAS.tiles.forEach(l=>l.addTo(ATLAS.map));
+  
+}
+const cssVar = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const geoOf = n => Array.isArray(n.geo)&&n.geo.length>=2&&isFinite(n.geo[0]) ? [+n.geo[0],+n.geo[1]] : null;
+function placePopup(label, items){
+  return `<div class="pop"><div class="pop-k">${items.length} ${items.length===1?'record':'records'} here</div><h4>${esc(label)}</h4>
+    <ul class="who">${items.slice().sort((a,b)=>(a._s??9999)-(b._s??9999)).map(p=>
+      `<li><button data-go="${esc(p.id)}"><span class="d" style="background:${colorOf(p)}"></span><span class="nm">${esc(p.name)}</span><span class="via">${esc(p._kind==='profile'?(p.role||p.category):(p.kind||''))}${p._s!=null?' · '+p._s:''}</span></button></li>`).join('')}</ul></div>`;
+}
+function arc(a,b,bend=.18){   // quadratic curve between two [lat,lng] points, as a polyline
+  const [y1,x1]=a,[y2,x2]=b, mx=(x1+x2)/2, my=(y1+y2)/2, dx=x2-x1, dy=y2-y1, cx=mx-dy*bend, cy=my+dx*bend, pts=[];
+  for(let i=0;i<=32;i++){ const t=i/32, u=1-t; pts.push([u*u*y1+2*u*t*cy+t*t*y2, u*u*x1+2*u*t*cx+t*t*x2]); }
+  return pts;
+}
+function drawAtlas(fit){
+  if (!ATLAS.map) return;
+  atlasTiles();
+  if (ATLAS.group) ATLAS.map.removeLayer(ATLAS.group);
+  const g = ATLAS.group = L.featureGroup().addTo(ATLAS.map);
+  const st=document.getElementById('atlasStatus'), key=document.getElementById('atlasKey');
+  document.querySelectorAll('#atlasLayer button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.layer===ATLAS.layer));
+  { const money=ATLAS.layer==='routes';
+    const vis=visibleProfiles().filter(p=>!money || p.category==='Holding Structures' || p.category==='Banking & Merchant Dynasties'), ids=new Set(visibleProfiles().map(p=>p.id));
+    const ents=DATA.entities.filter(e=>geoOf(e) && passEra(e) && (!money || MONEY_KIND.test(e.kind||'')) &&
+      (!narrowedNow() || (terms().length && matchQ(e)) || neighbors(e.id).some(x=>ids.has(x.other.id))));
+    const at=new Map();
+    [...vis,...ents].forEach(n=>{ const ll=geoOf(n); if(!ll) return; const k=ll.map(v=>v.toFixed(1)).join(','); (at.get(k)||at.set(k,{ll,items:[]}).get(k)).items.push(n); });
+    for (const {ll,items} of at.values()){
+      const ps=items.filter(n=>n._kind==='profile'), label=(ps[0]||items[0]).base || (items[0].name);
+      const cats=new Set(ps.map(p=>p.category)), c=ps.length ? (cats.size===1?catColor(ps[0]):'var(--accent)') : null;
+      const s=Math.round(12+5*Math.sqrt(items.length));
+      const icon=L.divIcon({className:'apin'+(ps.length?'':' ent'), iconSize:ps.length?[s,s]:[11,11], html:`<span style="--c:${c||'var(--edge-strong)'}">${ps.length&&items.length>1?items.length:''}</span>`});
+      L.marker(ll,{icon, title:`${label} · ${items.length}`, riseOnHover:true}).bindPopup(placePopup(label, items),{maxWidth:330, className:'apop', autoPanPaddingTopLeft:[24,160]}).addTo(g);
+    }
+    const unplaced=vis.filter(p=>!geoOf(p)).length;
+    st.innerHTML=money?`${ents.length} estate companies, banks, holding companies, foundations and offshore centres · ${vis.length} banking and holding dossiers · uses the filters above`
+      :`${vis.length} families · ${ents.length} places${unplaced?` · <span style="color:var(--dim)">${unplaced} without a base</span>`:''} · uses the filters above`;
+    key.innerHTML=`<h4>${money?'Where the money sits':'Families &amp; places'}</h4>${Object.entries(CATS).map(([k,v])=>`<div class="it"><span class="sw" style="width:9px;height:9px;border-radius:50%;background:${v.color};display:inline-block"></span>${esc(k)}</div>`).join('')}
+      <div class="it"><span style="width:9px;height:9px;border:1.5px solid var(--edge-strong);display:inline-block"></span>${money?'Company, bank, trust or offshore centre':'Estate, company, institution or place'}</div><div class="it" style="color:var(--muted)">Numbers = records sharing a city</div>`;
+  }
+  if (fit || !ATLAS.fitted[ATLAS.layer]) {
+    const b=g.getBounds(); if (b.isValid()) { ATLAS.map.fitBounds(b.pad(.08),{maxZoom:6, animate:false}); ATLAS.fitted[ATLAS.layer]=true; }
+  }
+}
+async function renderAtlas(){
+  if (!ATLAS.booting) ATLAS.booting = (async ()=>{
+    await atlasLibs();
+    ATLAS.map = L.map('atlasMap', {zoomControl:false, worldCopyJump:true, minZoom:2}).setView([50,8], 4);
+    L.control.zoom({position:'bottomright'}).addTo(ATLAS.map);
+    ATLAS.map.on('popupopen', e=>e.popup.getElement()?.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>openNode(b.dataset.go)));
+    new MutationObserver(()=>ATLAS.map&&atlasTiles()).observe(document.documentElement,{attributes:true, attributeFilter:['data-theme']});
+    matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>ATLAS.map&&atlasTiles());
+  })().catch(e=>{ document.getElementById('atlasStatus').textContent='The map library could not load. Check your connection and reload.'; throw e; });
+  await ATLAS.booting;
+  ATLAS.map.invalidateSize();
+  drawAtlas(false);
+}
+document.getElementById('atlasLayer').addEventListener('click', e=>{
+  const b=e.target.closest('[data-layer]'); if(!b || b.dataset.layer===ATLAS.layer) return;
+  ATLAS.layer=b.dataset.layer; ATLAS.map?.closePopup(); drawAtlas(false);
+});
+
+/* =====================================================================
+   ROUTER  (#/web · #/grid · #/chronology · #/overlaps · #/map · #/p/<id>)
+   ===================================================================== */
+function setView(v){
+  state.view=v;
+  document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===v));
+  document.getElementById('map').hidden = v!=='map';
+  document.getElementById('grid').hidden = v==='map'||v==='atlas';
+  document.getElementById('atlas').hidden = v!=='atlas';
+  document.getElementById('grid').scrollTop=0;
+  refresh();
+}
+const VIEW_HASH = {map:'web', atlas:'map', grid:'directory', overlaps:'overlaps', chron:'chronology', money:'money', wealth:'wealth'};
+const HASH_VIEW = {web:'map', map:'atlas', directory:'grid', grid:'grid', overlaps:'overlaps', chronology:'chron', timeline:'chron', money:'money', wealth:'wealth'};
+const hashOf = v => VIEW_HASH[v] || v;
+const viewOfHash = () => HASH_VIEW[location.hash.replace(/^#\/?/,'').split('/')[0]] || null;
+function route(){
+  const [a,b]=location.hash.replace(/^#\/?/,'').split('/');
+  const id=b?decodeURIComponent(b):'';
+  if(a==='p' && DATA.byId[id]){ showDrawer(id); return; }
+  hideDrawer();
+  const v=HASH_VIEW[a];   // sub-paths pick a layout or layer: #/web/timeline, #/map/routes
+  if(v==='map' && ['force','cluster','timeline'].includes(b) && b!==state.layout){
+    state.layout=b; G.pos.clear(); document.querySelectorAll('#layoutSeg button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.layout===b));
+    if(state.view==='map'){ renderMap(); return; }
+  }
+  if(v==='money'){ const t=b&&DATA.trails.find(x=>x.id===b); state.trail=t?t.id:null; if(state.view==='money'){ renderMoney(); document.getElementById('grid').scrollTop=0; return; } }
+  if(v==='atlas' && ['players','routes'].includes(b) && b!==ATLAS.layer){ ATLAS.layer=b; if(state.view==='atlas'){ drawAtlas(false); return; } }
+  if(v && v!==state.view) setView(v);
+}
+
+/* =====================================================================
+   BOOT
+   ===================================================================== */
+(async function boot(){
+  try{
+    const r=await fetch('data.json',{cache:'no-store'});
+    if(r.ok) DATA=normalize(await r.json());
+  }catch(_){/* opened from file:// — use embedded copy */}
+  if(!DATA) DATA=normalize(EMBEDDED_DATA);
+  DATA.ovl=computeOverlaps(DATA);
+  DATA.nComm=computeCommunities(DATA);
+  renderLegend(); bindUI();
+  setView(viewOfHash() || 'map');
+  route();
+})();
+</script>
+</body>
+</html>

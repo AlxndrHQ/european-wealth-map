@@ -1,0 +1,2078 @@
+{
+ "records": [
+  {
+   "id": "house-of-liechtenstein",
+   "name": "House of Liechtenstein (Princely Family; LGT Group)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Liechtenstein / Austria",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented role in the Atlantic slave trade was found. The profile is included because of the family's very large present-day wealth: LGT, the bank it owns, reported CHF 386.1bn in client assets under management at end-2025.",
+   "start": 1608,
+   "end": null,
+   "lifespan": "1608–present (princely house)",
+   "base": "Vaduz, Liechtenstein",
+   "geo": [
+    47.141,
+    9.521
+   ],
+   "aliases": [
+    "Haus Liechtenstein",
+    "Princes of Liechtenstein"
+   ],
+   "origins": "An Austrian noble family that rose in Habsburg service and was raised to princely rank in 1608. It bought the lordships of Schellenberg and Vaduz, which became the Principality of Liechtenstein in 1719. Most of its wealth lay in large estates in Bohemia and Moravia until Czechoslovakia confiscated them in 1945.",
+   "role_summary": "No documented direct involvement in the Atlantic slave trade or in colonial slavery. This record exists to answer the 'hidden old wealth' question: the family's fortune came from Central European land, Habsburg court office and, since the 1930s, private banking.",
+   "roleDetail": [
+    {
+     "t": "Wealth from land, not colonies.",
+     "d": "Until 1945 the family's core assets were estates in the Bohemian lands, worked under the serf labour system until 1848. That was a European system of unfree labour, not the Atlantic trade.",
+     "basis": "documented"
+    },
+    {
+     "t": "No colonial ventures found.",
+     "d": "Searches for a Liechtenstein chartered company, plantation holdings or slave-trade investment found none. The Liechtenstein–Czech Historians' Commission's work deals with the Bohemian and Moravian estates, not with colonies.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The family wholly owns LGT, one of Europe's largest family-owned private banks, and holds a major art collection displayed at the Liechtenstein palaces in Vienna. Hans-Adam II is regularly ranked Europe's richest monarch.",
+   "legacyDetail": [
+    {
+     "t": "LGT Group.",
+     "d": "Per LGT's 2025 results, group profit was CHF 445.6m and assets under management CHF 386.1bn. The family has controlled the bank for over 90 years.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Karl I of Liechtenstein",
+     "relation": "founder",
+     "years": "1569–1627",
+     "note": "Made the first Prince of Liechtenstein in 1608 for his service to the Habsburgs.",
+     "basis": "documented"
+    },
+    {
+     "name": "Hans-Adam II",
+     "relation": "descendant",
+     "years": "b. 1945",
+     "note": "Reigning prince since 1989. He rebuilt the family bank into LGT.",
+     "basis": "documented"
+    },
+    {
+     "name": "Hereditary Prince Alois",
+     "relation": "heir",
+     "years": "b. 1968",
+     "note": "Has acted as regent and handled day-to-day government since 2004.",
+     "basis": "documented"
+    }
+   ],
+   "today": "The house reigns over Liechtenstein. Hans-Adam II is sovereign, Hereditary Prince Alois has been regent since 2004, and Prince Max von und zu Liechtenstein chairs LGT. Their wealth sits mainly in LGT, family foundations, Austrian and Liechtenstein property, and the princely collections.",
+   "today_people": [
+    {
+     "name": "Hans-Adam II",
+     "relation": "head of the princely house",
+     "role": "Reigning Prince of Liechtenstein",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "finews.ch — Der reichste Royal Europas – dank einer Bank (2017)",
+      "url": "https://www.finews.ch/news/banken/29367-lgt-prinz-hans-adam-milliardaer-index"
+     }
+    },
+    {
+     "name": "Prince Max von und zu Liechtenstein",
+     "relation": "son of Hans-Adam II",
+     "role": "Chairman, LGT",
+     "sector": "Banking & finance",
+     "year": 2025,
+     "basis": "documented",
+     "source": {
+      "label": "LGT — Financial results 2024 presentation",
+      "url": "https://lgtwm-us.com/resource/blob/256642/ece22ad9bd4afea0d60ac43f362e52f1/lgt-financial-results-2024-presentation-en-data.pdf"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Principality of Liechtenstein",
+    "Palais Liechtenstein, Vienna"
+   ],
+   "oldWealth": {
+    "holdings": "LGT Group (private bank, wholly family-owned); princely art collections (Vienna); real estate and forests in Austria and Liechtenstein. The Bohemian and Moravian estates were confiscated in 1945.",
+    "value": "LGT client assets under management CHF 386.1bn at 31 Dec 2025 (LGT annual results, 2026). These are client assets, not family wealth. Hans-Adam II's personal fortune was put at c. US$4.4bn by the Bloomberg Billionaires Index (reported by finews.ch, Oct 2017). Later press citing Bloomberg gives higher figures.",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched for Liechtenstein chartered companies, Atlantic or plantation investments, asiento or South Sea holdings, and research on the family's colonial ties. None were found. The family's historic wealth came from Habsburg court office and serf-worked Central European estates, a separate system of unfree labour.",
+    "source": {
+     "label": "LGT — LGT significantly increases profit and continues growth trajectory (2025 results)",
+     "url": "https://www.lgt.com/ch-en/about-lgt/lgt-news/lgt-significantly-increases-profit-and-continues-growth-trajectory-336808"
+    }
+   },
+   "sources": [
+    {
+     "label": "LGT — 2025 annual results",
+     "url": "https://www.lgt.com/ch-en/about-lgt/lgt-news/lgt-significantly-increases-profit-and-continues-growth-trajectory-336808"
+    },
+    {
+     "label": "finews.ch — Der reichste Royal Europas – dank einer Bank (2017)",
+     "url": "https://www.finews.ch/news/banken/29367-lgt-prinz-hans-adam-milliardaer-index"
+    },
+    {
+     "label": "Wikipedia — House of Liechtenstein",
+     "url": "https://en.wikipedia.org/wiki/House_of_Liechtenstein"
+    }
+   ],
+   "connections": [
+    {
+     "id": "house-of-habsburg",
+     "type": "political",
+     "label": "rose as Habsburg courtiers; princely rank 1608"
+    }
+   ]
+  },
+  {
+   "id": "thurn-und-taxis-family",
+   "name": "Thurn und Taxis family (Princes of Thurn und Taxis)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Holy Roman Empire (German)",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented role in the slave trade. The fortune came from the hereditary Imperial postal monopoly (c. 1490s–1867) and later from land, forests and brewing.",
+   "start": 1490,
+   "end": null,
+   "lifespan": "c. 1490–present",
+   "base": "Regensburg (St Emmeram Palace), Bavaria",
+   "geo": [
+    49.015,
+    12.094
+   ],
+   "aliases": [
+    "Tassis",
+    "Taxis"
+   ],
+   "origins": "A courier family from Cornello near Bergamo. Franz von Taxis ran the Habsburg courier network between Innsbruck and Brussels from the 1490s. In 1615 Emperor Matthias made the office of Imperial Postmaster General a hereditary fief of the family.",
+   "role_summary": "No documented direct involvement in slavery or the slave trade. The family ran Europe's main postal network for the Habsburgs and the Holy Roman Empire. That was a service to the same crowns that licensed the trade, but no tie to the trade itself was found.",
+   "roleDetail": [
+    {
+     "t": "Postmasters to the Habsburgs.",
+     "d": "The Imperial Post (Kaiserliche Reichspost) was run by the family from c. 1600 to 1806. The Thurn-und-Taxis Post continued until it was sold to Prussia in 1867.",
+     "basis": "documented"
+    },
+    {
+     "t": "No colonial holdings found.",
+     "d": "The family's own history and standard references mention no colonies, plantations, Atlantic shipping or slave-trade investment.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The family remains one of Germany's largest private landowners, with nearly 20,000 hectares of forest (Euronews, 2026). Its seat is the former abbey of St Emmeram in Regensburg. After Prince Johannes died in 1990, Princess Gloria sold assets to settle large debts and inheritance tax.",
+   "legacyDetail": [
+    {
+     "t": "Largest private forest owner in Germany.",
+     "d": "Euronews (2026) gives 'knapp 20,000 hectares'. The family sold more than 5,000 hectares in 2004.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Franz von Taxis",
+     "relation": "founder",
+     "years": "1459–1517",
+     "note": "Organised the Habsburg courier service from Innsbruck to Brussels.",
+     "basis": "documented"
+    },
+    {
+     "name": "Johannes, 11th Prince",
+     "relation": "descendant",
+     "years": "1926–1990",
+     "note": "Left a fortune reported at c. US$3bn together with heavy debts.",
+     "basis": "documented"
+    },
+    {
+     "name": "Albert II, 12th Prince",
+     "relation": "son",
+     "years": "b. 1983",
+     "note": "Head of the house since 1990.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Albert, 12th Prince of Thurn and Taxis, has headed the house since 1990. His mother, Princess Gloria, is a well-known public figure. The family's wealth lies in forestry, real estate and the Regensburg palace and collections.",
+   "today_people": [
+    {
+     "name": "Albert, 12th Prince of Thurn and Taxis",
+     "relation": "head of the house",
+     "role": "Head of the princely house; forestry and estates owner",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Albert, 12th Prince of Thurn and Taxis",
+      "url": "https://en.wikipedia.org/wiki/Albert,_12th_Prince_of_Thurn_and_Taxis"
+     }
+    },
+    {
+     "name": "Gloria, Princess of Thurn and Taxis",
+     "relation": "widow of Johannes; mother of Albert",
+     "role": "Public figure; managed the family's restructuring after 1990",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — House of Thurn und Taxis",
+      "url": "https://en.wikipedia.org/wiki/House_of_Thurn_und_Taxis"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Thurn und Taxis Palace (St Emmeram), Regensburg",
+    "Thurn & Taxis site, Brussels"
+   ],
+   "oldWealth": {
+    "holdings": "Nearly 20,000 ha of forest, the largest private forest holding in Germany (Euronews, 2026); St Emmeram Palace, Regensburg; real estate; art and court library. The brewery and parts of the forest were sold.",
+    "value": "Vanity Fair (1992) reported that Johannes left a c. US$3bn fortune alongside c. US$500m of debts. A Tampa Bay Times report (1991) gave estimates up to US$3bn and noted much lower ones. No reliable current published valuation was found.",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched the family's history, its postal role for the Spanish and Austrian Habsburgs, and colonial, plantation or Brazil ties. No slave-trade investment, colonial holding or enslaved labour was found. The family's only tie is indirect service (postal) to crowns that also licensed the asiento, which is too remote to count as a link.",
+    "source": {
+     "label": "Euronews (DE) — Kirche, Adel, Grundeigentümer in Deutschland (2026)",
+     "url": "https://de.euronews.com/2026/04/20/kirche-adel-grundeigentumer-in-deutschland"
+    }
+   },
+   "sources": [
+    {
+     "label": "Thurn und Taxis — History of the Thurn und Taxis family",
+     "url": "https://www.thurnundtaxis.com/information/the-family/history-of-the-thurn-und-taxis-family"
+    },
+    {
+     "label": "Euronews (DE) — Kirche, Adel, Grundeigentümer in Deutschland (2026)",
+     "url": "https://de.euronews.com/2026/04/20/kirche-adel-grundeigentumer-in-deutschland"
+    },
+    {
+     "label": "Tampa Bay Times — He's 7 and he's already a billionaire (1991)",
+     "url": "https://www.tampabay.com/archive/1991/09/16/he-s-7-and-he-s-already-a-billionaire/"
+    }
+   ],
+   "connections": [
+    {
+     "id": "house-of-habsburg",
+     "type": "charter",
+     "label": "hereditary Imperial postmasters (1615)"
+    },
+    {
+     "id": "house-of-wittelsbach",
+     "type": "political",
+     "label": "Regensburg seat in Bavaria after 1806"
+    }
+   ]
+  },
+  {
+   "id": "house-of-hesse-kassel",
+   "name": "House of Hesse (Hesse-Kassel line; Landgraves and Electors of Hesse)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Holy Roman Empire (German)",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "Hesse-Kassel sent c. 17,000 soldiers to fight for Britain in North America (1776–83) under subsidy treaties. It had no documented role in the slave trade or in plantations.",
+   "start": 1776,
+   "end": null,
+   "lifespan": "1567–present (Hesse-Kassel line)",
+   "base": "Kassel (historic); Kronberg im Taunus (today)",
+   "geo": [
+    51.313,
+    9.479
+   ],
+   "aliases": [
+    "Hessen-Kassel",
+    "Haus Hessen",
+    "Landgraves of Hesse"
+   ],
+   "origins": "The Landgraves of Hesse-Kassel financed their state partly by hiring out their army to foreign powers. In January 1776 Landgrave Frederick II agreed to supply Britain with 12,000 soldiers. Later about a quarter of Britain's land forces in America were German auxiliaries, called 'Hessians'.",
+   "role_summary": "The house hired out soldiers to Britain, and they fought to hold slaveholding colonies. In March 1779 France protested that Hessians were fighting in the Antilles, and the Landgrave replied that the Antilles 'belonged to' North America. Historian Friederike Baer finds no evidence that Hessian regiments were actually sent to the West Indies. Hessian units took in formerly enslaved Black men, some recruited and some captured, mostly as drummers. About 100 or more went back with the troops to Kassel.",
+   "roleDetail": [
+    {
+     "t": "Soldier-renting to Britain.",
+     "d": "Under the 15 January 1776 treaty Hesse-Kassel supplied 12,000 men. Some 16,992 Hesse-Kassel soldiers served in North America.",
+     "basis": "documented"
+    },
+    {
+     "t": "Caribbean deployment unproven.",
+     "d": "The 1779 French complaint about Hessians in the Antilles (possibly St Lucia, 1778) is documented. Baer notes that no German regiment was in the St Lucia expedition and that the question remains open.",
+     "basis": "documented"
+    },
+    {
+     "t": "Black Hessians.",
+     "d": "Hessian regiments enlisted or seized formerly enslaved African Americans, mostly as drummers. Roughly 100–200 Black men, women and children went to Germany with the troops (Musgrave; Hoffman 1981).",
+     "basis": "documented"
+    },
+    {
+     "t": "Rothschild's first great client.",
+     "d": "Mayer Amschel Rothschild became a court agent to the future William IX/I in 1769. He handled British payments for hired Hessian troops and, from 1806, hid the Elector's fortune from Napoleon. That business launched the Rothschild bank.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The Elector's fortune, swollen by British subsidies, was the seed capital of the Rothschild network. Today the Hessische Hausstiftung (House of Hesse Foundation) owns palaces, art and hotels. In January 2026 Landgrave Donatus offered its cultural foundation to the State of Hesse.",
+   "legacyDetail": [
+    {
+     "t": "2026 offer to the state.",
+     "d": "Hessenschau (27 Jan 2026), citing the FAZ, reported an internal valuation of c. €450m for the properties and art. Schloss Friedrichshof (Kronberg) and Schloss Fasanerie are among the properties offered.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Frederick II, Landgrave of Hesse-Kassel",
+     "relation": "ruler",
+     "years": "1720–1785",
+     "note": "Signed the 1776 troop treaty with Britain.",
+     "basis": "documented"
+    },
+    {
+     "name": "William IX / Elector William I",
+     "relation": "son",
+     "years": "1743–1821",
+     "note": "Built a vast fortune from subsidies and lending; client of Mayer Amschel Rothschild.",
+     "id": "nm-rothschild",
+     "basis": "documented"
+    },
+    {
+     "name": "Donatus, Landgrave of Hesse",
+     "relation": "descendant / head of house",
+     "years": "b. 1966",
+     "note": "Head of the House of Hesse since 2013; chairs the family foundations.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Landgrave Donatus heads the House of Hesse. The house's assets (Schlosshotel Kronberg, Schloss Fasanerie, the Prinz von Hessen winery and art collections) are held by the Hessische Hausstiftung and its cultural foundation. In 2026 he offered the cultural foundation to the State of Hesse.",
+   "today_people": [
+    {
+     "name": "Donatus, Landgrave of Hesse",
+     "relation": "head of the House of Hesse",
+     "role": "Chairman of the House of Hesse foundations",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "hessenschau — Schlösser im Angebot (27 Jan 2026)",
+      "url": "https://www.hessenschau.de/politik/schloesser-im-angebot-wird-das-land-hessen-betreiber-eines-luxushotels-v1,haus-hessen-verkauf-100.html"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Hesse (Hessen), Germany",
+    "'Hessians', the American name for all German auxiliaries"
+   ],
+   "oldWealth": {
+    "holdings": "Schloss Friedrichshof (Schlosshotel Kronberg), Schloss Fasanerie (Eichenzell), Rosenhöhe mausoleums (Darmstadt), residential land in Kronberg, Hanau and Eichenzell, tens of thousands of art objects, the Prinz von Hessen winery.",
+    "value": "Properties and art internally valued at c. €450m (FAZ, as reported by hessenschau, 27 Jan 2026).",
+    "slaveryLink": "indirect",
+    "linkSummary": "Indirect: British subsidy money for Hessian troops who fought to keep Britain's slaveholding American colonies built the Elector's fortune (later managed through Rothschild). Hessian units also took in or seized formerly enslaved Black men. No plantations, slave-trade shareholdings or LBS compensation claims were found, and a Caribbean deployment is unproven (Baer).",
+    "source": {
+     "label": "The Rothschild Archive — Origins of the Rothschild banking business",
+     "url": "https://rothschildarchive.org/business"
+    }
+   },
+   "sources": [
+    {
+     "label": "Deutschlandmuseum — The Landgrave of Hesse-Kassel concludes a treaty with Great Britain (1776)",
+     "url": "https://deutschlandmuseum.de/en/geschichte/kalender/1776-01-15-the-sale-of-our-children"
+    },
+    {
+     "label": "Friederike Baer — 'The Antilles belong to North America': Kassel, 1779",
+     "url": "https://friederikebaer.com/2026/08/04/the-antilles-belong-to-north-america-kassel-1779/"
+    },
+    {
+     "label": "Black Central Europe — Black Hessians (Christian Musgrave)",
+     "url": "https://blackcentraleurope.com/biographies/black-hessians-christian-musgrave/"
+    },
+    {
+     "label": "The Rothschild Archive — Origins of the Rothschild banking business",
+     "url": "https://rothschildarchive.org/business"
+    }
+   ],
+   "connections": [
+    {
+     "id": "nm-rothschild",
+     "type": "finance",
+     "label": "Mayer Amschel Rothschild court agent from 1769"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "political",
+     "label": "1776 troop treaty with George III's Britain"
+    },
+    {
+     "id": "crown-of-denmark-norway",
+     "type": "finance",
+     "label": "William IX's largest loans (c. 1801–06) went to Denmark"
+    }
+   ]
+  },
+  {
+   "id": "house-of-hohenzollern",
+   "name": "House of Hohenzollern (Brandenburg-Prussia; Sigmaringen line)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Brandenburg-Prussia",
+   "scale": "Significant",
+   "scaleBasis": "estimated",
+   "scaleNote": "Historians estimate the Brandenburg African Company, chartered by the Hohenzollern Great Elector, shipped up to c. 20,000 Africans in 1680–1717, about one in ten dying at sea (Postcolonial Potsdam).",
+   "start": 1680,
+   "end": 1721,
+   "lifespan": "1415 (Brandenburg)–present",
+   "base": "Berlin and Potsdam (Prussian line); Sigmaringen (Swabian line)",
+   "geo": [
+    52.4,
+    13.051
+   ],
+   "aliases": [
+    "Hohenzollern",
+    "Prussian royal house",
+    "House of Prussia"
+   ],
+   "origins": "Margraves and Electors of Brandenburg from 1415, Kings in/of Prussia from 1701, German Emperors 1871–1918. A separate Catholic Swabian line (Hohenzollern-Sigmaringen) kept its estates in south-west Germany.",
+   "role_summary": "Elector Frederick William (the Great Elector) backed Raule's 1680–81 Guinea expedition, chartered the Brandenburg African Company in 1682 and built Groß Friedrichsburg on the Gold Coast. The company bought captives and sold them in the Caribbean from a leased base on Danish St Thomas. His grandson King Frederick William I sold the forts to the Dutch WIC in 1717 (transfer completed c. 1720–21) for c. 7,000–7,200 ducats and 12 enslaved Africans.",
+   "roleDetail": [
+    {
+     "t": "A state slave-trading venture.",
+     "d": "The details are in the existing records frederick-william-brandenburg and brandenburg-african-company. The dynasty owned the venture, so this tie is documented.",
+     "basis": "documented"
+    },
+    {
+     "t": "Africans at court.",
+     "d": "Raule was commissioned to bring young Africans to serve at the Elector's court.",
+     "basis": "documented"
+    },
+    {
+     "t": "Two lines today.",
+     "d": "The Prussian line descends from the Great Elector. The Sigmaringen line is a distant Swabian branch with no tie to the African company.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Groß Friedrichsburg survives at Princes Town, Ghana. In 2025 the Prussian line settled a near-century-old dispute with the German state: c. 3,000 objects went into a new public Hohenzollern Art Collection Foundation, with a 6:3 public-to-family board.",
+   "legacyDetail": [
+    {
+     "t": "2025 settlement.",
+     "d": "The Prussian Cultural Heritage Foundation's board approved the agreement on 26 May 2025. The family keeps some 'C-list' items.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Frederick William, the Great Elector",
+     "relation": "founder of the venture",
+     "years": "1620–1688",
+     "note": "Chartered the Brandenburg African Company in 1682.",
+     "id": "frederick-william-brandenburg",
+     "basis": "documented"
+    },
+    {
+     "name": "Frederick William I of Prussia",
+     "relation": "grandson",
+     "years": "1688–1740",
+     "note": "Sold the Gold Coast forts to the Dutch WIC.",
+     "basis": "documented"
+    },
+    {
+     "name": "Wilhelm II",
+     "relation": "descendant",
+     "years": "1859–1941",
+     "note": "Last German Emperor; abdicated 1918.",
+     "basis": "documented"
+    },
+    {
+     "name": "Georg Friedrich, Prince of Prussia",
+     "relation": "great-great-grandson of Wilhelm II",
+     "years": "b. 1976",
+     "note": "Head of the Prussian line; party to the 2025 settlement.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Georg Friedrich, Prince of Prussia, heads the Prussian line. Under the 2025 settlement he co-founded the Hohenzollern Art Collection Foundation. Karl Friedrich, Prince of Hohenzollern, heads the separate Sigmaringen line, which has c. 15,000 ha of forest. No public statement by the Prussian line on the African company was found.",
+   "today_people": [
+    {
+     "name": "Georg Friedrich, Prince of Prussia",
+     "relation": "head of the Prussian line, descendant of the Great Elector",
+     "role": "Co-founder, Stiftung Hohenzollernscher Kunstbesitz (2025)",
+     "sector": "Royalty & titles",
+     "year": 2025,
+     "basis": "documented",
+     "source": {
+      "label": "Stiftung Preußischer Kulturbesitz — Board approves Hohenzollern agreement (26 May 2025)",
+      "url": "https://www.preussischer-kulturbesitz.de/en/news-detail/article/2025/05/26/spk-board-of-trustees-approves-agreement-between-the-public-sector-and-the-house-of-hohenzollern-on-disputed-ownership-issues.html"
+     }
+    },
+    {
+     "name": "Karl Friedrich, Prince of Hohenzollern",
+     "relation": "head of the Swabian (Sigmaringen) line",
+     "role": "Owner of the Fürst von Hohenzollern estates",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Karl Friedrich, Prince of Hohenzollern",
+      "url": "https://en.wikipedia.org/wiki/Karl_Friedrich,_Prince_of_Hohenzollern"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Groß Friedrichsburg (Princes Town, Ghana)",
+    "Hohenzollern Castle",
+    "Hohenzollerndamm, Berlin"
+   ],
+   "oldWealth": {
+    "holdings": "Prussian line: Burg Hohenzollern (shared with Sigmaringen), residual art ('C-list'), a voice in the 2025 public art foundation. Sigmaringen line: c. 15,000 ha of forest (c. 12,800 ha Baden-Württemberg, 2,200 ha Bavaria) and Sigmaringen Castle.",
+    "value": "No published valuation of either line's private wealth was found. Euronews (2026) gives the Sigmaringen line's forest at c. 15,000 ha.",
+    "slaveryLink": "documented",
+    "linkSummary": "Documented for the Prussian line: the dynasty's head chartered and invested in the Brandenburg African Company (1682), which shipped up to c. 20,000 captives, and a later king sold its forts with 12 enslaved Africans as part of the price. None found for the Sigmaringen line, a separate branch.",
+    "source": {
+     "label": "Postcolonial Potsdam — The Rotary of the Oranges: Brandenburg-Prussia and the enslavement of Africans",
+     "url": "https://postcolonialpotsdam.org/en/2020/03/22/the-rotary-of-the-oranges-brandenburg-prussia-and-the-enslavement-of-africans/"
+    }
+   },
+   "sources": [
+    {
+     "label": "Postcolonial Potsdam — Brandenburg-Prussia and the enslavement of Africans",
+     "url": "https://postcolonialpotsdam.org/en/2020/03/22/the-rotary-of-the-oranges-brandenburg-prussia-and-the-enslavement-of-africans/"
+    },
+    {
+     "label": "Wikipedia — Brandenburger Gold Coast",
+     "url": "https://en.wikipedia.org/wiki/Brandenburger_Gold_Coast"
+    },
+    {
+     "label": "Stiftung Preußischer Kulturbesitz — Hohenzollern agreement approved (2025)",
+     "url": "https://www.preussischer-kulturbesitz.de/en/news-detail/article/2025/05/26/spk-board-of-trustees-approves-agreement-between-the-public-sector-and-the-house-of-hohenzollern-on-disputed-ownership-issues.html"
+    },
+    {
+     "label": "Euronews (DE) — Kirche, Adel, Grundeigentümer in Deutschland (2026)",
+     "url": "https://de.euronews.com/2026/04/20/kirche-adel-grundeigentumer-in-deutschland"
+    }
+   ],
+   "connections": [
+    {
+     "id": "frederick-william-brandenburg",
+     "type": "family",
+     "label": "the Great Elector"
+    },
+    {
+     "id": "brandenburg-african-company",
+     "type": "ownership",
+     "label": "chartered and capitalised 1682"
+    },
+    {
+     "id": "dutch-west-india-company",
+     "type": "trade",
+     "label": "sold Gold Coast forts 1717–21"
+    },
+    {
+     "id": "danish-west-indies",
+     "type": "political",
+     "label": "leased base on St Thomas from 1685"
+    },
+    {
+     "id": "john-conny",
+     "type": "political",
+     "label": "Ahanta broker at Groß Friedrichsburg"
+    }
+   ]
+  },
+  {
+   "id": "house-of-saxe-coburg-gotha",
+   "name": "House of Saxe-Coburg and Gotha (Belgian, British and Portuguese lines)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Belgium / Britain / Portugal",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No role in the Atlantic slave trade was found. The family came to its thrones after Britain's 1807 and 1833 abolition acts. Its gravest record is Leopold II's Congo Free State (1885–1908), a later colonial forced-labour regime, not the Atlantic trade.",
+   "start": 1836,
+   "end": null,
+   "lifespan": "1826 (ducal house)–present",
+   "base": "Coburg; Brussels (Laeken); London",
+   "geo": [
+    50.884,
+    4.358
+   ],
+   "aliases": [
+    "Sachsen-Coburg und Gotha",
+    "House of Windsor (renamed 1917)",
+    "Braganza-Saxe-Coburg"
+   ],
+   "origins": "A small Thuringian ducal house that placed Leopold I on the Belgian throne (1831), Ferdinand as king consort of Portugal (1836) and Prince Albert as Queen Victoria's consort (1840). The British royal house bore the name from Edward VII (1901) until it was renamed Windsor in 1917.",
+   "role_summary": "Atlantic slave trade: no documented involvement. Belgian line: Leopold II personally owned the Congo Free State (1885–1908). He ran it through a regime of forced rubber and ivory collection enforced by the Force Publique, with mass violence and a population collapse; estimates range widely and are debated, with disease a major cause. This was colonial forced labour after the era of the Atlantic trade, run in the name of 'anti-slavery'. Portuguese line: its kings reigned while slavery lasted in Portugal's African colonies until the 1869 decree and the end of 'liberto' status (1876–78).",
+   "roleDetail": [
+    {
+     "t": "Congo Free State (forced labour, not the Atlantic trade).",
+     "d": "Leopold II's profits from forced labour helped fund the 1900 Royal Donation (Royal Trust) of palaces and land still at the Belgian royal family's disposal.",
+     "basis": "documented"
+    },
+    {
+     "t": "British line inherits earlier crown ties.",
+     "d": "The British monarchy's slave-trade links come from the Stuart and Hanoverian crowns (RAC, South Sea Company). In 2023 the Guardian found a 1689 RAC share transfer to William III. Charles III backed independent research into these links (Camilla de Koning, Manchester; co-sponsored by Historic Royal Palaces).",
+     "basis": "documented"
+    },
+    {
+     "t": "Portuguese line.",
+     "d": "Ferdinand II (king consort 1837–53) and his sons Pedro V and Luís I reigned while slavery continued in Portuguese Africa. The 25 February 1869 decree abolished it, turning enslaved people into 'libertos' bound to work until 1876–78.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "On 30 June 2020 King Philippe wrote to President Tshisekedi expressing his 'deepest regrets' for 'acts of violence and cruelty' in the Congo. It was not a formal apology. The Royal Trust, partly funded by Congo profits, holds c. 7,500 ha and 77 buildings, valued at at least €231.4m in its first disclosure (Belga).",
+   "legacyDetail": [
+    {
+     "t": "Royal Trust.",
+     "d": "Created from Leopold II's 1900 donation, it was enlarged when he ceded the Congo to Belgium in 1908. Its properties cannot be sold and stay at the royal family's disposal.",
+     "basis": "documented"
+    },
+    {
+     "t": "British monarchy research.",
+     "d": "Buckingham Palace said in April 2023 that the King takes the issue 'profoundly seriously' and opened the Royal Archives to the PhD project.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Leopold I of Belgium",
+     "relation": "founder of the Belgian line",
+     "years": "1790–1865",
+     "note": "Coburg prince elected King of the Belgians in 1831.",
+     "basis": "documented"
+    },
+    {
+     "name": "Prince Albert",
+     "relation": "nephew of Leopold I",
+     "years": "1819–1861",
+     "note": "Consort of Queen Victoria; presided at the 1840 anti-slavery meeting in London.",
+     "basis": "documented"
+    },
+    {
+     "name": "Leopold II of Belgium",
+     "relation": "son of Leopold I",
+     "years": "1835–1909",
+     "note": "Personal ruler of the Congo Free State 1885–1908.",
+     "basis": "documented"
+    },
+    {
+     "name": "Philippe of Belgium",
+     "relation": "descendant",
+     "years": "b. 1960",
+     "note": "Expressed 'deepest regrets' for colonial violence in 2020.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles III",
+     "relation": "descendant (Windsor, formerly Saxe-Coburg-Gotha)",
+     "years": "b. 1948",
+     "note": "Backed research into the monarchy's slave-trade links in 2023.",
+     "basis": "documented"
+    }
+   ],
+   "today": "The house's lines reign in Belgium (King Philippe) and, as Windsor, in Britain (Charles III). Hubertus Prinz von Sachsen-Coburg und Gotha has headed the German ducal house since April 2025. Belgian royal assets are partly held by the Royal Trust, and the British King's private wealth by the Duchy of Lancaster and private estates.",
+   "today_people": [
+    {
+     "name": "King Philippe of Belgium",
+     "relation": "great-great-grandnephew of Leopold II",
+     "role": "King of the Belgians",
+     "sector": "Royalty & titles",
+     "year": 2020,
+     "basis": "documented",
+     "source": {
+      "label": "Africanews — Belgian king 'deeply regrets' colonial injustices in DR Congo (30 Jun 2020)",
+      "url": "https://www.africanews.com/2020/06/30/belgian-king-deeply-regrets-colonial-injustices-in-dr-congo"
+     }
+    },
+    {
+     "name": "Charles III",
+     "relation": "great-great-grandson of Prince Albert",
+     "role": "King of the United Kingdom",
+     "sector": "Royalty & titles",
+     "year": 2023,
+     "basis": "documented",
+     "source": {
+      "label": "ITV News — King Charles backs research into British monarchy's links to slavery (6 Apr 2023)",
+      "url": "https://itv.com/news/2023-04-06/king-charles-backs-research-into-british-monarchys-links-to-slavery"
+     }
+    },
+    {
+     "name": "Hubertus Prinz von Sachsen-Coburg und Gotha",
+     "relation": "head of the ducal house since 3 April 2025",
+     "role": "Head of the House of Saxe-Coburg and Gotha",
+     "sector": "Land & estates",
+     "year": 2025,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Hubertus Prinz von Sachsen-Coburg und Gotha",
+      "url": "https://en.wikipedia.org/wiki/Hubertus_Prinz_von_Sachsen-Coburg_und_Gotha"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Léopoldville (Kinshasa until 1966)",
+    "Lake Albert (named for Prince Albert)",
+    "Coburg, Bavaria"
+   ],
+   "oldWealth": {
+    "holdings": "Belgium: Royal Trust (c. 7,500 ha, 77 buildings incl. Laeken park and Royal Greenhouses, at the family's disposal). Britain: King's private estates (Sandringham, Balmoral), Duchy of Lancaster income, art, jewels, investments. Coburg: ducal family foundations and property.",
+    "value": "Belgian Royal Trust assets at least €231.4m (first disclosure, Belga News Agency). King Charles III: £680m (Sunday Times Rich List 2026, 230th, as reported by BusinessCloud); private wealth c. £1.8bn by the Guardian’s estimate (“Cost of the Crown”, April 2023, disputed by Buckingham Palace).",
+    "slaveryLink": "indirect",
+    "linkSummary": "Atlantic slave trade: none found for this house itself. Documented colonial forced labour: Leopold II's Congo Free State (1885–1908), whose profits partly endowed the Royal Trust. This was later forced labour, not the Atlantic trade. Indirect: the British line inherited a crown whose Stuart and Hanoverian holders invested in the RAC and South Sea Company, and the Portuguese line reigned over colonial slavery until 1869–78.",
+    "source": {
+     "label": "Belga News Agency — Belgium's royal properties worth at least 230 million euros",
+     "url": "https://belganewsagency.eu/belgiums-royal-properties-are-worth-at-least-230-million-royal-trust-reveals"
+    }
+   },
+   "sources": [
+    {
+     "label": "Wikipedia — Atrocities in the Congo Free State",
+     "url": "https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State"
+    },
+    {
+     "label": "Wikipedia — Royal Trust (Belgium)",
+     "url": "https://en.wikipedia.org/wiki/Royal_Trust_(Belgium)"
+    },
+    {
+     "label": "HuffPost UK — King Charles shows support for research into royal family's ties to slavery (2023)",
+     "url": "https://huffingtonpost.co.uk/entry/king-charles-royal-links-slavery_uk_64305b20e4b05cef00c8ecc2"
+    },
+    {
+     "label": "Cambridge — Abolition and the registration of slaves and libertos in Portuguese Mozambique",
+     "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abolition-and-the-registration-of-slaves-and-libertos-in-portuguese-mozambique-185676/3A3FA0943DED612EECDC33AA25F53CFC"
+    }
+   ],
+   "connections": [
+    {
+     "id": "congo-free-state",
+     "type": "ownership",
+     "label": "Leopold II's personal domain 1885–1908"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "family",
+     "label": "Victoria (Hanover) married Albert; Edward VII Saxe-Coburg"
+    },
+    {
+     "id": "royal-african-company",
+     "type": "legacy",
+     "label": "2023 research into crown's RAC links"
+    },
+    {
+     "id": "william-iii-and-mary-ii",
+     "type": "legacy",
+     "label": "1689 RAC share transfer to William III (Guardian 2023)"
+    },
+    {
+     "id": "crown-of-portugal",
+     "type": "family",
+     "label": "Braganza-Saxe-Coburg kings 1853–1910"
+    }
+   ]
+  },
+  {
+   "id": "house-of-habsburg",
+   "name": "House of Habsburg (Spanish and Austrian lines; Habsburg-Lorraine)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Spain / Holy Roman Empire (German)",
+   "scale": "Major",
+   "scaleBasis": "documented",
+   "scaleNote": "As kings of Castile and Aragon (1516–1700), the Spanish Habsburgs licensed the transatlantic trade to Spanish America: the 1518 licence for 4,000 Africans, the Portuguese asientos from 1595 (Reinel) to 1640, and the Grillo-Lomellini asiento of 1662.",
+   "start": 1518,
+   "end": 1700,
+   "lifespan": "c. 1020–present",
+   "base": "Madrid (Spanish line); Vienna (Austrian line)",
+   "geo": [
+    40.418,
+    -3.714
+   ],
+   "aliases": [
+    "Habsburg-Lothringen",
+    "Casa de Austria",
+    "Spanish Habsburgs"
+   ],
+   "origins": "A Swabian-Swiss comital family that became Holy Roman Emperors. Through Charles V (r. Spain 1516–56) it inherited Castile, Aragon and the Indies. The Spanish line ruled until 1700. The Austrian line, descended from Charles V's brother Ferdinand I, continued as Habsburg-Lorraine.",
+   "role_summary": "Spanish Habsburg kings turned the slave trade into a crown revenue system. Charles V's 1518 licence to Gorrevod opened direct Africa–America shipments. Philip II and his successors sold monopoly asientos (Reinel 1595; Portuguese contractors to 1640; Grillo and Lomellini 1662). Charles V also granted Venezuela to the Welser. The crown institution is in crown-of-castile; this record is the dynasty.",
+   "roleDetail": [
+    {
+     "t": "1518 licence and the asiento system.",
+     "d": "See charter-1518, spanish-asiento, pedro-gomes-reinel and grillo-and-lomellini. All were issued by Habsburg kings.",
+     "basis": "documented"
+    },
+    {
+     "t": "Financed by the Fugger, Welser and Genoese.",
+     "d": "The crown's loans from the Augsburg and Genoese houses were tied to the same royal finances that sold slave-trade licences.",
+     "basis": "documented"
+    },
+    {
+     "t": "Austrian line.",
+     "d": "The surviving Habsburg-Lorraine line descends from Ferdinand I, not from the Spanish kings who issued the asientos. No separate Austrian Habsburg slave-trade role was found.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Austria's 1919 Habsburg Law transferred court and entailed family-fund assets to the Republic. The law is still in constitutional force and is confirmed by the 1955 State Treaty. The family kept 'considerable private' assets, but repeated restitution claims have failed.",
+   "legacyDetail": [
+    {
+     "t": "Restitution blocked.",
+     "d": "Austrian arbitration panels (2004) rejected family claims because constitutional law and the State Treaty bar restitution.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Charles V",
+     "relation": "emperor and king",
+     "years": "1500–1558",
+     "note": "Issued the 1518 licence and the Welser Venezuela grant.",
+     "id": "crown-of-castile",
+     "basis": "documented"
+    },
+    {
+     "name": "Philip II",
+     "relation": "son",
+     "years": "1527–1598",
+     "note": "Concluded the first great asiento with Pedro Gomes Reinel (1595).",
+     "id": "pedro-gomes-reinel",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles II of Spain",
+     "relation": "descendant",
+     "years": "1661–1700",
+     "note": "Last Spanish Habsburg; his death led to the Bourbon succession.",
+     "basis": "documented"
+    },
+    {
+     "name": "Karl von Habsburg",
+     "relation": "descendant (Austrian line)",
+     "years": "b. 1961",
+     "note": "Head of the House of Habsburg-Lorraine since 2007.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Karl von Habsburg heads the House of Habsburg-Lorraine. The former imperial palaces and family-fund estates belong to the Republic of Austria and the City of Vienna. The family keeps undisclosed private assets.",
+   "today_people": [
+    {
+     "name": "Karl von Habsburg",
+     "relation": "head of the House of Habsburg-Lorraine (Austrian line)",
+     "role": "Head of house; former MEP",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Karl von Habsburg",
+      "url": "https://en.wikipedia.org/wiki/Karl_von_Habsburg"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Habsburg Castle (Aargau, Switzerland)"
+   ],
+   "oldWealth": {
+    "holdings": "Post-1919: undisclosed private family assets. Former court and family-fund properties (palaces, c. tens of thousands of hectares) are owned by the Republic of Austria and the City of Vienna.",
+    "value": "No reliable published valuation of the family's present wealth found. The 1919 expropriation and failed restitution claims are documented (habsburger.net; Habsburg Law).",
+    "slaveryLink": "indirect",
+    "linkSummary": "Indirect for the living family. The Spanish Habsburg kings issued the 1518 licence and sold the asientos (1595–1640 to Portuguese contractors; 1662 to Grillo and Lomellini) that supplied enslaved Africans to Spanish America. That branch died out in 1700. Today's Habsburg-Lorraine family descends from the Austrian line (Ferdinand I, through Maria Theresa), not from the Spanish kings, and its pre-1919 crown wealth was mostly expropriated.",
+    "source": {
+     "label": "habsburger.net — A fortune loses its owners: Habsburg assets after 1918",
+     "url": "https://www.habsburger.net/en/chapter/fortune-loses-its-owners-habsburg-assets-after-1918"
+    }
+   },
+   "sources": [
+    {
+     "label": "habsburger.net — A fortune loses its owners: Habsburg assets after 1918",
+     "url": "https://www.habsburger.net/en/chapter/fortune-loses-its-owners-habsburg-assets-after-1918"
+    },
+    {
+     "label": "Wikipedia — Habsburg Law",
+     "url": "https://en.wikipedia.org/wiki/Habsburg_Law"
+    },
+    {
+     "label": "Manuscrits (UAB, 2021) — From licences to the 1595 Reinel asiento",
+     "url": "https://ddd.uab.cat/pub/manuscrits/manuscrits_a2021v44/manuscrits_a2021v44p93.pdf"
+    }
+   ],
+   "connections": [
+    {
+     "id": "crown-of-castile",
+     "type": "family",
+     "label": "Habsburg kings of Castile 1516–1700"
+    },
+    {
+     "id": "charter-1518",
+     "type": "charter",
+     "label": "Charles V's 1518 licence"
+    },
+    {
+     "id": "spanish-asiento",
+     "type": "charter",
+     "label": "sold asiento contracts"
+    },
+    {
+     "id": "pedro-gomes-reinel",
+     "type": "charter",
+     "label": "1595 asiento from Philip II"
+    },
+    {
+     "id": "grillo-and-lomellini",
+     "type": "charter",
+     "label": "1662 asiento"
+    },
+    {
+     "id": "welser-family",
+     "type": "charter",
+     "label": "Venezuela grant 1528"
+    },
+    {
+     "id": "fugger-family",
+     "type": "finance",
+     "label": "imperial loans"
+    },
+    {
+     "id": "house-of-bourbon",
+     "type": "political",
+     "label": "War of the Spanish Succession 1701–14"
+    }
+   ]
+  },
+  {
+   "id": "house-of-bourbon",
+   "name": "House of Bourbon (French, Spanish and Orléans lines)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "France / Spain",
+   "scale": "Major",
+   "scaleBasis": "documented",
+   "scaleNote": "French Bourbon kings chartered the slave-trading companies and issued the Code Noir (1685). Philip V gave the 1701 asiento to the Compagnie de Guinée and in 1713 ceded it to Britain's South Sea Company. Charles IV's 1789 decree opened free trade in captives to Spanish America, fuelling Cuba's slave-trade boom.",
+   "start": 1664,
+   "end": 1886,
+   "lifespan": "1589 (French throne)–present",
+   "base": "Versailles (French line); Madrid (Spanish line)",
+   "geo": [
+    48.805,
+    2.12
+   ],
+   "aliases": [
+    "Borbón",
+    "Bourbon-Anjou",
+    "Orléans"
+   ],
+   "origins": "A Capetian cadet line that took the French throne with Henri IV (1589). Louis XIV's grandson Philip V founded the Spanish Bourbons in 1700. The Orléans and Two Sicilies lines are further branches. The French crown institution is the existing record crown-of-france.",
+   "role_summary": "In France the Bourbons chartered the Compagnie des Indes, Sénégal and Guinée companies, issued the Code Noir (1685) and, under Charles X, imposed the 1825 indemnity on Haiti. In Spain Philip V moved the asiento from the Habsburg system to the French Compagnie de Guinée (1701) and then to Britain (Utrecht, 1713). Charles IV liberalised the trade (1789). Ferdinand VII signed the 1817 treaty with Britain to end it, but the trade to Cuba continued illegally. According to historian Martín Rodrigo, Queen Regent María Cristina and her husband Agustín Fernando Muñoz were among those who profited from the illegal Cuban trade.",
+   "roleDetail": [
+    {
+     "t": "Code Noir and the French companies.",
+     "d": "See code-noir, compagnie-de-guinee and crown-of-france.",
+     "basis": "documented"
+    },
+    {
+     "t": "1701 and 1713 asientos.",
+     "d": "Philip V granted the asiento to the Compagnie de Guinée (1701). The Treaty of Utrecht transferred it to the South Sea Company (1713).",
+     "basis": "documented"
+    },
+    {
+     "t": "1789 free-trade decree.",
+     "d": "Charles IV's royal cédula of February 1789 let Spanish subjects and foreigners trade captives freely into Cuba, Santo Domingo, Puerto Rico and Caracas.",
+     "basis": "documented"
+    },
+    {
+     "t": "María Cristina and the illegal Cuban trade.",
+     "d": "The Barcelona Maritime Museum's 2025 exhibition, advised by Martín Rodrigo, names her and Muñoz among the trade's profiteers. Detailed archival proof was not reviewed here.",
+     "basis": "interpretive"
+    }
+   ],
+   "legacy": "Spanish Bourbons reign today (Felipe VI). The French claimants are Louis Alphonse, Duke of Anjou (Legitimist) and Jean, Count of Paris (Orléanist). Île Bourbon (Réunion), Bourbon Street (New Orleans) and Bourbon County (Kentucky) carry the name.",
+   "legacyDetail": [
+    {
+     "t": "Felipe VI's disclosed wealth.",
+     "d": "In April 2022 the Royal Household published his assets as €2,573,392 (savings, securities, art, jewellery), with no property. In 2020 he renounced any inheritance from Juan Carlos.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Louis XIV",
+     "relation": "king",
+     "years": "1638–1715",
+     "note": "Issued the Code Noir (1685).",
+     "id": "crown-of-france",
+     "basis": "documented"
+    },
+    {
+     "name": "Philip V of Spain",
+     "relation": "grandson",
+     "years": "1683–1746",
+     "note": "Granted the 1701 asiento; ceded it to Britain in 1713.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles IV of Spain",
+     "relation": "descendant",
+     "years": "1748–1819",
+     "note": "1789 decree freeing the trade in captives.",
+     "basis": "documented"
+    },
+    {
+     "name": "María Cristina de Borbón-Dos Sicilias",
+     "relation": "queen regent",
+     "years": "1806–1878",
+     "note": "Reported profiteer of the illegal Cuban trade (Rodrigo).",
+     "basis": "interpretive"
+    },
+    {
+     "name": "Felipe VI",
+     "relation": "descendant",
+     "years": "b. 1968",
+     "note": "King of Spain since 2014.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Felipe VI reigns in Spain and has published modest personal assets (€2.57m, 2022). Juan Carlos I's finances have been the subject of investigations. Louis Alphonse de Bourbon and Jean d'Orléans are the rival French claimants. No public statement by the Spanish Royal Household on Bourbon involvement in the slave trade was found.",
+   "today_people": [
+    {
+     "name": "Felipe VI",
+     "relation": "head of the Spanish Bourbons",
+     "role": "King of Spain",
+     "sector": "Royalty & titles",
+     "year": 2022,
+     "basis": "documented",
+     "source": {
+      "label": "Euronews — Spain's King Felipe VI unveils €2.6m assets (2022)",
+      "url": "https://euronews.com/2022/04/26/spain-s-king-felipe-vi-unveils-2-6m-assets-amid-push-for-more-transparency"
+     }
+    },
+    {
+     "name": "Louis Alphonse de Bourbon, Duke of Anjou",
+     "relation": "senior agnatic Bourbon (Legitimist claimant)",
+     "role": "Legitimist pretender to the French throne",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Louis Alphonse, Duke of Anjou",
+      "url": "https://en.wikipedia.org/wiki/Louis_Alphonse,_Duke_of_Anjou"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Île Bourbon (Réunion, until 1848)",
+    "Bourbon Street, New Orleans",
+    "Bourbon County, Kentucky"
+   ],
+   "oldWealth": {
+    "holdings": "Spain: Felipe VI's declared personal assets (no real estate; palaces are state property, Patrimonio Nacional). France: claimants hold modest private estates; Orléans foundations (e.g., Fondation Saint-Louis) hold family heritage.",
+    "value": "Felipe VI: €2,573,392 (Royal Household declaration, April 2022, reported by Euronews). No reliable published valuation of the wider Bourbon family wealth found.",
+    "slaveryLink": "documented",
+    "linkSummary": "Documented: as heads of state, the French Bourbons issued the Code Noir and chartered the slave-trading companies, and the Spanish Bourbons held the asiento (1701 Compagnie de Guinée; 1713 South Sea Company) and freed the trade in 1789. Reported but less fully sourced here: Queen Regent María Cristina and her husband profited from the illegal Cuban trade (Martín Rodrigo, 2025).",
+    "source": {
+     "label": "Ara — The Maritime Museum shows the shame of Catalan slavery (19 Feb 2025)",
+     "url": "https://en.ara.cat/culture/the-maritime-museum-shows-the-shame-of-catalan-slavery_130_5290175.amp.html"
+    }
+   },
+   "sources": [
+    {
+     "label": "Ara — The Maritime Museum shows the shame of Catalan slavery (2025)",
+     "url": "https://en.ara.cat/culture/the-maritime-museum-shows-the-shame-of-catalan-slavery_130_5290175.amp.html"
+    },
+    {
+     "label": "Archivo Nacional de Asunción — Real cédula que autoriza el libre comercio de esclavos (1789)",
+     "url": "https://historia.archivonacional.gov.py/index.php/real-cedula-que-autorizael-libre-comercio-de-esclavos-y-real-despacho-sobre-alcabala"
+    },
+    {
+     "label": "Euronews — Spain's King Felipe VI unveils €2.6m assets (2022)",
+     "url": "https://euronews.com/2022/04/26/spain-s-king-felipe-vi-unveils-2-6m-assets-amid-push-for-more-transparency"
+    }
+   ],
+   "connections": [
+    {
+     "id": "crown-of-france",
+     "type": "family",
+     "label": "Bourbon monarchy of France"
+    },
+    {
+     "id": "code-noir",
+     "type": "charter",
+     "label": "Louis XIV's edict, 1685"
+    },
+    {
+     "id": "compagnie-de-guinee",
+     "type": "charter",
+     "label": "1701 asiento from Philip V"
+    },
+    {
+     "id": "south-sea-company",
+     "type": "charter",
+     "label": "asiento ceded at Utrecht, 1713"
+    },
+    {
+     "id": "spanish-asiento",
+     "type": "charter",
+     "label": "Bourbon-era asientos"
+    },
+    {
+     "id": "anglo-spanish-treaty-1817",
+     "type": "political",
+     "label": "Ferdinand VII's 1817 treaty"
+    },
+    {
+     "id": "mascarene-islands",
+     "type": "legacy",
+     "label": "Île Bourbon named for the dynasty"
+    },
+    {
+     "id": "house-of-orleans-braganza",
+     "type": "family",
+     "label": "Orléans cadet line"
+    }
+   ]
+  },
+  {
+   "id": "house-of-wittelsbach",
+   "name": "House of Wittelsbach (Dukes, Electors and Kings of Bavaria)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Holy Roman Empire (German)",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented role in the Atlantic slave trade was found for the Bavarian line. A collateral branch (Palatinate-Zweibrücken) gave Sweden three kings (1654–1718) during and after the Swedish Africa Company's short Gold Coast venture.",
+   "start": 1180,
+   "end": null,
+   "lifespan": "1180 (Bavaria)–present",
+   "base": "Munich (Nymphenburg), Bavaria",
+   "geo": [
+    48.158,
+    11.503
+   ],
+   "aliases": [
+    "Wittelsbacher",
+    "House of Bavaria"
+   ],
+   "origins": "Rulers of Bavaria from 1180 to 1918, with branches in the Palatinate, Sweden (Charles X Gustav, Charles XI, Charles XII) and Greece (Otto). After 1918 a 1923 agreement with the Free State of Bavaria created the Wittelsbacher Ausgleichsfonds (WAF) to support the family.",
+   "role_summary": "No documented direct involvement in slavery or the slave trade for the Bavarian line. The Swedish Gold Coast post Carolusborg (1653) is often said to be named after Charles X Gustav of the Palatinate-Zweibrücken branch. The company was chartered under Queen Christina (Vasa) and lost its forts by 1663. That is a cousin branch's crown office, too remote to count as a tie for the Bavarian house.",
+   "roleDetail": [
+    {
+     "t": "Collateral Swedish kings.",
+     "d": "Charles X Gustav reigned 1654–60, as the Swedish Africa Company traded on the Gold Coast (1650–63). The Swedish slave trade in that period was small.",
+     "basis": "interpretive"
+    },
+    {
+     "t": "WAF wealth comes from 1923.",
+     "d": "The fund was created on 9 March 1923 to settle the family's claims after the monarchy ended.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The WAF holds c. 12,000 ha of forest, Berg and Grünau castles, central Munich property and the Hirschgarten beer garden, and lends c. 43,000 cultural objects to state museums. Family line heads receive c. €14m a year. The Bavarian Court of Audit does not audit it.",
+   "legacyDetail": [
+    {
+     "t": "Opaque fund.",
+     "d": "The Finance Ministry gave the WAF's value as €348m (2016) and €444m (2018), excluding art.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Charles X Gustav of Sweden",
+     "relation": "collateral branch (Palatinate-Zweibrücken)",
+     "years": "1622–1660",
+     "note": "King of Sweden during the Swedish Africa Company era.",
+     "id": "swedish-africa-company",
+     "basis": "interpretive"
+    },
+    {
+     "name": "Ludwig III of Bavaria",
+     "relation": "last king",
+     "years": "1845–1921",
+     "note": "Monarchy ended in 1918.",
+     "basis": "documented"
+    },
+    {
+     "name": "Franz, Duke of Bavaria",
+     "relation": "descendant / head of house",
+     "years": "b. 1933",
+     "note": "Head of the house since 1996; main WAF beneficiary.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Franz, Duke of Bavaria, heads the house and is the largest beneficiary of the Wittelsbacher Ausgleichsfonds. The family's wealth is mostly in the WAF and in the family's own private assets.",
+   "today_people": [
+    {
+     "name": "Franz, Duke of Bavaria",
+     "relation": "head of the House of Wittelsbach",
+     "role": "Head of house; principal beneficiary of the WAF; art patron",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Franz, Duke of Bavaria",
+      "url": "https://en.wikipedia.org/wiki/Franz_von_Bayern"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Wittelsbacher Platz, Munich",
+    "Ludwigshafen am Rhein"
+   ],
+   "oldWealth": {
+    "holdings": "Wittelsbacher Ausgleichsfonds: c. 12,000 ha forest, Berg and Grünau castles, central Munich real estate, Hirschgarten; c. 43,000 cultural objects on loan to Bavarian museums.",
+    "value": "WAF valued at €348m (2016) and €444m (2018) by the Bavarian Finance Ministry, excluding art (reported by WEB.DE/dpa, March 2023).",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched for Bavarian Wittelsbach colonial, asiento, South Sea or plantation ties and found none. The only contact found is collateral: Charles X Gustav of the Palatinate-Zweibrücken branch was King of Sweden during the small Swedish Africa Company venture (1650–63). That is a cousin branch, not the Bavarian line, so it is not counted as a link.",
+    "source": {
+     "label": "WEB.DE (dpa) — 100 Jahre Ausgleichsfonds: Bayerns Monarchen alimentiert (2023)",
+     "url": "https://web.de/magazine/wirtschaft/100-jahre-ausgleichsfonds-bayerns-monarchen-alimentiert-37895666"
+    }
+   },
+   "sources": [
+    {
+     "label": "WEB.DE (dpa) — 100 Jahre Ausgleichsfonds (2023)",
+     "url": "https://web.de/magazine/wirtschaft/100-jahre-ausgleichsfonds-bayerns-monarchen-alimentiert-37895666"
+    },
+    {
+     "label": "Wikipedia — Swedish Gold Coast",
+     "url": "https://en.wikipedia.org/wiki/Swedish_Gold_Coast"
+    },
+    {
+     "label": "Wikipedia — Franz, Duke of Bavaria",
+     "url": "https://en.wikipedia.org/wiki/Franz_von_Bayern"
+    }
+   ],
+   "connections": [
+    {
+     "id": "swedish-africa-company",
+     "type": "parallel",
+     "label": "cousin branch reigned in Sweden 1654–1718"
+    },
+    {
+     "id": "house-of-habsburg",
+     "type": "political",
+     "label": "rival and ally in the Empire"
+    }
+   ]
+  },
+  {
+   "id": "house-of-grimaldi-monaco",
+   "name": "House of Grimaldi (Princes of Monaco)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Monaco / Genoa (Italian states)",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented slave-trade involvement was found for the Monaco line. The wider Genoese Grimaldi clan traded between Seville and Hispaniola (1489–1517), but the study of that network found here does not document dealing in captives.",
+   "start": 1297,
+   "end": null,
+   "lifespan": "1297–present",
+   "base": "Monaco",
+   "geo": [
+    43.731,
+    7.42
+   ],
+   "aliases": [
+    "Grimaldi",
+    "Goyon de Matignon-Grimaldi"
+   ],
+   "origins": "A Genoese patrician family that seized Monaco in 1297. The male line died out in 1731, and the house continued through Louise-Hippolyte Grimaldi's marriage to Jacques de Goyon de Matignon, who took the Grimaldi name. The Genoese Grimaldi 'albergo' was a wider clan of merchants and bankers, distinct from the Monaco princes.",
+   "role_summary": "No documented direct involvement of the Monaco princes in slavery or the slave trade. Genoese merchants (Centurione, Grillo, Lomellini and others) were central to early Spanish slave licences and asientos, and Grimaldi merchants such as Jerónimo Grimaldi ran a Seville–Santo Domingo trading house in 1489–1517. A slave-trade role for them is not shown in the sources found, and they were not the Monaco line.",
+   "roleDetail": [
+    {
+     "t": "Genoese context.",
+     "d": "The Genoese buyers of Gorrevod's 1518 licence and the 1662 Grillo-Lomellini asiento are documented. No Grimaldi is named among them in the sources checked.",
+     "basis": "documented"
+    },
+    {
+     "t": "No French colonial holdings found.",
+     "d": "Searches for Grimaldi or Matignon property in Saint-Domingue or other French slave colonies found nothing.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The princely family reigns over Monaco. The Société des Bains de Mer (casinos and hotels) is majority state-owned. Albert II's personal fortune has been estimated at about US$1bn.",
+   "legacyDetail": [
+    {
+     "t": "Wealth estimate.",
+     "d": "Forbes put Albert II at c. US$1bn in 2011 (reported by the Sunday Times, South Africa).",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "François Grimaldi",
+     "relation": "founder",
+     "years": "d. 1309",
+     "note": "Seized the Rock of Monaco in 1297.",
+     "basis": "documented"
+    },
+    {
+     "name": "Jacques I (Goyon de Matignon)",
+     "relation": "heir by marriage",
+     "years": "1689–1751",
+     "note": "Continued the house after the male line ended (1731).",
+     "basis": "documented"
+    },
+    {
+     "name": "Albert II",
+     "relation": "descendant",
+     "years": "b. 1958",
+     "note": "Sovereign Prince since 2005.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Albert II has been Sovereign Prince since 2005, and his son Jacques is hereditary prince. Personal wealth is in property, art and other holdings. The Société des Bains de Mer is majority-owned by the State of Monaco.",
+   "today_people": [
+    {
+     "name": "Albert II, Prince of Monaco",
+     "relation": "head of the House of Grimaldi",
+     "role": "Sovereign Prince of Monaco",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Sunday Times (SA) / TimesLIVE — All that lovely lolly (2011)",
+      "url": "https://www.timeslive.co.za/amp/sunday-times/lifestyle/2011-06-26-all-that-lovely-lolly/"
+     }
+    }
+   ],
+   "oldWealth": {
+    "holdings": "Private property in Monaco and France, art and investments. The SBM casino and hotel group is majority state-owned, not the prince's.",
+    "value": "c. US$1bn personal fortune (Forbes richest royals, 2011, reported by the Sunday Times/TimesLIVE). No later authoritative revision found.",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched for Monaco Grimaldi or Matignon links to slave licences, asientos and French Caribbean plantations, and for Genoese Grimaldi merchants in the Seville slave trade. None were documented. The Garrido Raya and Moreno Escalante study of the Grimaldi network in Seville and Hispaniola (Temas Americanistas, 2012) concerns general trade, and the Genoese slave-licence buyers named in the sources are other families.",
+    "source": {
+     "label": "Garrido Raya & Moreno Escalante — La red mercantil de los Grimaldi… (1489–1517), Temas Americanistas 29 (2012)",
+     "url": "https://revistascientificas.us.es/index.php/Temas_Americanistas/article/download/14654/12783/52308"
+    }
+   },
+   "sources": [
+    {
+     "label": "Gouvernement Princier de Monaco — Matignon (lordship of)",
+     "url": "https://www.gouv.mc/en/government-institutions/history-and-heritage/places/matignon-lordship-of"
+    },
+    {
+     "label": "Temas Americanistas (2012) — La red mercantil de los Grimaldi",
+     "url": "https://revistascientificas.us.es/index.php/Temas_Americanistas/article/download/14654/12783/52308"
+    },
+    {
+     "label": "TimesLIVE — All that lovely lolly (2011)",
+     "url": "https://www.timeslive.co.za/amp/sunday-times/lifestyle/2011-06-26-all-that-lovely-lolly/"
+    }
+   ],
+   "connections": [
+    {
+     "id": "centurione-family",
+     "type": "parallel",
+     "label": "Genoese networks in Seville (no Grimaldi slave tie found)"
+    },
+    {
+     "id": "grillo-and-lomellini",
+     "type": "parallel",
+     "label": "Genoese asentistas, other families"
+    },
+    {
+     "id": "port-seville",
+     "type": "parallel",
+     "label": "Grimaldi trading house, Seville–Santo Domingo"
+    }
+   ]
+  },
+  {
+   "id": "wallenberg-family",
+   "name": "Wallenberg family (Investor AB, SEB)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Sweden",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented role in slavery. The family bank, Stockholms Enskilda Bank, was founded in 1856, nine years after Sweden ended slavery on Saint-Barthélemy (1847).",
+   "start": 1856,
+   "end": null,
+   "lifespan": "1856–present",
+   "base": "Stockholm",
+   "geo": [
+    59.329,
+    18.074
+   ],
+   "aliases": [
+    "Wallenbergsfären"
+   ],
+   "origins": "André Oscar Wallenberg (1816–1886), a naval officer and son of the Bishop of Linköping, founded Stockholms Enskilda Bank in 1856. It merged in 1972 into SEB. The family's industrial holdings are pooled in Investor AB, whose largest owner has been the Wallenberg Foundations since 1917.",
+   "role_summary": "No documented involvement in slavery or the slave trade. The Swedish Caribbean colony of Saint-Barthélemy (1784–1878) and its slave trade predate the Wallenberg bank. No Wallenberg ties to it were found. The family's historical controversies are elsewhere, notably its Second World War dealings with Germany.",
+   "roleDetail": [
+    {
+     "t": "Timing rules out St Barth slavery.",
+     "d": "Slavery on St Barthélemy ended on 9 October 1847, when the Swedish state bought the freedom of the last 523 enslaved people. Enskilda Bank opened in 1856.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Investor AB reported adjusted net asset value of SEK 1,087.1bn at end-2025. Its holdings include ABB, Atlas Copco, Ericsson, AstraZeneca, SEB and Saab. Investor paid SEK 3.7bn to the Wallenberg Foundations in 2025, and the foundations mainly fund Swedish research.",
+   "legacyDetail": [
+    {
+     "t": "Foundation model.",
+     "d": "The family controls rather than owns most of the fortune, through the Knut and Alice Wallenberg Foundation and sister foundations.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "André Oscar Wallenberg",
+     "relation": "founder",
+     "years": "1816–1886",
+     "note": "Founded Stockholms Enskilda Bank in 1856.",
+     "basis": "documented"
+    },
+    {
+     "name": "Knut Agathon Wallenberg",
+     "relation": "son",
+     "years": "1853–1938",
+     "note": "Founded the Knut and Alice Wallenberg Foundation in 1917.",
+     "basis": "documented"
+    },
+    {
+     "name": "Jacob Wallenberg",
+     "relation": "descendant",
+     "years": "b. 1956",
+     "note": "Chair of Investor AB.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Jacob Wallenberg chairs Investor AB (re-elected May 2026), and Marcus Wallenberg and Fred Wallenberg sit on its board. The Wallenberg Foundations are Investor's largest shareholder. No slavery-related history was found.",
+   "today_people": [
+    {
+     "name": "Jacob Wallenberg",
+     "relation": "fifth-generation descendant of André Oscar Wallenberg",
+     "role": "Chair, Investor AB",
+     "sector": "Banking & finance",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Investor AB — Notice of AGM / AGM bulletin, 7 May 2026",
+      "url": "https://news.cision.com/investor/r/notice-of-investor-ab-s-annual-general-meeting-on-may-7--2026,c4327045"
+     }
+    },
+    {
+     "name": "Marcus Wallenberg",
+     "relation": "family member",
+     "role": "Board member, Investor AB",
+     "sector": "Banking & finance",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Investor AB — Notice of AGM, 7 May 2026",
+      "url": "https://news.cision.com/investor/r/notice-of-investor-ab-s-annual-general-meeting-on-may-7--2026,c4327045"
+     }
+    }
+   ],
+   "oldWealth": {
+    "holdings": "Control of Investor AB (stakes in ABB, Atlas Copco, Ericsson, AstraZeneca, SEB, Saab and others) via the Wallenberg Foundations; FAM AB.",
+    "value": "Investor AB adjusted net asset value SEK 1,087.1bn at 31 Dec 2025 (Investor year-end report 2025). This is a company figure, not the family's personal wealth.",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched for Wallenberg links to Saint-Barthélemy, the Swedish slave trade and colonial plantations, in English and Swedish. None were found. The family bank dates from 1856, after slavery ended on St Barth in 1847.",
+    "source": {
+     "label": "Investor AB — Year-end report 2025",
+     "url": "https://news.cision.com/investor/r/year-end-report-2025,c4295997"
+    }
+   },
+   "sources": [
+    {
+     "label": "Wallenberg Foundations — First generation: it started with the bank",
+     "url": "https://wallenberg.com/en/history"
+    },
+    {
+     "label": "Investor AB — Year-end report 2025",
+     "url": "https://news.cision.com/investor/r/year-end-report-2025,c4295997"
+    },
+    {
+     "label": "Wikipedia — André Oscar Wallenberg",
+     "url": "https://en.wikipedia.org/wiki/Andr%C3%A9_Oscar_Wallenberg"
+    }
+   ],
+   "connections": [
+    {
+     "id": "saint-barthelemy-swedish",
+     "type": "parallel",
+     "label": "Swedish slave colony ended before the bank existed"
+    },
+    {
+     "id": "house-of-bernadotte",
+     "type": "political",
+     "label": "Swedish establishment"
+    },
+    {
+     "id": "de-geer-family",
+     "type": "parallel",
+     "label": "earlier Swedish industrial dynasty"
+    }
+   ]
+  },
+  {
+   "id": "house-of-bernadotte",
+   "name": "House of Bernadotte (Swedish royal family)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Sweden",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "Bernadotte kings ruled Sweden's slaveholding Caribbean colony of Saint-Barthélemy from 1818 until abolition in 1847, when the state bought the freedom of the last 523 enslaved people. The island traded captives illegally into the 1830s (Uppsala University).",
+   "start": 1818,
+   "end": 1847,
+   "lifespan": "1818–present",
+   "base": "Stockholm",
+   "geo": [
+    59.327,
+    18.072
+   ],
+   "aliases": [
+    "Bernadotte af Wisborg"
+   ],
+   "origins": "French marshal Jean-Baptiste Bernadotte was elected Swedish crown prince in 1810 and reigned as Karl XIV Johan (1818–44). Sweden had acquired Saint-Barthélemy from France in 1784 under Gustav III (House of Holstein-Gottorp, not Bernadotte).",
+   "role_summary": "Karl XIV Johan governed the colony closely from 1810 to 1844 and sought more colonies (Uppsala University). Saint-Barthélemy was a free port where enslaved people were bought and sold illegally, including onward to Cuba, despite Sweden's 1813–15 treaty commitments. Under Oscar I the state abolished slavery there and bought the last 523 enslaved people free on 9 October 1847.",
+   "roleDetail": [
+    {
+     "t": "Crown over a slave colony.",
+     "d": "The colony was a crown possession. Earlier Swedish kings had set slave-trade rules (royal letter 1786; 1790 tax on shipments of West Africans).",
+     "basis": "documented"
+    },
+    {
+     "t": "Illegal trade into the 1830s.",
+     "d": "Uppsala's ERC-funded project (Fredrik Thomasson) documents the island as a market for illegal captives. In 1809 one ship landed 378 Africans.",
+     "basis": "documented"
+    },
+    {
+     "t": "State-funded emancipation.",
+     "d": "In 1847 the Swedish state bought out the owners of the last enslaved people.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Sweden sold Saint-Barthélemy back to France in 1878. Uppsala University now leads major research on Swedish Caribbean slavery, and Saint-Barthélemy will be named on the Paris slavery memorial. No royal statement on the colony was found.",
+   "legacyDetail": [
+    {
+     "t": "Research.",
+     "d": "Fredrik Thomasson's ERC project (2024–28) studies Swedish participation in Caribbean slavery and colonialism.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Karl XIV Johan",
+     "relation": "founder",
+     "years": "1763–1844",
+     "note": "Ruled the colony closely 1810–44.",
+     "basis": "documented"
+    },
+    {
+     "name": "Oscar I",
+     "relation": "son",
+     "years": "1799–1859",
+     "note": "King when slavery ended on St Barthélemy (1847). His wife Josephine of Leuchtenberg was the sister of Empress Amélie of Brazil.",
+     "basis": "documented"
+    },
+    {
+     "name": "Carl XVI Gustaf",
+     "relation": "descendant",
+     "years": "b. 1946",
+     "note": "King of Sweden since 1973.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Carl XVI Gustaf is King of Sweden and Crown Princess Victoria is heir. Palaces are state property. The family's private wealth (e.g., Solliden on Öland) is undisclosed, and no reliable published estimate was found.",
+   "today_people": [
+    {
+     "name": "Carl XVI Gustaf",
+     "relation": "head of the House of Bernadotte",
+     "role": "King of Sweden",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Carl XVI Gustaf",
+      "url": "https://en.wikipedia.org/wiki/Carl_XVI_Gustaf"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Gustavia, Saint-Barthélemy (named for Gustav III, pre-Bernadotte)"
+   ],
+   "oldWealth": {
+    "holdings": "Private: Solliden (Öland) and private investments. Royal palaces are state property administered by the state.",
+    "value": "No reliable published valuation found. Online rich-list figures are unsourced.",
+    "slaveryLink": "indirect",
+    "linkSummary": "Indirect: Bernadotte kings were sovereigns of Saint-Barthélemy (1818–47), a slaveholding colony that was a market for illegally traded captives into the 1830s. Emancipation in 1847 was paid for by the state. No evidence was found that the family personally owned enslaved people or invested in slaving voyages.",
+    "source": {
+     "label": "Uppsala University — Different laws in force in Sweden's Caribbean colony (17 Dec 2025)",
+     "url": "https://www.uu.se/en/news/2025/2025-12-17-different-laws-in-force-in-swedens-caribbean-colony"
+    }
+   },
+   "sources": [
+    {
+     "label": "Uppsala University — Different laws in force in Sweden's Caribbean colony (2025)",
+     "url": "https://www.uu.se/en/news/2025/2025-12-17-different-laws-in-force-in-swedens-caribbean-colony"
+    },
+    {
+     "label": "Uppsala University — Slavery, Abolition and Archipelagic Connections in the Swedish Caribbean",
+     "url": "https://www.uu.se/en/department/history/research/research-projects/list-of-research-projects/slavery-abolition-and-archipelagic-connections-in-the-swedish-caribbean"
+    },
+    {
+     "label": "St Barthélemy-sällskapet — Så såldes de sista svenska slavarna (H. Lindqvist)",
+     "url": "https://stbarthsallskapet.se/wp-content/uploads/2019/09/S%C3%A5-s%C3%A5ldes-de-sista-svenska-slavarana-H.-Lindqvist_150704.pdf"
+    }
+   ],
+   "connections": [
+    {
+     "id": "saint-barthelemy-swedish",
+     "type": "ownership",
+     "label": "crown colony 1818–47 under Bernadotte kings"
+    },
+    {
+     "id": "house-of-orleans-braganza",
+     "type": "family",
+     "label": "Oscar I's queen was sister of Empress Amélie of Brazil"
+    },
+    {
+     "id": "wallenberg-family",
+     "type": "political",
+     "label": "Swedish establishment"
+    }
+   ]
+  },
+  {
+   "id": "house-of-orleans-braganza",
+   "name": "Imperial House of Brazil (Braganza and Orléans-Braganza)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Brazil",
+   "scale": "Major",
+   "scaleBasis": "estimated",
+   "scaleNote": "The Brazilian Empire (1822–89) was the largest importer of enslaved Africans in its era. More than 500,000 were brought in illegally after the 1831 ban, until the 1850 Eusébio de Queirós law (IHU Unisinos estimate). The crown estate of Santa Cruz was worked by enslaved people.",
+   "start": 1822,
+   "end": 1888,
+   "lifespan": "1822–present",
+   "base": "Rio de Janeiro; Petrópolis",
+   "geo": [
+    -22.505,
+    -43.178
+   ],
+   "aliases": [
+    "Casa Imperial do Brasil",
+    "Orléans e Bragança"
+   ],
+   "origins": "A branch of Portugal's Braganza dynasty (crown-of-portugal) that founded the Brazilian Empire under Pedro I (1822). The present house descends from Princess Isabel, daughter of Pedro II, and her husband Gaston d'Orléans, Count of Eu, hence 'Orléans-Braganza'.",
+   "role_summary": "The emperors reigned over a slave society. Pedro I's government passed the 1831 ban but did not enforce it, so imports continued on a vast scale until 1850. The royal and imperial Santa Cruz estate near Rio was worked by enslaved people; a manuscript of 1820 records 'slaves of the Brazilian Royal Family' there. Princess Isabel, as regent, signed the Lei Áurea on 13 May 1888, abolishing slavery without compensation. The monarchy fell in 1889.",
+   "roleDetail": [
+    {
+     "t": "Enslaved people on crown estates.",
+     "d": "Vanderbilt holds an 1820 table of births, deaths and escapes of enslaved people at the royal Santa Cruz plantation. A Fiocruz thesis studies its enslaved community under the Empire.",
+     "basis": "documented"
+    },
+    {
+     "t": "Illegal trade under the Empire.",
+     "d": "The 1831 Feijó law was 'a law for the English to see'. People imported illegally after 1831 were not freed by the 1850 law.",
+     "basis": "documented"
+    },
+    {
+     "t": "Abolition by the dynasty.",
+     "d": "The Lei Áurea (1888) was signed by Princess Isabel; see lei-aurea-1888.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The Petrópolis branch still collects the 'laudêmio', a 2.5% charge on property sales in the area of Pedro I's former imperial farm (bought from 1830). It is paid to the Companhia Imobiliária de Petrópolis, which reported revenue of R$5.16m in 2020. The fee drew criticism after the 2022 Petrópolis floods.",
+   "legacyDetail": [
+    {
+     "t": "The 'taxa do príncipe'.",
+     "d": "The Vassouras branch (Dom Bertrand) says it receives none of the laudêmio. Its father sold his share in the 1940s.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Pedro I",
+     "relation": "founder",
+     "years": "1798–1834",
+     "note": "First emperor; bought the Córrego Seco farm (Petrópolis) in 1830.",
+     "id": "crown-of-portugal",
+     "basis": "documented"
+    },
+    {
+     "name": "Pedro II",
+     "relation": "son",
+     "years": "1825–1891",
+     "note": "Emperor 1831–89; slavery lasted through almost all of his reign.",
+     "basis": "documented"
+    },
+    {
+     "name": "Isabel, Princess Imperial",
+     "relation": "daughter",
+     "years": "1846–1921",
+     "note": "Signed the Lei Áurea, 1888.",
+     "id": "lei-aurea-1888",
+     "basis": "documented"
+    },
+    {
+     "name": "Bertrand of Orléans-Braganza",
+     "relation": "great-grandson of Isabel",
+     "years": "b. 1941",
+     "note": "Head of the Vassouras branch since 2022.",
+     "basis": "documented"
+    }
+   ],
+   "today": "The house is split. Dom Bertrand of Orléans-Braganza (Vassouras branch) has been head since 2022. The Petrópolis branch recognises Dom Pedro Carlos and receives the laudêmio through the Companhia Imobiliária de Petrópolis. Luiz Philippe de Orléans e Bragança, of the Vassouras family, is a federal deputy.",
+   "today_people": [
+    {
+     "name": "Bertrand of Orléans-Braganza",
+     "relation": "great-grandson of Princess Isabel; head of Vassouras branch",
+     "role": "Head of the Imperial House (Vassouras claim)",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "InfoMoney — Chefe da Casa Imperial rejeita casamento de herdeiro (2026)",
+      "url": "https://www.infomoney.com.br/?p=3411043"
+     }
+    },
+    {
+     "name": "Pedro Carlos of Orléans-Braganza",
+     "relation": "head of the Petrópolis branch",
+     "role": "Beneficiary of the Petrópolis laudêmio via the Companhia Imobiliária de Petrópolis",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Laudêmio of Petrópolis",
+      "url": "https://en.wikipedia.org/wiki/Laud%C3%AAmio_of_Petr%C3%B3polis"
+     }
+    },
+    {
+     "name": "Luiz Philippe de Orléans e Bragança",
+     "relation": "great-great-grandson of Princess Isabel",
+     "role": "Federal deputy (Brazil)",
+     "sector": "Politics & government",
+     "year": 2022,
+     "basis": "documented",
+     "source": {
+      "label": "Folha de Pernambuco — Tragédias em Petrópolis acirram críticas à 'taxa do príncipe' (2022)",
+      "url": "https://www.folhape.com.br/noticias/tragedias-em-petropolis-acirram-criticas-a-taxa-do-principe-e-rusgas/220584/"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Petrópolis (city of Pedro)",
+    "Teresópolis (for Empress Teresa Cristina)",
+    "Leopoldina, Minas Gerais"
+   ],
+   "oldWealth": {
+    "holdings": "Petrópolis branch: emphyteutic rights over the former imperial farm in Petrópolis, collected as a 2.5% laudêmio on property transfers via the Companhia Imobiliária de Petrópolis.",
+    "value": "Companhia Imobiliária de Petrópolis total revenue R$5.16m in 2020 (R$4.88m operating), from its filing with the Rio commercial registry (Jucerja), as reported by Metrópoles and Folha de Pernambuco (2022). No valuation of the family’s wealth found.",
+    "slaveryLink": "documented",
+    "linkSummary": "Documented: Pedro I and Pedro II, from whom the Petrópolis branch descends through Princess Isabel, reigned over Brazilian slavery and the illegal post-1831 trade, and the imperial family owned enslaved people on crown estates such as Santa Cruz. Its continuing Petrópolis income comes from the Córrego Seco farm, bought by Pedro I in 1830 during the slavery era. The Vassouras branch says it does not receive the fee. The dynasty abolished slavery in 1888 (Isabel's Lei Áurea), with no compensation to owners or to the freed.",
+    "source": {
+     "label": "Vanderbilt Special Collections — Slaves of the Brazilian Royal Family manuscript (1820)",
+     "url": "https://collections.library.vanderbilt.edu/repositories/2/resources/1745"
+    }
+   },
+   "sources": [
+    {
+     "label": "Vanderbilt — Slaves of the Brazilian Royal Family manuscript (1820)",
+     "url": "https://collections.library.vanderbilt.edu/repositories/2/resources/1745"
+    },
+    {
+     "label": "Wikipedia — Laudêmio of Petrópolis",
+     "url": "https://en.wikipedia.org/wiki/Laud%C3%AAmio_of_Petr%C3%B3polis"
+    },
+    {
+     "label": "Wikipedia — Abolitionism in Brazil",
+     "url": "https://en.wikipedia.org/wiki/Abolitionism_in_Brazil"
+    },
+    {
+     "label": "IHU Unisinos — O polêmico debate sobre reparações pela escravidão no Brasil (2015)",
+     "url": "https://www.ihu.unisinos.br/noticias/549368-o-polemico-debate-sobre-reparacoes-pela-escravidao-no-brasil"
+    }
+   ],
+   "connections": [
+    {
+     "id": "crown-of-portugal",
+     "type": "family",
+     "label": "Braganza branch"
+    },
+    {
+     "id": "lei-aurea-1888",
+     "type": "legacy",
+     "label": "signed by Princess Isabel"
+    },
+    {
+     "id": "port-rio-valongo",
+     "type": "political",
+     "label": "Rio slave market under João VI and Pedro I"
+    },
+    {
+     "id": "house-of-bourbon",
+     "type": "family",
+     "label": "Orléans line via the Count of Eu"
+    },
+    {
+     "id": "house-of-habsburg",
+     "type": "family",
+     "label": "Pedro II's mother, Maria Leopoldina of Austria"
+    },
+    {
+     "id": "house-of-bernadotte",
+     "type": "family",
+     "label": "Empress Amélie's sister was Queen of Sweden"
+    }
+   ]
+  },
+  {
+   "id": "saint-barthelemy-swedish",
+   "name": "Saint-Barthélemy (Swedish colony, 1784–1878)",
+   "type": "entity",
+   "kind": "Colony / plantation",
+   "description": "Caribbean island acquired by Gustav III from France in 1784. Its free port, Gustavia, became a market where enslaved Africans were bought and sold, illegally into the 1830s despite Sweden's 1813–15 treaty commitments (Uppsala University). The Swedish state bought the freedom of the last 523 enslaved people on 9 October 1847, and Sweden sold the island back to France in 1878.",
+   "start": 1784,
+   "geo": [
+    17.897,
+    -62.85
+   ],
+   "connections": [
+    {
+     "id": "house-of-bernadotte",
+     "type": "ownership",
+     "label": "crown colony under Bernadotte kings 1818–47"
+    },
+    {
+     "id": "port-havana",
+     "type": "trade",
+     "label": "captives resold onward to Cuba"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Uppsala University — Different laws in force in Sweden's Caribbean colony (2025)",
+     "url": "https://www.uu.se/en/news/2025/2025-12-17-different-laws-in-force-in-swedens-caribbean-colony"
+    },
+    {
+     "label": "Wikipedia — Swedish colony of Saint Barthélemy",
+     "url": "https://en.wikipedia.org/wiki/Swedish_colony_of_Saint_Barth%C3%A9lemy"
+    }
+   ]
+  },
+  {
+   "id": "congo-free-state",
+   "name": "Congo Free State (1885–1908)",
+   "type": "entity",
+   "kind": "Colony / forced-labour regime",
+   "description": "Territory held personally by Leopold II of Belgium from 1885 until Belgium annexed it on 15 November 1908. Rubber and ivory were extracted through forced labour enforced by the Force Publique, with killings, hostage-taking and village burnings. Estimates of population decline range from c. 1 to 10+ million and are debated, with disease a major cause. This was colonial forced labour after the Atlantic slave trade, presented by Leopold as an 'anti-slavery' mission. Its profits partly endowed the Belgian Royal Trust.",
+   "start": 1885,
+   "geo": [
+    -5.85,
+    13.05
+   ],
+   "connections": [
+    {
+     "id": "house-of-saxe-coburg-gotha",
+     "type": "ownership",
+     "label": "personal domain of Leopold II"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Wikipedia — Atrocities in the Congo Free State",
+     "url": "https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State"
+    },
+    {
+     "label": "Wikipedia — Royal Trust (Belgium)",
+     "url": "https://en.wikipedia.org/wiki/Royal_Trust_(Belgium)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "year": 1518,
+   "title": "Charles V's licence opens direct shipments",
+   "text": "The Habsburg king licensed Gorrevod to ship 4,000 Africans to the Indies, and the licence was resold to Genoese merchants in Andalusia.",
+   "ids": [
+    "house-of-habsburg",
+    "charter-1518",
+    "crown-of-castile"
+   ],
+   "source": {
+    "label": "Wikipedia — Asiento de negros",
+    "url": "https://en.wikipedia.org/wiki/Asiento_de_negros"
+   }
+  },
+  {
+   "year": 1595,
+   "title": "Philip II signs the Reinel asiento",
+   "text": "The first great monopoly asiento went to Pedro Gomes Reinel. Portuguese contractors held it until 1640.",
+   "ids": [
+    "house-of-habsburg",
+    "pedro-gomes-reinel",
+    "spanish-asiento"
+   ],
+   "source": {
+    "label": "Manuscrits (UAB, 2021)",
+    "url": "https://ddd.uab.cat/pub/manuscrits/manuscrits_a2021v44/manuscrits_a2021v44p93.pdf"
+   }
+  },
+  {
+   "year": 1682,
+   "title": "Hohenzollern Elector charters the Brandenburg African Company",
+   "text": "Frederick William chartered the company. Historians estimate it shipped up to c. 20,000 Africans by 1717.",
+   "ids": [
+    "house-of-hohenzollern",
+    "brandenburg-african-company",
+    "frederick-william-brandenburg"
+   ],
+   "source": {
+    "label": "Postcolonial Potsdam",
+    "url": "https://postcolonialpotsdam.org/en/2020/03/22/the-rotary-of-the-oranges-brandenburg-prussia-and-the-enslavement-of-africans/"
+   }
+  },
+  {
+   "year": 1685,
+   "title": "Louis XIV issues the Code Noir",
+   "text": "The Bourbon king's edict defined enslaved people in French colonies as movable property.",
+   "ids": [
+    "house-of-bourbon",
+    "code-noir",
+    "crown-of-france"
+   ],
+   "source": {
+    "label": "Wikipedia — Code Noir",
+    "url": "https://en.wikipedia.org/wiki/Code_Noir"
+   }
+  },
+  {
+   "year": 1713,
+   "title": "Bourbon Spain cedes the asiento to Britain",
+   "text": "After Philip V's 1701 grant to the Compagnie de Guinée, the Treaty of Utrecht moved the asiento to the South Sea Company.",
+   "ids": [
+    "house-of-bourbon",
+    "compagnie-de-guinee",
+    "south-sea-company"
+   ],
+   "source": {
+    "label": "Wikipedia — Asiento de negros",
+    "url": "https://en.wikipedia.org/wiki/Asiento_de_negros"
+   }
+  },
+  {
+   "year": 1717,
+   "title": "Prussia sells Groß Friedrichsburg",
+   "text": "Frederick William I sold the Gold Coast forts to the Dutch WIC for c. 7,000 ducats and 12 enslaved Africans. The transfer was completed c. 1720–21.",
+   "ids": [
+    "house-of-hohenzollern",
+    "dutch-west-india-company"
+   ],
+   "source": {
+    "label": "Wikipedia — Brandenburger Gold Coast",
+    "url": "https://en.wikipedia.org/wiki/Brandenburger_Gold_Coast"
+   }
+  },
+  {
+   "year": 1776,
+   "title": "Hesse-Kassel rents 12,000 soldiers to Britain",
+   "text": "Landgrave Frederick II's treaty sent 'Hessians' to fight to keep Britain's American colonies. The subsidy money later passed through Rothschild hands.",
+   "ids": [
+    "house-of-hesse-kassel",
+    "house-of-hanover",
+    "nm-rothschild"
+   ],
+   "source": {
+    "label": "Deutschlandmuseum",
+    "url": "https://deutschlandmuseum.de/en/geschichte/kalender/1776-01-15-the-sale-of-our-children"
+   }
+  },
+  {
+   "year": 1789,
+   "title": "Charles IV frees the trade in captives",
+   "text": "A Bourbon royal cédula let Spaniards and foreigners trade captives freely into Cuba and other colonies, and Cuba's slave trade expanded rapidly.",
+   "ids": [
+    "house-of-bourbon"
+   ],
+   "source": {
+    "label": "Archivo Nacional de Asunción",
+    "url": "https://historia.archivonacional.gov.py/index.php/real-cedula-que-autorizael-libre-comercio-de-esclavos-y-real-despacho-sobre-alcabala"
+   }
+  },
+  {
+   "year": 1847,
+   "title": "Sweden ends slavery on Saint-Barthélemy",
+   "text": "On 9 October 1847, under Oscar I, the Swedish state bought the freedom of the last 523 enslaved people.",
+   "ids": [
+    "house-of-bernadotte",
+    "saint-barthelemy-swedish"
+   ],
+   "source": {
+    "label": "St Barthélemy-sällskapet (Lindqvist)",
+    "url": "https://stbarthsallskapet.se/wp-content/uploads/2019/09/S%C3%A5-s%C3%A5ldes-de-sista-svenska-slavarana-H.-Lindqvist_150704.pdf"
+   }
+  },
+  {
+   "year": 1885,
+   "title": "Leopold II takes the Congo Free State",
+   "text": "The Saxe-Coburg king of the Belgians became personal ruler of a territory run on forced labour. This was a colonial regime after the Atlantic trade.",
+   "ids": [
+    "house-of-saxe-coburg-gotha",
+    "congo-free-state"
+   ],
+   "source": {
+    "label": "Wikipedia — Atrocities in the Congo Free State",
+    "url": "https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State"
+   }
+  },
+  {
+   "year": 1888,
+   "title": "Princess Isabel signs the Lei Áurea",
+   "text": "The Brazilian imperial regent abolished slavery without compensation, and the monarchy fell the next year.",
+   "ids": [
+    "house-of-orleans-braganza",
+    "lei-aurea-1888"
+   ],
+   "source": {
+    "label": "Wikipedia — Abolitionism in Brazil",
+    "url": "https://en.wikipedia.org/wiki/Abolitionism_in_Brazil"
+   }
+  },
+  {
+   "year": 1919,
+   "title": "Austria's Habsburg Law",
+   "text": "Habsburg court and family-fund assets passed to the Republic. The law is still in constitutional force.",
+   "ids": [
+    "house-of-habsburg"
+   ],
+   "source": {
+    "label": "habsburger.net",
+    "url": "https://www.habsburger.net/en/chapter/fortune-loses-its-owners-habsburg-assets-after-1918"
+   }
+  },
+  {
+   "year": 2020,
+   "title": "King Philippe's 'deepest regrets' to Congo",
+   "text": "On 30 June 2020 the Belgian king wrote of 'acts of violence and cruelty' under colonial rule. It was not a formal apology.",
+   "ids": [
+    "house-of-saxe-coburg-gotha",
+    "congo-free-state"
+   ],
+   "source": {
+    "label": "Africanews (2020)",
+    "url": "https://www.africanews.com/2020/06/30/belgian-king-deeply-regrets-colonial-injustices-in-dr-congo"
+   }
+  },
+  {
+   "year": 2025,
+   "title": "Hohenzollern settlement with the German state",
+   "text": "Around 3,000 objects went to a new public Hohenzollern Art Collection Foundation, ending a near-century dispute.",
+   "ids": [
+    "house-of-hohenzollern"
+   ],
+   "source": {
+    "label": "Stiftung Preußischer Kulturbesitz (2025)",
+    "url": "https://www.preussischer-kulturbesitz.de/en/news-detail/article/2025/05/26/spk-board-of-trustees-approves-agreement-between-the-public-sector-and-the-house-of-hohenzollern-on-disputed-ownership-issues.html"
+   }
+  },
+  {
+   "year": 2026,
+   "title": "House of Hesse offers its cultural foundation to the state",
+   "text": "Landgrave Donatus offered palaces and art, internally valued at c. €450m, to the State of Hesse.",
+   "ids": [
+    "house-of-hesse-kassel"
+   ],
+   "source": {
+    "label": "hessenschau (2026)",
+    "url": "https://www.hessenschau.de/politik/schloesser-im-angebot-wird-das-land-hessen-betreiber-eines-luxushotels-v1,haus-hessen-verkauf-100.html"
+   }
+  }
+ ]
+}

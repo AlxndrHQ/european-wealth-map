@@ -1,0 +1,7 @@
+.DS_Store
+# raw ICIJ name matches: unverified leads that may name private individuals; never publish
+research/icij/
+# fact-check log: its before/after columns quote private details that were removed; keep local
+research/FACTCHECK.md
+# internal planning notes
+European Wealth Handoff.md

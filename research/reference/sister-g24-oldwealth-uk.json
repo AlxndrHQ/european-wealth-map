@@ -1,0 +1,2959 @@
+{
+ "records": [
+  {
+   "id": "grosvenor-family-westminster",
+   "name": "Grosvenor family (Dukes of Westminster)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No compensation claim or slave-trade investment found for the ducal line in UCL LBS; a cadet branch (Richard Erle-Drax-Grosvenor, nephew of the 1st Earl Grosvenor) owned Drax Hall, Barbados, by marriage, to 1819 (per LBS).",
+   "start": 1788,
+   "end": 1828,
+   "lifespan": "1066–present (Mayfair from 1677)",
+   "base": "Mayfair, London",
+   "geo": [
+    51.512,
+    -0.151
+   ],
+   "aliases": [
+    "Grosvenor Estate",
+    "Grosvenor Group",
+    "Earls Grosvenor",
+    "Marquesses of Westminster"
+   ],
+   "origins": "The family claims descent from Gilbert le Grosveneur, who came over with William the Conqueror, and has been seated at Eaton, Cheshire, since the 1440s. In 1677 Sir Thomas Grosvenor, 3rd Baronet, married the twelve-year-old heiress Mary Davies, whose manor of Ebury became Mayfair, Belgravia and Pimlico.",
+   "role_summary": "No documented direct involvement in slavery by the main ducal line. The cross-check found one link in a junior branch: Richard Grosvenor (1762–1819), son of the 1st Earl Grosvenor's younger brother Thomas, married the Drax heiress, took the name Erle-Drax-Grosvenor and owned Drax Hall in Barbados. As an MP he strongly opposed the 1807 bill to abolish the slave trade (per LBS).",
+   "roleDetail": [
+    {
+     "t": "Cadet branch held Drax Hall.",
+     "d": "Per UCL LBS, Richard Erle-Drax-Grosvenor is listed as owner of Drax Hall (St George) and Staple Grove (Christ Church), Barbados, until 1819; his son and then his son-in-law John Sawbridge Erle-Drax inherited.",
+     "basis": "documented"
+    },
+    {
+     "t": "Opposed abolition in 1807.",
+     "d": "LBS (citing the History of Parliament) records that he strongly opposed the 1807 bill to abolish the slave trade.",
+     "basis": "documented"
+    },
+    {
+     "t": "Main line: no claims found.",
+     "d": "Searches of LBS by surname and keyword (Grosvenor, Westminster, Eaton Hall) returned no compensation claim, mortgage or trusteeship for the Earls Grosvenor or Dukes of Westminster. Grosvenor Square appears in LBS only as the London address of many West India proprietors.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The Grosvenor Estate (c. 300 acres of Mayfair and Belgravia) is run by Grosvenor Group for the 7th Duke and family trusts, alongside the Eaton estate in Cheshire and Liverpool ONE. The Drax Hall branch passed out of the Grosvenor name in 1828; the plantation is still owned by the Drax family today.",
+   "legacyDetail": [
+    {
+     "t": "The Drax inheritance went to the Drax line.",
+     "d": "After Richard Erle-Drax-Grosvenor II died unmarried in 1828, Charborough and Drax Hall passed to his sister Jane and her husband John Sawbridge Erle-Drax, ancestor of Richard Drax.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Gilbert le Grosveneur",
+     "relation": "ancestor",
+     "years": "fl. 1066",
+     "note": "Norman knight from whom the family claims descent (per Grosvenor).",
+     "basis": "interpretive"
+    },
+    {
+     "name": "Sir Thomas Grosvenor, 3rd Bt & Mary Davies",
+     "relation": "spouse",
+     "years": "1677",
+     "note": "Marriage brought the manor of Ebury — future Mayfair and Belgravia — to the family.",
+     "basis": "documented"
+    },
+    {
+     "name": "Sir Richard Grosvenor, 4th Bt",
+     "relation": "heir",
+     "years": "1720s",
+     "note": "Began developing Mayfair around Grosvenor Square (from 1720).",
+     "basis": "documented"
+    },
+    {
+     "name": "Richard Erle-Drax-Grosvenor",
+     "relation": "nephew of the 1st Earl",
+     "years": "1762–1819",
+     "note": "Married Sarah Frances Drax; owned Drax Hall, Barbados; opposed the 1807 abolition bill (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "John Sawbridge Erle-Drax",
+     "relation": "son-in-law of R. E. D. Grosvenor",
+     "years": "1800–1887",
+     "note": "Inherited Charborough and Drax Hall through Jane Erle-Drax-Grosvenor.",
+     "basis": "documented",
+     "id": "john-sawbridge-erle-drax"
+    },
+    {
+     "name": "Robert Grosvenor, 1st Marquess of Westminster",
+     "relation": "heir",
+     "years": "1767–1845",
+     "note": "Developed Belgravia in the 1820s.",
+     "basis": "documented"
+    },
+    {
+     "name": "Hugh Grosvenor, 7th Duke of Westminster",
+     "relation": "heir",
+     "years": "b. 1991",
+     "note": "Inherited the title and the Grosvenor Estate trusts in 2016.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Hugh Grosvenor, 7th Duke of Westminster, heads the family, whose property company Grosvenor operates in Mayfair, Belgravia, Liverpool and abroad. Neither the duke nor Grosvenor has addressed the cadet branch's ownership of Drax Hall. That plantation belongs to the separate Drax family (Richard Drax).",
+   "today_people": [
+    {
+     "name": "Hugh Grosvenor, 7th Duke of Westminster",
+     "relation": "titleholder; heir to the Grosvenor Estate (peerage records)",
+     "role": "Duke of Westminster; Grosvenor family trusts",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Hugh Grosvenor, 7th Duke of Westminster",
+      "url": "https://en.wikipedia.org/wiki/Hugh_Grosvenor,_7th_Duke_of_Westminster"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Grosvenor Square",
+    "Grosvenor Street",
+    "Upper Grosvenor Street",
+    "Grosvenor Place",
+    "Eaton Square",
+    "Belgrave Square",
+    "Ebury Street",
+    "Davies Street (for Mary Davies)",
+    "Grosvenor House"
+   ],
+   "oldWealth": {
+    "holdings": "c. 300 acres of Mayfair and Belgravia (Grosvenor Estate), the Eaton estate in Cheshire, rural estates in England and Scotland, and international property through Grosvenor Group",
+    "value": "Duke of Westminster and the Grosvenor family £9.677bn, 18th (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026); £9.884bn, 14th, in 2025",
+    "slaveryLink": "indirect",
+    "linkSummary": "No LBS claim, RAC or South Sea holding found for the ducal line. A cadet branch was a slave-owner: Richard Erle-Drax-Grosvenor, nephew of the 1st Earl Grosvenor, owned Drax Hall, Barbados, by marriage until 1819 and opposed the 1807 abolition bill (LBS). That plantation wealth passed to the Drax line, not to the Grosvenor Estate.",
+    "source": {
+     "label": "UCL LBS — Richard Erle Drax Grosvenor [I]",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146643055"
+    }
+   },
+   "sources": [
+    {
+     "label": "UCL LBS — Richard Erle Drax Grosvenor [I]",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146643055"
+    },
+    {
+     "label": "Wikipedia — Richard Erle-Drax-Grosvenor (1762–1819)",
+     "url": "https://en.wikipedia.org/wiki/Richard_Erle-Drax-Grosvenor_(1762%E2%80%931819)"
+    },
+    {
+     "label": "Grosvenor — Our history",
+     "url": "https://www.grosvenor.com/about-us/our-history"
+    },
+    {
+     "label": "Wikipedia — Sunday Times Rich List 2025",
+     "url": "https://en.wikipedia.org/wiki/Sunday_Times_Rich_List_2025"
+    }
+   ],
+   "connections": [
+    {
+     "id": "drax-family",
+     "type": "family",
+     "label": "cadet branch owned Drax Hall by marriage (1788–1828)"
+    },
+    {
+     "id": "john-sawbridge-erle-drax",
+     "type": "family",
+     "label": "son-in-law of R. E. D. Grosvenor; inherited Drax Hall"
+    },
+    {
+     "id": "slave-trade-act-1807",
+     "type": "political",
+     "label": "R. E. D. Grosvenor opposed the 1807 bill"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS entries for the cadet branch"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "London great estate in the landownership debate"
+    }
+   ]
+  },
+  {
+   "id": "cadogan-family",
+   "name": "Cadogan family (Earls Cadogan)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "The Chelsea estate came from Sir Hans Sloane, whose income included his wife's Jamaican sugar plantations; the 1st Earl Cadogan lent £20,500 in 1774 on a Grenada estate and its enslaved people (per LBS).",
+   "start": 1695,
+   "end": 1774,
+   "lifespan": "1717–present (Chelsea estate)",
+   "base": "Chelsea, London",
+   "geo": [
+    51.495,
+    -0.159
+   ],
+   "aliases": [
+    "Cadogan Estates",
+    "Cadogan Group",
+    "Viscounts Chelsea"
+   ],
+   "origins": "Sir Hans Sloane — physician in Jamaica in 1687–89 and later President of the Royal Society — bought the manor of Chelsea in 1712. In 1717 his daughter Elizabeth married Charles Cadogan, later 2nd Baron Cadogan, and the Sloane estate in Chelsea passed to the Cadogans, who still own it.",
+   "role_summary": "Sloane married the widow of a Jamaican planter in 1695 and drew income from her sugar plantations worked by enslaved people until her death in 1724; historians link that money to his collection and to the purchase of Chelsea. His grandson Charles Sloane Cadogan, later 1st Earl Cadogan, appears in UCL LBS as a mortgagee: in 1774 he lent £20,500 to buy a 320-acre estate in St George's, Grenada, 'with the enslaved people on it'.",
+   "roleDetail": [
+    {
+     "t": "Sloane's Jamaican income.",
+     "d": "Sloane's wife Elizabeth Langley Rose was heiress to Jamaican sugar plantations; the London Society and Wikipedia say their income helped fund his collecting and the purchase of Chelsea.",
+     "basis": "interpretive"
+    },
+    {
+     "t": "1774 Grenada mortgage.",
+     "d": "Per LBS, on 31 March 1774 Charles Sloane Cadogan lent £20,500 to Sir Robert Cockburn, Sir George Colebrooke, John Stewart and John Nelson to buy a 320-acre Grenada estate and its enslaved people.",
+     "basis": "documented"
+    },
+    {
+     "t": "No 1830s compensation claim.",
+     "d": "No Cadogan earl appears as an awardee in the 1830s compensation records (LBS search by surname).",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Cadogan owns c. 93 acres of Chelsea and Knightsbridge — Sloane Square, Sloane Street, Cadogan Square, Hans Town — run by Cadogan Group for the 9th Earl and family trusts. Sloane's collection founded the British Museum, which in 2020 moved his bust and relabelled it to note his links to slavery.",
+   "legacyDetail": [
+    {
+     "t": "Names on the map.",
+     "d": "Sloane Square, Hans Place and Hans Crescent commemorate Sloane; Cadogan Square and Cadogan Hall commemorate the earls.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Sir Hans Sloane",
+     "relation": "founder of the estate",
+     "years": "1660–1753",
+     "note": "Physician in Jamaica (1687–89); married a planter's widow in 1695; bought the manor of Chelsea in 1712.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Cadogan, 2nd Baron Cadogan & Elizabeth Sloane",
+     "relation": "spouse",
+     "years": "m. 1717",
+     "note": "Elizabeth inherited the Chelsea estate from her father.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Sloane Cadogan, 1st Earl Cadogan",
+     "relation": "grandson of Sloane",
+     "years": "1728–1807",
+     "note": "Co-heir of Sloane; mortgagee of a Grenada estate in 1774 (LBS); leased Hans Town for development; Earl Cadogan 1800.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Cadogan, 8th Earl Cadogan",
+     "relation": "descendant",
+     "years": "1937–2023",
+     "note": "Chairman of the estate for decades; died 2023.",
+     "basis": "documented"
+    },
+    {
+     "name": "Edward Cadogan, 9th Earl Cadogan",
+     "relation": "heir",
+     "years": "b. 1966",
+     "note": "Succeeded in 2023.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Edward Cadogan, 9th Earl Cadogan, succeeded his father in 2023; Cadogan Group manages the Chelsea estate for the family trusts. The estate has made no public statement about the Sloane plantation money or the 1774 Grenada mortgage.",
+   "today_people": [
+    {
+     "name": "Edward Cadogan, 9th Earl Cadogan",
+     "relation": "titleholder; heir to the Cadogan estate (peerage records)",
+     "role": "Earl Cadogan; family head of Cadogan Estates",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Earl Cadogan",
+      "url": "https://en.wikipedia.org/wiki/Earl_Cadogan"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Cadogan Square",
+    "Cadogan Place",
+    "Cadogan Hall",
+    "Sloane Square",
+    "Sloane Street",
+    "Hans Place",
+    "Hans Crescent"
+   ],
+   "oldWealth": {
+    "holdings": "c. 93 acres of Chelsea and Knightsbridge (Cadogan Estates)",
+    "value": "Earl Cadogan and family £6.418bn, 29th (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "documented",
+    "linkSummary": "Founder Hans Sloane drew income from the Jamaican sugar plantations of his wife, Elizabeth Langley Rose, which added to the fortune with which he bought the manor of Chelsea in 1712. His grandson and co-heir, the 1st Earl Cadogan, a direct ancestor of today's earls, lent £20,500 in 1774 to four men to buy a 320-acre Grenada estate with its enslaved people, and held the mortgage (LBS). No 1830s compensation award was found.",
+    "source": {
+     "label": "UCL LBS — Charles Sloane Cadogan, 1st Earl Cadogan",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146648147"
+    }
+   },
+   "sources": [
+    {
+     "label": "UCL LBS — Charles Sloane Cadogan, 1st Earl Cadogan",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146648147"
+    },
+    {
+     "label": "London Society — Chelsea, Sir Hans Sloane, the British Museum and the slavery connection",
+     "url": "https://londonsociety.org.uk/post/chelsea-and-sir-hans-sloane-connection"
+    },
+    {
+     "label": "Wikipedia — Hans Sloane",
+     "url": "https://en.wikipedia.org/wiki/Hans_Sloane"
+    },
+    {
+     "label": "Wikipedia — Charles Cadogan, 8th Earl Cadogan",
+     "url": "https://en.wikipedia.org/wiki/Charles_Cadogan,_8th_Earl_Cadogan"
+    }
+   ],
+   "connections": [
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS: 1st Earl as mortgagee of a Grenada estate"
+    },
+    {
+     "id": "grosvenor-family-westminster",
+     "type": "parallel",
+     "label": "neighbouring London great estate"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "London great estate in the landownership debate"
+    },
+    {
+     "id": "port-london",
+     "type": "finance",
+     "label": "London lending into Caribbean plantations"
+    }
+   ]
+  },
+  {
+   "id": "howard-de-walden-family",
+   "name": "Howard de Walden family (Marylebone estate; Ellis & Portland lines)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Significant",
+   "scaleBasis": "documented",
+   "scaleNote": "Per LBS, Charles Rose Ellis, Lord Seaford — father of the 6th Baron Howard de Walden — was awarded c. £18,100 for five Jamaican estates; Henry Bentinck, 1st Duke of Portland, ancestor of the Portland line that held Marylebone, died Governor of Jamaica owning 287 enslaved people (1726).",
+   "start": 1721,
+   "end": 1868,
+   "lifespan": "1708–present (Marylebone estate)",
+   "base": "Marylebone, London",
+   "geo": [
+    51.519,
+    -0.147
+   ],
+   "aliases": [
+    "Howard de Walden Estate",
+    "Portland Estate",
+    "Barons Seaford",
+    "Scott-Ellis family",
+    "Czernin family"
+   ],
+   "origins": "The Marylebone estate was bought by John Holles, Duke of Newcastle, in 1708 and passed through his daughter Henrietta Cavendish Holles, who married Edward Harley, and then their daughter Margaret to the Dukes of Portland (the 'Portland Estate'). When the 5th Duke of Portland died in 1879 it went to his sister Lucy, widow of the 6th Baron Howard de Walden, and so to the Ellis (later Scott-Ellis) line.",
+   "role_summary": "Both lines that met in the estate were tied to Caribbean slavery. On the Ellis side, Charles Rose Ellis, Lord Seaford, was a leader of the West India interest in Parliament; LBS records five Jamaican compensation awards to him, and his son the 6th Baron Howard de Walden kept the Jamaican estates as an absentee owner into the 1860s. On the Portland side, Henry Bentinck, 1st Duke of Portland, lost heavily in the South Sea Bubble and died in 1726 as Governor of Jamaica owning 287 enslaved people. Robert Harley, the father-in-law of the estate heiress, founded the South Sea Company in 1711.",
+   "roleDetail": [
+    {
+     "t": "Seaford's compensation.",
+     "d": "Per LBS, Lord Seaford was awarded money as owner for Shettlewood Pen, Crawle Pen, Ellis Caymanas, and New and Old Montpelier in Jamaica — c. £18,100 in total.",
+     "basis": "documented"
+    },
+    {
+     "t": "6th Baron: absentee owner.",
+     "d": "LBS says Charles Augustus Ellis, 6th Baron Howard de Walden, inherited his father's Jamaican property after emancipation, stayed an absentee owner into the 1860s, and was also left an interest in Fort George estate by a cousin.",
+     "basis": "documented"
+    },
+    {
+     "t": "Portland in Jamaica.",
+     "d": "Per LBS, the 1st Duke of Portland borrowed against South Sea stock, became Governor of Jamaica in 1721 and died there in 1726; his Jamaican probate listed 287 enslaved people valued at £8,774 Jamaican currency.",
+     "basis": "documented"
+    },
+    {
+     "t": "Harley and the South Sea Company.",
+     "d": "The National Trust's 2020 report (Wimpole entry) notes that Robert Harley, 1st Earl of Oxford, set up the South Sea Company in 1711; his son married the Marylebone heiress, and Harley Street is named for the family.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The Howard de Walden Estate owns c. 92 acres of Marylebone — Harley Street, Wimpole Street, Cavendish Square, Portland Place — and is owned by the descendants of the 9th Baron's four daughters. The street names record the Holles, Harley, Cavendish and Bentinck (Portland) owners.",
+   "legacyDetail": [
+    {
+     "t": "Medical quarter.",
+     "d": "The estate built up Harley Street as London's private medical district in the 20th century.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "John Holles, Duke of Newcastle",
+     "relation": "purchaser",
+     "years": "1662–1711",
+     "note": "Bought the manor of Marylebone in 1708.",
+     "basis": "documented"
+    },
+    {
+     "name": "Robert Harley, 1st Earl of Oxford",
+     "relation": "father-in-law of the heiress",
+     "years": "1661–1724",
+     "note": "Founded the South Sea Company in 1711 (per National Trust).",
+     "basis": "documented"
+    },
+    {
+     "name": "Henry Bentinck, 1st Duke of Portland",
+     "relation": "ancestor of the Portland line",
+     "years": "1682–1726",
+     "note": "South Sea speculator; Governor of Jamaica; died owning 287 enslaved people (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "Margaret Cavendish Harley & William Bentinck, 2nd Duke of Portland",
+     "relation": "spouse",
+     "years": "m. 1734",
+     "note": "The Marylebone estate passed into the Portland family.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Rose Ellis, Lord Seaford",
+     "relation": "father of the 6th Baron",
+     "years": "1771–1845",
+     "note": "Jamaican proprietor and West India Committee chairman; five compensation awards (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Augustus Ellis, 6th Baron Howard de Walden",
+     "relation": "son",
+     "years": "1799–1868",
+     "note": "Absentee Jamaican owner; married Lady Lucy Cavendish-Scott-Bentinck, who inherited the Portland Estate in 1879.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Scott-Ellis, 9th Baron Howard de Walden",
+     "relation": "descendant",
+     "years": "1912–1999",
+     "note": "On his death the barony fell into abeyance among four daughters, who inherited the estate.",
+     "basis": "documented"
+    },
+    {
+     "name": "Peter Czernin, 11th Baron Howard de Walden",
+     "relation": "heir",
+     "years": "b. 1966",
+     "note": "Succeeded his mother, Hazel Czernin, 10th Baroness, in 2024.",
+     "basis": "documented"
+    }
+   ],
+   "today": "The Howard de Walden Estate is owned by the family of the 9th Baron's daughters. Hazel Czernin, 10th Baroness, sat on the estate board for over 30 years and died in 2024; her son Peter Czernin succeeded as 11th Baron. No public statement on the Seaford or Portland slavery links has been found.",
+   "today_people": [
+    {
+     "name": "Peter Czernin, 11th Baron Howard de Walden",
+     "relation": "titleholder; son of the 10th Baroness (peerage records)",
+     "role": "Hereditary peer; member of the family that owns the Howard de Walden Estate",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Peerage News — The Baroness Howard de Walden 1935–2024",
+      "url": "https://peeragenews.blogspot.com/2024/07/the-baroness-howard-de-walden-1935-2024.html"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Harley Street",
+    "Wimpole Street",
+    "Cavendish Square",
+    "Portland Place",
+    "Great Portland Street",
+    "Bentinck Street",
+    "Holles Street",
+    "Welbeck Street",
+    "Howard de Walden Estate"
+   ],
+   "oldWealth": {
+    "holdings": "c. 92 acres of Marylebone, London (Howard de Walden Estate)",
+    "value": "Baron Howard de Walden and family £3.357bn, 49th (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "documented",
+    "linkSummary": "Per LBS, Lord Seaford, father of the 6th Baron and a direct ancestor of today's family, was awarded £18,127 for five Jamaican estates (Montpelier, Shettlewood, Caymanas and others), and the 6th Baron carried on the Jamaican business after 1834. Henry Bentinck, 1st Duke of Portland, whose line inherited Marylebone, died Governor of Jamaica in 1726 owning 287 enslaved people (per Wikipedia, from a cited source). The estate itself came through the Holles–Harley–Portland marriages, not by purchase with slavery money.",
+    "source": {
+     "label": "UCL LBS — Charles Rose Ellis, Lord Seaford",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/13399"
+    }
+   },
+   "sources": [
+    {
+     "label": "UCL LBS — Charles Rose Ellis, Lord Seaford",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/13399"
+    },
+    {
+     "label": "UCL LBS — Charles Augustus Ellis, 6th Baron Howard de Walden",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146662645"
+    },
+    {
+     "label": "UCL LBS — Henry Bentinck, 1st Duke of Portland",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146662185"
+    },
+    {
+     "label": "Wikipedia — Baron Howard de Walden",
+     "url": "https://en.wikipedia.org/wiki/Baron_Howard_de_Walden"
+    },
+    {
+     "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+     "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+    }
+   ],
+   "connections": [
+    {
+     "id": "south-sea-company",
+     "type": "ownership",
+     "label": "Harley founded it; 1st Duke of Portland speculated in its stock"
+    },
+    {
+     "id": "slavery-abolition-act-1833",
+     "type": "plantation",
+     "label": "Lord Seaford's Jamaican compensation awards"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS entries for Seaford, the 6th Baron and Portland"
+    },
+    {
+     "id": "cavendish-family-devonshire",
+     "type": "family",
+     "label": "Cavendish-Bentinck kinship through the Portland line"
+    },
+    {
+     "id": "brydges-family-chandos",
+     "type": "parallel",
+     "label": "Chandos also built at Cavendish Square in the 1720s"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "London great estate in the landownership debate"
+    }
+   ]
+  },
+  {
+   "id": "portman-family",
+   "name": "Portman family (Viscounts Portman)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented involvement found: LBS surname and keyword searches returned no Portman claimant, mortgagee or trustee; dates mark the period cross-checked.",
+   "start": 1660,
+   "end": 1838,
+   "lifespan": "1532–present (Marylebone estate)",
+   "base": "Marylebone, London",
+   "geo": [
+    51.516,
+    -0.157
+   ],
+   "aliases": [
+    "Portman Estate",
+    "Portman Settled Estates",
+    "Berkeley Portman"
+   ],
+   "origins": "Sir William Portman, a Somerset lawyer and Lord Chief Justice under Henry VIII and Mary, acquired fields in the manor of Lilleston, Marylebone, between c. 1532 and 1554. Henry William Portman began building on them in the 1760s (Portman Square, 1764–84), and the estate passed through the Berkeley Portmans, who became Viscounts Portman in 1873.",
+   "role_summary": "No documented direct involvement in slavery. LBS shows no Portman awardee, mortgagee or trustee; 'Portman Square' appears only as the London address of many West India proprietors who rented from the estate. A 'John Portman' is among the c. 200 founding subscribers to the Royal African Company in 1672, but no source found links him to the landed Portmans, so it is not counted.",
+   "roleDetail": [
+    {
+     "t": "Tenants, not owners.",
+     "d": "LBS records many slave-owners living in Portman Square and nearby streets; that shows tenancy, not Portman ownership of enslaved people.",
+     "basis": "documented"
+    },
+    {
+     "t": "Unresolved 1672 name.",
+     "d": "'John Portman' appears in the 1672 RAC charter list of subscribers; his identity is unconfirmed.",
+     "basis": "interpretive"
+    }
+   ],
+   "legacy": "The Portman Estate covers c. 110 acres of Marylebone between Oxford Street and Marylebone Road and is held in trust for the family; Christopher Portman, 10th Viscount, is the head of the family.",
+   "legacyDetail": [
+    {
+     "t": "Family history published.",
+     "d": "The estate's archive project and its 2022 history 'From Somerset to Portman Square' trace the family from 1532.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Sir William Portman",
+     "relation": "founder",
+     "years": "d. 1557",
+     "note": "Lord Chief Justice; acquired the Marylebone fields (c. 1532–1554).",
+     "basis": "documented"
+    },
+    {
+     "name": "Henry William Portman",
+     "relation": "descendant",
+     "years": "d. 1796",
+     "note": "Began developing the Marylebone estate in the 1760s.",
+     "basis": "documented"
+    },
+    {
+     "name": "Edward Berkeley Portman, 1st Viscount Portman",
+     "relation": "descendant",
+     "years": "1799–1888",
+     "note": "Created Viscount Portman in 1873.",
+     "basis": "documented"
+    },
+    {
+     "name": "Christopher Portman, 10th Viscount Portman",
+     "relation": "heir",
+     "years": "b. 1958",
+     "note": "Present viscount; the estate is held in family trusts.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Christopher Portman, 10th Viscount Portman, heads the family whose trusts own the Portman Estate. No slavery link has been documented, and the estate's own archive history does not report one.",
+   "today_people": [
+    {
+     "name": "Christopher Portman, 10th Viscount Portman",
+     "relation": "titleholder (peerage records)",
+     "role": "Viscount Portman; head of the family owning the Portman Estate",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Christopher Portman, 10th Viscount Portman",
+      "url": "https://en.wikipedia.org/wiki/Christopher_Portman,_10th_Viscount_Portman"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Portman Square",
+    "Portman Street",
+    "Bryanston Square",
+    "Bryanston Street",
+    "Orchard Street",
+    "Dorset Street"
+   ],
+   "oldWealth": {
+    "holdings": "c. 110 acres of Marylebone, London (Portman Estate)",
+    "value": "Viscount Portman and family £1.9bn, 84th (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched: LBS by surname and keyword (Portman), the 1672 RAC subscriber list, South Sea peers, the National Trust 2020 report and the estate's own history. No Portman claim, mortgage, trusteeship or plantation was found. An unidentified 'John Portman' subscribed to the RAC in 1672; no link to the family is shown.",
+    "source": {
+     "label": "Portman Estate — Archives: a 500-year history",
+     "url": "https://portmanestate.co.uk/archives/"
+    }
+   },
+   "sources": [
+    {
+     "label": "Portman Estate — Archives",
+     "url": "https://portmanestate.co.uk/archives/"
+    },
+    {
+     "label": "Wikipedia — Christopher Portman, 10th Viscount Portman",
+     "url": "https://en.wikipedia.org/wiki/Christopher_Portman,_10th_Viscount_Portman"
+    },
+    {
+     "label": "Wikipedia — List of officials and shareholders in the Royal African Company, 1672 (from the charter)",
+     "url": "https://en.wikipedia.org/wiki/List_of_officials_and_shareholders_in_the_Royal_African_Company,_1672"
+    }
+   ],
+   "connections": [
+    {
+     "id": "royal-african-company",
+     "type": "parallel",
+     "label": "a 'John Portman' among 1672 subscribers — identity unconfirmed"
+    },
+    {
+     "id": "howard-de-walden-family",
+     "type": "parallel",
+     "label": "neighbouring Marylebone estate"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "London great estate in the landownership debate"
+    }
+   ]
+  },
+  {
+   "id": "montagu-douglas-scott-buccleuch",
+   "name": "Montagu Douglas Scott family (Dukes of Buccleuch; Montagu inheritance)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "The Montagu estates (Boughton) came to Buccleuch through the 3rd Duke's 1767 marriage to Lady Elizabeth Montagu, granddaughter of the 2nd Duke of Montagu, who received a 1722 royal grant of St Lucia and St Vincent and lost c. £40,000 on a failed colonising expedition; no LBS claim was found for any Duke of Buccleuch.",
+   "start": 1722,
+   "end": 1723,
+   "lifespan": "1663–present",
+   "base": "Boughton House, Northamptonshire (also Bowhill & Drumlanrig, Scotland)",
+   "geo": [
+    52.432,
+    -0.697
+   ],
+   "aliases": [
+    "Buccleuch Estates",
+    "Buccleuch Group",
+    "Dukes of Montagu",
+    "Dukes of Queensberry"
+   ],
+   "origins": "Anne Scott, Countess of Buccleuch, married James, Duke of Monmouth, eldest illegitimate son of Charles II, in 1663; the dukedom of Buccleuch survived Monmouth's execution in 1685. In 1767 Henry Scott, 3rd Duke, married Elizabeth Montagu, granddaughter and heir of John, 2nd Duke of Montagu, bringing Boughton House and the Montagu estates, and in 1810 he inherited the Queensberry dukedom and Drumlanrig.",
+   "role_summary": "The cross-check found no slave-ownership or compensation for the Dukes of Buccleuch. The Montagu inheritance carries one colonial project: in 1722 George I granted the islands of St Lucia and St Vincent to John, 2nd Duke of Montagu, who sent Nathaniel Uring with seven ships of settlers. French troops from Martinique forced them out within weeks, and Montagu reportedly lost c. £40,000. The same duke paid for the education of Ignatius Sancho and supported the Jamaican scholar Francis Williams.",
+   "roleDetail": [
+    {
+     "t": "1722 Caribbean grant.",
+     "d": "Letters patent of 22 June 1722 made Montagu proprietor and governor of St Lucia and St Vincent; the settlement at Petit Carenage was abandoned under French pressure (Wikipedia; DNB).",
+     "basis": "documented"
+    },
+    {
+     "t": "A planned sugar colony.",
+     "d": "Britain's other Windward settlements of the period became slave plantations; whether Montagu's colony would have relied on enslaved labour is not shown in the sources found.",
+     "basis": "interpretive"
+    },
+    {
+     "t": "Patron of Black Britons.",
+     "d": "Montagu financed the education of Ignatius Sancho, later a butler in the Montagu household, and supported Francis Williams.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The 10th Duke chairs the Buccleuch Group and owns c. 200,000 acres in Scotland plus Boughton in Northamptonshire, making him one of Britain's largest private landowners. Shrubsole's 2019 coverage names the Boughton estate among England's great aristocratic holdings.",
+   "legacyDetail": [
+    {
+     "t": "Bateman, 1883.",
+     "d": "The 5th Duke held 460,108 acres in England and Scotland, per Bateman's 'Great Landowners'.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "James Scott, Duke of Monmouth & Anne Scott, Duchess of Buccleuch",
+     "relation": "founders",
+     "years": "m. 1663",
+     "note": "Monmouth was Charles II's eldest illegitimate son; executed 1685 after his rebellion against James II.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Montagu, 2nd Duke of Montagu",
+     "relation": "ancestor (Montagu line)",
+     "years": "1690–1749",
+     "note": "Granted St Lucia and St Vincent in 1722; patron of Ignatius Sancho.",
+     "basis": "documented"
+    },
+    {
+     "name": "Henry Scott, 3rd Duke of Buccleuch & Elizabeth Montagu",
+     "relation": "spouse",
+     "years": "m. 1767",
+     "note": "Brought Boughton and the Montagu estates to Buccleuch.",
+     "basis": "documented"
+    },
+    {
+     "name": "Walter Montagu Douglas Scott, 5th Duke",
+     "relation": "descendant",
+     "years": "1806–1884",
+     "note": "Held 460,108 acres in 1883 (Bateman).",
+     "basis": "documented"
+    },
+    {
+     "name": "Richard Scott, 10th Duke of Buccleuch",
+     "relation": "heir",
+     "years": "b. 1954",
+     "note": "Present duke; chairman of the Buccleuch Group.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Richard Scott, 10th Duke of Buccleuch and 12th Duke of Queensberry, chairs the Buccleuch Group and lives at Bowhill and Drumlanrig; Boughton House is open to the public. The family has not addressed the 1722 Caribbean grant publicly, and no slavery compensation has been traced to it.",
+   "today_people": [
+    {
+     "name": "Richard Scott, 10th Duke of Buccleuch",
+     "relation": "titleholder; heir to the Montagu and Buccleuch estates (peerage records)",
+     "role": "Chairman of the Buccleuch Group; major Scottish landowner",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Richard Scott, 10th Duke of Buccleuch",
+      "url": "https://en.wikipedia.org/wiki/Richard_Scott,_10th_Duke_of_Buccleuch"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Buccleuch Street (Edinburgh)",
+    "Buccleuch Place (Edinburgh)",
+    "Montagu House (Whitehall, demolished)",
+    "Dalkeith Palace",
+    "Queensberry House (Edinburgh)"
+   ],
+   "oldWealth": {
+    "holdings": "Over 200,000 acres in southern Scotland (Bowhill, Drumlanrig, Dalkeith), held by Buccleuch Estates Ltd, plus the Boughton estate in Northamptonshire. Reported totals vary: Country Life gave 240,000 acres (2010), and land sales since then include about 25,000 acres of the Borders estate around Langholm.",
+    "value": "No current published Sunday Times Rich List or Forbes figure found",
+    "slaveryLink": "indirect",
+    "linkSummary": "No LBS claim, RAC or South Sea holding was found for any Duke of Buccleuch, and the dukes are absent from the 1672 RAC list. The only tie runs through the female line: the Montagu estates came with Lady Elizabeth Montagu, who married the 3rd Duke in 1767. Her maternal grandfather, the 2nd Duke of Montagu (d. 1749), received a 1722 royal grant of St Lucia and St Vincent for a colonising venture that failed. No enslaved people are documented on it.",
+    "source": {
+     "label": "Wikipedia — John Montagu, 2nd Duke of Montagu",
+     "url": "https://en.wikipedia.org/wiki/John_Montagu,_2nd_Duke_of_Montagu"
+    }
+   },
+   "sources": [
+    {
+     "label": "Wikipedia — John Montagu, 2nd Duke of Montagu",
+     "url": "https://en.wikipedia.org/wiki/John_Montagu,_2nd_Duke_of_Montagu"
+    },
+    {
+     "label": "Wikipedia — Nathaniel Uring",
+     "url": "https://en.wikipedia.org/wiki/Nathaniel_Uring"
+    },
+    {
+     "label": "Wikipedia — Duke of Buccleuch",
+     "url": "https://en.wikipedia.org/wiki/Duke_of_Buccleuch"
+    },
+    {
+     "label": "Wikisource — DNB: Montagu, John (1688?–1749)",
+     "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Montagu,_John_(1688%3F-1749)"
+    }
+   ],
+   "connections": [
+    {
+     "id": "british-crown-estate-duchies",
+     "type": "family",
+     "label": "descended from Charles II through Monmouth"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "charter",
+     "label": "George I granted St Lucia and St Vincent (1722)"
+    },
+    {
+     "id": "percy-family-northumberland",
+     "type": "family",
+     "label": "the 10th Duke of Northumberland married a Buccleuch daughter"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "Boughton named in Shrubsole's data"
+    }
+   ]
+  },
+  {
+   "id": "percy-family-northumberland",
+   "name": "Percy family (Dukes of Northumberland)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "Per LBS, Lord Charles Greatheed-Bertie Percy (1794–1870), grandson of the 1st Duke and brother of the 5th Duke, was awarded compensation on St Kitts as a trustee (claim 269); no claim was found for any Duke of Northumberland.",
+   "start": 1826,
+   "end": 1836,
+   "lifespan": "1066–present",
+   "base": "Alnwick Castle, Northumberland",
+   "geo": [
+    55.416,
+    -1.706
+   ],
+   "aliases": [
+    "Northumberland Estates",
+    "House of Percy",
+    "Earls of Beverley",
+    "Smithson Percy"
+   ],
+   "origins": "The Percys came over with the Normans; Henry de Percy bought Alnwick in 1309 and the family became Earls of Northumberland. The male line failed in 1670; heiress Lady Elizabeth Seymour's husband Hugh Smithson took the Percy name and was created Duke of Northumberland in 1766. Syon House, a former abbey, has been a Percy seat since 1594.",
+   "role_summary": "No direct slave-ownership by the dukes was found. In a cadet branch, Lord Charles Greatheed-Bertie Percy — son of Algernon, 1st Earl of Beverley, and brother of the 5th Duke — married the granddaughter of the St Kitts planter Bertie Greatheed and received slavery compensation as trustee of his estate (LBS, St Kitts claim 269). He died at Alnwick Castle in 1870.",
+   "roleDetail": [
+    {
+     "t": "St Kitts trusteeship.",
+     "d": "LBS lists him as awardee (trustee) for the Greatheed estate in St Peter Basseterre, shown as 'Charles Bertie Percy' on the 1828 McMahon map.",
+     "basis": "documented"
+    },
+    {
+     "t": "The ducal line.",
+     "d": "The current dukes descend from his brother George, 5th Duke (2nd Earl of Beverley); no LBS entry was found for any duke.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Northumberland Estates manages c. 100,000 acres around Alnwick, along with Syon Park in west London. Alnwick Castle is a visitor attraction, widely known as a Harry Potter film location.",
+   "legacyDetail": [
+    {
+     "t": "Bateman, 1883.",
+     "d": "The 6th Duke held 186,397 acres, mostly in Northumberland.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Henry de Percy",
+     "relation": "ancestor",
+     "years": "fl. 1309",
+     "note": "Bought Alnwick Castle.",
+     "basis": "documented"
+    },
+    {
+     "name": "Hugh Smithson Percy, 1st Duke of Northumberland",
+     "relation": "founder of the ducal line",
+     "years": "1714–1786",
+     "note": "Married the Percy heiress; created duke 1766.",
+     "basis": "documented"
+    },
+    {
+     "name": "Algernon Percy, 1st Earl of Beverley",
+     "relation": "son",
+     "years": "1750–1830",
+     "note": "Younger son; his line later inherited the dukedom.",
+     "basis": "documented"
+    },
+    {
+     "name": "Lord Charles Greatheed-Bertie Percy",
+     "relation": "grandson",
+     "years": "1794–1870",
+     "note": "St Kitts compensation as trustee of the Greatheed estate (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "George Percy, 5th Duke",
+     "relation": "grandson",
+     "years": "1778–1867",
+     "note": "Brother of Lord Charles; ancestor of the present dukes.",
+     "basis": "documented"
+    },
+    {
+     "name": "Ralph Percy, 12th Duke of Northumberland",
+     "relation": "heir",
+     "years": "b. 1956",
+     "note": "Present duke since 1995.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Ralph Percy, 12th Duke of Northumberland, owns Alnwick Castle, Syon House and Northumberland Estates. No public statement on the St Kitts trusteeship has been found.",
+   "today_people": [
+    {
+     "name": "Ralph Percy, 12th Duke of Northumberland",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner of Northumberland Estates, Alnwick Castle and Syon House",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Ralph Percy, 12th Duke of Northumberland",
+      "url": "https://en.wikipedia.org/wiki/Ralph_Percy,_12th_Duke_of_Northumberland"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Northumberland Avenue (site of Northumberland House)",
+    "Percy Street (Newcastle)",
+    "Syon Park"
+   ],
+   "oldWealth": {
+    "holdings": "c. 80,000 acres in Northumberland and the Scottish Borders (Northumberland Estates website, 2026), plus Alnwick Castle and Syon House. The separate 9,500-acre Rothbury estate was sold in 2023–26.",
+    "value": "Duke of Northumberland and family £544m, 252nd (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "indirect",
+    "linkSummary": "No LBS claim or RAC/South Sea holding was found for any duke. The one claim is collateral: Lord Charles Greatheed-Bertie Percy, a younger son of the 1st Earl of Beverley and brother of the 5th Duke, was awarded £1,223 for St Kitts as trustee of the estate of his father-in-law, Bertie Bertie Greatheed (LBS claim 269). Petworth, a Percy seat before 1670, appears in the National Trust's 2020 report only for its later Wyndham owners.",
+    "source": {
+     "label": "UCL LBS — Charles Greatheed-Bertie Percy",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/25450"
+    }
+   },
+   "sources": [
+    {
+     "label": "UCL LBS — Charles Greatheed-Bertie Percy",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/25450"
+    },
+    {
+     "label": "Wikipedia — Duke of Northumberland",
+     "url": "https://en.wikipedia.org/wiki/Duke_of_Northumberland"
+    },
+    {
+     "label": "Wikipedia — Ralph Percy, 12th Duke of Northumberland",
+     "url": "https://en.wikipedia.org/wiki/Ralph_Percy,_12th_Duke_of_Northumberland"
+    }
+   ],
+   "connections": [
+    {
+     "id": "slavery-abolition-act-1833",
+     "type": "plantation",
+     "label": "St Kitts compensation to a Percy trustee"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS entry for Lord Charles Percy"
+    },
+    {
+     "id": "montagu-douglas-scott-buccleuch",
+     "type": "family",
+     "label": "20th-century Percy–Buccleuch marriage"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "among England's largest aristocratic landowners"
+    }
+   ]
+  },
+  {
+   "id": "cavendish-family-devonshire",
+   "name": "Cavendish family (Dukes of Devonshire)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "The National Trust's 2020 report (Hardwick Hall) lists colonial investments (Somers Island, Russia, North-West Passage and East India companies) and a female-line kin tie to the Lascelles; the only LBS entry is an unsuccessful Trinidad claim by a grandson of the 4th Duke.",
+   "start": 1615,
+   "end": 1836,
+   "lifespan": "c. 1540–present",
+   "base": "Chatsworth House, Derbyshire",
+   "geo": [
+    53.228,
+    -1.611
+   ],
+   "aliases": [
+    "Devonshire Group",
+    "Chatsworth Settlement Trustees",
+    "Cavendish-Bentinck (cadet)"
+   ],
+   "origins": "Sir William Cavendish, a commissioner in Henry VIII's Dissolution of the Monasteries, married Bess of Hardwick and bought Chatsworth in 1549. Their son William became 1st Earl of Devonshire (1618); the 4th Earl was made Duke of Devonshire in 1694 for backing William III. Later marriages brought Bolton Abbey, Lismore in Ireland, and Eastbourne.",
+   "role_summary": "The National Trust's 2020 report finds colonial but not slave-owning ties: the 1st Earl of Devonshire invested in the Somers Island (Bermuda) Company, the Russia and North-West Passage companies and the East India Company. A grandson of the 4th Duke, Lord William Cavendish-Bentinck, made an unsuccessful Trinidad compensation claim as an incumbrancer, and a granddaughter of the 5th Duke married into the slave-owning Lascelles family. No compensation award to a Duke of Devonshire was found.",
+   "roleDetail": [
+    {
+     "t": "Bermuda investor.",
+     "d": "The 1st Earl invested in the Somers Island Company (NT 2020); Devonshire Parish, Bermuda, is named after him. Enslaved Africans were held in Bermuda from the 1610s.",
+     "basis": "documented"
+    },
+    {
+     "t": "Unsuccessful Trinidad claim.",
+     "d": "Lord William Cavendish-Bentinck, grandson of the 4th Duke and later Governor-General of India, claimed unsuccessfully as incumbrancer on L'Amitié, Trinidad (LBS claim Trinidad 1684).",
+     "basis": "documented"
+    },
+    {
+     "t": "Marriage into the Lascelles.",
+     "d": "Caroline Howard, granddaughter of the 5th Duke, married William Lascelles, son of the 2nd Earl of Harewood, who received £26,307 in compensation (NT 2020).",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The 12th Duke's family lives at Chatsworth, which is run by the Chatsworth House Trust; Devonshire Group manages the estates in Derbyshire, Yorkshire (Bolton Abbey), Eastbourne and Lismore. With the family's support, the Trust is researching Chatsworth's historic links to the transatlantic slave trade and empire with the Universities of Derby and Oxford and the White Rose consortium.",
+   "legacyDetail": [
+    {
+     "t": "Research under way.",
+     "d": "Chatsworth's colonialism research programme says the colonial links 'may not be as obvious' as at other houses but should be acknowledged.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Sir William Cavendish & Bess of Hardwick",
+     "relation": "founders",
+     "years": "m. 1547",
+     "note": "Dissolution commissioner; bought Chatsworth in 1549.",
+     "basis": "documented"
+    },
+    {
+     "name": "William Cavendish, 1st Earl of Devonshire",
+     "relation": "son",
+     "years": "1551–1626",
+     "note": "Investor in the Somers Island and East India companies (NT 2020).",
+     "basis": "documented"
+    },
+    {
+     "name": "William Cavendish, 1st Duke of Devonshire",
+     "relation": "descendant",
+     "years": "1640–1707",
+     "note": "Created duke 1694 for backing the 1688 Revolution.",
+     "basis": "documented"
+    },
+    {
+     "name": "Caroline Howard (Lascelles)",
+     "relation": "granddaughter of the 5th Duke",
+     "years": "1803–1881",
+     "note": "Married William Lascelles of the slave-owning Harewood family.",
+     "basis": "documented",
+     "id": "lascelles-family"
+    },
+    {
+     "name": "Lord William Cavendish-Bentinck",
+     "relation": "grandson of the 4th Duke",
+     "years": "1774–1839",
+     "note": "Unsuccessful Trinidad claimant as incumbrancer (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "Peregrine Cavendish, 12th Duke of Devonshire",
+     "relation": "heir",
+     "years": "b. 1944",
+     "note": "Present duke since 2004.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Peregrine Cavendish, 12th Duke of Devonshire, and his family live at Chatsworth; the Chatsworth House Trust, with the family's support, is researching links to slavery and colonialism.",
+   "today_people": [
+    {
+     "name": "Peregrine Cavendish, 12th Duke of Devonshire",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner-occupier of Chatsworth; family head of Devonshire Group",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Peregrine Cavendish, 12th Duke of Devonshire",
+      "url": "https://en.wikipedia.org/wiki/Peregrine_Cavendish,_12th_Duke_of_Devonshire"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Devonshire Parish, Bermuda",
+    "Cavendish Square (for Henrietta Cavendish Holles, a related branch)",
+    "Devonshire Park, Eastbourne",
+    "Burlington Arcade"
+   ],
+   "oldWealth": {
+    "holdings": "c. 65,000 acres in Derbyshire, Yorkshire and Sussex (Devonshire Group), including the 35,000-acre Chatsworth estate and the Bolton Abbey estate (c. 28,000–30,000 acres), Eastbourne property, and the 7,732-acre Lismore estate in Ireland",
+    "value": "Duke of Devonshire £915m, 172nd (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "indirect",
+    "linkSummary": "Per the National Trust's 2020 Hardwick Hall entry, the 1st Earl of Devonshire (1551–1626) invested in the Somers Island (Bermuda), Russia, North-West Passage and East India companies. The other ties came through daughters' lines: Lord William Henry Cavendish-Bentinck, a grandson of the 4th Duke and a Portland Bentinck, made an unsuccessful Trinidad claim (LBS), and Caroline Howard, a granddaughter of the 5th Duke, married into the Lascelles. No compensation award, RAC/South Sea holding or plantation was found for the dukes themselves.",
+    "source": {
+     "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+     "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+    }
+   },
+   "sources": [
+    {
+     "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+     "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+    },
+    {
+     "label": "UCL LBS — Lord William Henry Cavendish-Bentinck",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/1299780778"
+    },
+    {
+     "label": "Devonshire Group — Colonialism research",
+     "url": "https://devonshiregroup.co.uk/information/colonialism-research/"
+    },
+    {
+     "label": "Wikipedia — Peregrine Cavendish, 12th Duke of Devonshire",
+     "url": "https://en.wikipedia.org/wiki/Peregrine_Cavendish,_12th_Duke_of_Devonshire"
+    }
+   ],
+   "connections": [
+    {
+     "id": "lascelles-family",
+     "type": "family",
+     "label": "5th Duke's granddaughter married William Lascelles"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS: Cavendish-Bentinck's Trinidad claim"
+    },
+    {
+     "id": "howard-de-walden-family",
+     "type": "family",
+     "label": "Cavendish-Bentinck kinship with the Portland line"
+    },
+    {
+     "id": "william-iii-and-mary-ii",
+     "type": "political",
+     "label": "dukedom created 1694 for backing William III"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "major aristocratic landowner"
+    }
+   ]
+  },
+  {
+   "id": "russell-family-bedford",
+   "name": "Russell family (Dukes of Bedford)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No slave-ownership, compensation or slave-company holding found; the 4th Duke supervised the colonies as Southern Secretary (1748–51) and negotiated the 1763 Peace of Paris, which ceded Grenada, Dominica, St Vincent and Tobago to Britain.",
+   "start": 1748,
+   "end": 1763,
+   "lifespan": "1539–present",
+   "base": "Woburn Abbey, Bedfordshire",
+   "geo": [
+    51.987,
+    -0.588
+   ],
+   "aliases": [
+    "Bedford Estates",
+    "Woburn Enterprises",
+    "Marquesses of Tavistock"
+   ],
+   "origins": "John Russell, a courtier of Henry VII and Henry VIII, was made Earl of Bedford in 1550 and received former monastic lands: Tavistock Abbey (1539), Woburn Abbey (1547) and the 'convent garden' of Westminster Abbey — Covent Garden (1552). Bloomsbury came through the 1669 marriage of William, Lord Russell, to Rachel Wriothesley; the dukedom followed in 1694.",
+   "role_summary": "No documented direct involvement in slavery. LBS has no Russell duke as claimant, and no Russell appears in the 1672 RAC list. The family's ties are through office: the 4th Duke was Southern Secretary in 1748–51, the department over the slave colonies, and in 1762–63 he negotiated the Peace of Paris, which brought Grenada, Dominica, St Vincent and Tobago into the British plantation system.",
+   "roleDetail": [
+    {
+     "t": "Colonial office.",
+     "d": "As Southern Secretary the 4th Duke corresponded with colonial governors, including those of the Caribbean and Virginia; Bedford County, Virginia, is probably named for him.",
+     "basis": "documented"
+    },
+    {
+     "t": "Peace of Paris (1763).",
+     "d": "Bedford was Britain's plenipotentiary in Paris; the treaty ceded the 'Ceded Islands' to Britain, where plantation slavery expanded rapidly.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The Bedford Estates still own Woburn Abbey and its park and a substantial part of Bloomsbury (Bedford Square, Russell Square). The Covent Garden estate was sold in 1918.",
+   "legacyDetail": [
+    {
+     "t": "Dissolution wealth.",
+     "d": "Woburn, Tavistock and Covent Garden are textbook examples of Tudor monastic land becoming aristocratic estates.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "John Russell, 1st Earl of Bedford",
+     "relation": "founder",
+     "years": "c. 1485–1555",
+     "note": "Received Tavistock, Woburn and Covent Garden after the Dissolution.",
+     "basis": "documented"
+    },
+    {
+     "name": "William, Lord Russell & Rachel Wriothesley",
+     "relation": "spouse",
+     "years": "m. 1669",
+     "note": "Brought Bloomsbury to the family.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Russell, 4th Duke of Bedford",
+     "relation": "descendant",
+     "years": "1710–1771",
+     "note": "Southern Secretary 1748–51; negotiated the Peace of Paris 1763.",
+     "basis": "documented",
+     "id": "john-russell-4th-duke-of-bedford"
+    },
+    {
+     "name": "Andrew Russell, 15th Duke of Bedford",
+     "relation": "heir",
+     "years": "b. 1962",
+     "note": "Present duke since 2003; runs Woburn.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Andrew Russell, 15th Duke of Bedford, owns Woburn Abbey, its safari park and the Bloomsbury holdings through the Bedford Estates. The family has not addressed the 4th Duke's colonial roles, and no slavery-derived wealth is documented.",
+   "today_people": [
+    {
+     "name": "Andrew Russell, 15th Duke of Bedford",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner of Woburn Abbey and the Bedford Estates",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Andrew Russell, 15th Duke of Bedford",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Russell,_15th_Duke_of_Bedford"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Bedford Square",
+    "Russell Square",
+    "Tavistock Square",
+    "Woburn Place",
+    "Bedford Street (Covent Garden)",
+    "Bedford County, Virginia (probably)"
+   ],
+   "oldWealth": {
+    "holdings": "Woburn Abbey and estate (Bedfordshire) and the Bloomsbury estate in London (Bedford Estates)",
+    "value": "Duke of Bedford £882m, 181st (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched: LBS (Russell surname, 'Duke of Bedford', Woburn), the 1672 RAC list, the History of Parliament South Sea peerage study and Bedfordshire Archives' slave-trade survey (which names other county families, not the Russells). No ownership, compensation or slave-company stock was found; only the 4th Duke's ministerial roles (Southern Secretary; 1763 treaty).",
+    "source": {
+     "label": "Bedfordshire Archives — Bedfordshire and the Slave Trade",
+     "url": "https://bedsarchives.bedford.gov.uk/Newsletters/BedfordshireandtheSlaveTrade.aspx"
+    }
+   },
+   "sources": [
+    {
+     "label": "Wikipedia — Andrew Russell, 15th Duke of Bedford",
+     "url": "https://en.wikipedia.org/wiki/Andrew_Russell,_15th_Duke_of_Bedford"
+    },
+    {
+     "label": "Bedfordshire Archives — Bedfordshire and the Slave Trade",
+     "url": "https://bedsarchives.bedford.gov.uk/Newsletters/BedfordshireandtheSlaveTrade.aspx"
+    },
+    {
+     "label": "Library of Virginia — County formation: Bedford",
+     "url": "https://lva.virginia.gov/WHATWEHAVE/local/county_formation/locality_maps_bioB.htm"
+    },
+    {
+     "label": "Wikipedia — John Russell, 4th Duke of Bedford",
+     "url": "https://en.wikipedia.org/wiki/John_Russell,_4th_Duke_of_Bedford"
+    }
+   ],
+   "connections": [
+    {
+     "id": "john-russell-4th-duke-of-bedford",
+     "type": "family",
+     "label": "4th Duke — Southern Secretary"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "political",
+     "label": "ministers under George II and George III"
+    },
+    {
+     "id": "church-of-england",
+     "type": "parallel",
+     "label": "estates carved from Dissolution monastic land"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "Woburn named in Shrubsole's data"
+    }
+   ]
+  },
+  {
+   "id": "fitzalan-howard-family-norfolk",
+   "name": "Fitzalan-Howard family (Dukes of Norfolk)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No duke appears in LBS; the present line descends, through the female line, from John Hubert Washington Hibbert, a claimant on Jamaican compensation and heir of the Hibbert slave-factoring firm (LBS).",
+   "start": 1836,
+   "end": 1875,
+   "lifespan": "1483–present",
+   "base": "Arundel Castle, West Sussex",
+   "geo": [
+    50.856,
+    -0.553
+   ],
+   "aliases": [
+    "Howard family",
+    "Earls of Arundel",
+    "Arundel Estate",
+    "Earl Marshal"
+   ],
+   "origins": "John Howard was created Duke of Norfolk in 1483; the 4th Duke's 1555 marriage to Mary Fitzalan brought Arundel Castle and the earldom of Arundel. As leading Catholic peers, the dukes were barred from Parliament and most offices until 1829, but kept the hereditary office of Earl Marshal and large estates in Sussex and Sheffield.",
+   "role_summary": "No documented direct involvement in slavery by the dukes. LBS shows indirect links only: the 1820s Michelgrove estate the 12th Duke bought came from the son of a Liverpool slave-trader, and, per LBS, Cecilia Hibbert — daughter of John Hubert Washington Hibbert, a claimant on Agualta Vale Pen, Jamaica, whose father had been a partner in the Hibbert slave-factoring business in Kingston — was the great-grandmother of Miles Fitzalan-Howard, 17th Duke.",
+   "roleDetail": [
+    {
+     "t": "Hibbert descent.",
+     "d": "LBS: J. H. W. Hibbert was a claimant on three Jamaican claims, including Agualta Vale Pen; his daughter Cecilia was great-grandmother of the 17th Duke.",
+     "basis": "documented"
+    },
+    {
+     "t": "Michelgrove purchase.",
+     "d": "In 1828 the Duke of Norfolk bought Michelgrove, Sussex, for £185,000 from Richard Watt Walker, of the Liverpool Watt slave-trading family (LBS).",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The 18th Duke holds Arundel Castle and its estate and serves as Earl Marshal, organising state ceremonies, including the 2023 coronation.",
+   "legacyDetail": [
+    {
+     "t": "Catholic aristocracy.",
+     "d": "The family remains England's premier Catholic ducal house.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "John Howard, 1st Duke of Norfolk",
+     "relation": "founder",
+     "years": "c. 1425–1485",
+     "note": "Created duke 1483; killed at Bosworth.",
+     "basis": "documented"
+    },
+    {
+     "name": "Thomas Howard, 4th Duke & Mary Fitzalan",
+     "relation": "spouse",
+     "years": "m. 1555",
+     "note": "Brought Arundel Castle to the Howards.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Hubert Washington Hibbert",
+     "relation": "maternal ancestor of the 17th Duke",
+     "years": "1804–1875",
+     "note": "Jamaican compensation claimant; heir of the Hibbert Kingston firm (LBS).",
+     "basis": "documented",
+     "id": "hibbert-family"
+    },
+    {
+     "name": "Miles Fitzalan-Howard, 17th Duke",
+     "relation": "descendant",
+     "years": "1915–2002",
+     "note": "Great-grandson of Cecilia Hibbert (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "Edward Fitzalan-Howard, 18th Duke of Norfolk",
+     "relation": "heir",
+     "years": "b. 1956",
+     "note": "Present duke and Earl Marshal.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Edward Fitzalan-Howard, 18th Duke of Norfolk, is Earl Marshal and owns Arundel Castle. The family has made no public statement on the Hibbert descent, which is a genealogical, not financial, link.",
+   "today_people": [
+    {
+     "name": "Edward Fitzalan-Howard, 18th Duke of Norfolk",
+     "relation": "titleholder; descendant of J. H. W. Hibbert through the female line (LBS)",
+     "role": "Earl Marshal of England; owner of Arundel Castle",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Duke of Norfolk",
+      "url": "https://en.wikipedia.org/wiki/Duke_of_Norfolk"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Arundel Street (London)",
+    "Norfolk Street (London)",
+    "Howard Street (Sheffield)",
+    "Norfolk Park (Sheffield)"
+   ],
+   "oldWealth": {
+    "holdings": "Arundel Castle and the Arundel estate (West Sussex); historically large Sheffield and Norfolk holdings",
+    "value": "No recent published Rich List estimate found",
+    "slaveryLink": "indirect",
+    "linkSummary": "Searched LBS (Howard, Fitzalan, 'Duke of Norfolk', Arundel), the 1672 RAC list and South Sea peerage studies: no duke owned enslaved people or held slave-company stock. Through the female line, Cecilia Hibbert, daughter of Jamaican compensation claimant J. H. W. Hibbert, was a great-grandmother of the 17th Duke (LBS). No Hibbert money is shown to have reached the ducal estates. Separately, the 12th Duke bought Michelgrove in 1828 from the heirs of Liverpool slave trader Richard Watt.",
+    "source": {
+     "label": "UCL LBS — John Hubert Washington Hibbert",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/17795"
+    }
+   },
+   "sources": [
+    {
+     "label": "UCL LBS — John Hubert Washington Hibbert",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/17795"
+    },
+    {
+     "label": "UCL LBS — Richard Watt Walker (Michelgrove sale)",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/43237"
+    },
+    {
+     "label": "Wikipedia — Duke of Norfolk",
+     "url": "https://en.wikipedia.org/wiki/Duke_of_Norfolk"
+    }
+   ],
+   "connections": [
+    {
+     "id": "hibbert-family",
+     "type": "family",
+     "label": "17th Duke's maternal ancestor"
+    },
+    {
+     "id": "port-liverpool",
+     "type": "trade",
+     "label": "bought Michelgrove from the Liverpool Watt family (1828)"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS records the descent"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "ancient aristocratic landowner"
+    }
+   ]
+  },
+  {
+   "id": "stanley-family-derby",
+   "name": "Stanley family (Earls of Derby, Knowsley)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No slave-ownership or slave-trade investment found despite Knowsley's proximity to Liverpool; Edward Stanley (later 14th Earl), as Colonial Secretary, drafted and introduced the 1833 Abolition Act with its £20m compensation to owners.",
+   "start": 1833,
+   "end": 1833,
+   "lifespan": "1385–present",
+   "base": "Knowsley Hall, near Liverpool",
+   "geo": [
+    53.438,
+    -2.836
+   ],
+   "aliases": [
+    "Derby Estates",
+    "Lord Stanley",
+    "Knowsley Safari"
+   ],
+   "origins": "Sir John Stanley gained Knowsley by marrying Isabel Lathom in 1385; Thomas Stanley was made Earl of Derby in 1485 for his part at Bosworth. The family dominated Lancashire for five centuries from Knowsley and Lathom.",
+   "role_summary": "No documented ownership of enslaved people or investment in Liverpool's slave trade was found. Edward Stanley, later 14th Earl and three times Prime Minister, became Colonial Secretary in 1833 and drew up the Abolition of Slavery Bill, which created the 'apprenticeship' system and the £20m compensation paid to slave-owners.",
+   "roleDetail": [
+    {
+     "t": "Author of the 1833 Act.",
+     "d": "Stanley moved the resolutions for emancipation in May 1833; his bill shortened apprenticeship and raised compensation to £20m (Nottingham Special Collections; NPG).",
+     "basis": "documented"
+    },
+    {
+     "t": "Stockbridge seat.",
+     "d": "Per LBS, Stanley first entered Parliament in 1822 for Stockbridge, a seat bought by Earl Grosvenor from Joseph Foster Barham, whose West Indian income had fallen.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Knowsley Hall and Knowsley Safari remain the family's, and the earls are prominent in horse racing (the Derby and the Oaks are named after the 12th Earl's race). The Stanley Cup and Stanley Park, Vancouver, commemorate the 16th Earl.",
+   "legacyDetail": [
+    {
+     "t": "Liverpool landlords.",
+     "d": "The family's 19th-century revival rested on Lancashire and Liverpool urban estates and mining.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Sir John Stanley & Isabel Lathom",
+     "relation": "founders",
+     "years": "m. 1385",
+     "note": "Marriage brought Knowsley.",
+     "basis": "documented"
+    },
+    {
+     "name": "Thomas Stanley, 1st Earl of Derby",
+     "relation": "descendant",
+     "years": "c. 1435–1504",
+     "note": "Created earl in 1485 after Bosworth.",
+     "basis": "documented"
+    },
+    {
+     "name": "Edward Smith-Stanley, 14th Earl of Derby",
+     "relation": "descendant",
+     "years": "1799–1869",
+     "note": "Colonial Secretary who carried the 1833 Abolition Act; three times PM.",
+     "basis": "documented"
+    },
+    {
+     "name": "Edward Stanley, 19th Earl of Derby",
+     "relation": "heir",
+     "years": "b. 1962",
+     "note": "Present earl; owner of Knowsley.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Edward Stanley, 19th Earl of Derby, owns Knowsley Hall and the safari park. The family has no documented slavery wealth; its historical link is political — the 14th Earl's design of the compensation scheme.",
+   "today_people": [
+    {
+     "name": "Edward Stanley, 19th Earl of Derby",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner of Knowsley Hall and estate",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Edward Stanley, 19th Earl of Derby",
+      "url": "https://en.wikipedia.org/wiki/Edward_Stanley,_19th_Earl_of_Derby"
+     }
+    }
+   ],
+   "placesNamed": [
+    "The Derby and the Oaks (Epsom races)",
+    "Stanley Cup",
+    "Stanley Park, Vancouver",
+    "Stanley Park, Liverpool",
+    "Derby Square (Liverpool)"
+   ],
+   "oldWealth": {
+    "holdings": "Knowsley Hall and park (c. 2,500 acres of parkland) and the Derby estates in Merseyside and Lancashire",
+    "value": "No recent published Rich List estimate found",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched: LBS (Stanley surname, 'Earl of Derby', Knowsley), the 1672 RAC list, South Sea peerage studies and Liverpool slave-trade sources. No Stanley ownership, compensation or slaving investment was found. The tie is political: the future 14th Earl wrote the 1833 Abolition Act, including the £20m compensation to owners.",
+    "source": {
+     "label": "University of Nottingham Manuscripts — Edward George Geoffrey Smith Stanley, 14th Earl of Derby",
+     "url": "https://www.nottingham.ac.uk/manuscriptsandspecialcollections/learning/biographies/edwardgeorgegeoffreysmithstanley,14thearlofderby(1799-1869).aspx"
+    }
+   },
+   "sources": [
+    {
+     "label": "University of Nottingham Manuscripts — 14th Earl of Derby",
+     "url": "https://www.nottingham.ac.uk/manuscriptsandspecialcollections/learning/biographies/edwardgeorgegeoffreysmithstanley,14thearlofderby(1799-1869).aspx"
+    },
+    {
+     "label": "UCL LBS — Joseph Foster Barham II",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146634950"
+    },
+    {
+     "label": "Wikipedia — Edward Stanley, 19th Earl of Derby",
+     "url": "https://en.wikipedia.org/wiki/Edward_Stanley,_19th_Earl_of_Derby"
+    }
+   ],
+   "connections": [
+    {
+     "id": "slavery-abolition-act-1833",
+     "type": "political",
+     "label": "Stanley drafted and carried the 1833 Act"
+    },
+    {
+     "id": "slave-compensation-commission",
+     "type": "political",
+     "label": "designed the £20m compensation"
+    },
+    {
+     "id": "port-liverpool",
+     "type": "parallel",
+     "label": "Knowsley's Liverpool hinterland"
+    },
+    {
+     "id": "grosvenor-family-westminster",
+     "type": "political",
+     "label": "entered Parliament for Grosvenor's Stockbridge seat (1822)"
+    }
+   ]
+  },
+  {
+   "id": "manners-family-rutland",
+   "name": "Manners family (Dukes of Rutland)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented involvement found; dates mark the period cross-checked.",
+   "start": 1660,
+   "end": 1838,
+   "lifespan": "c. 1460–present",
+   "base": "Belvoir Castle, Leicestershire",
+   "geo": [
+    52.894,
+    -0.782
+   ],
+   "aliases": [
+    "Belvoir Estate",
+    "Marquesses of Granby",
+    "Haddon Hall (Lord Edward Manners)"
+   ],
+   "origins": "Belvoir came to the Manners family through Sir Robert Manners's marriage to the de Ros heiress in the 15th century; Thomas Manners became Earl of Rutland in 1525 and gained former monastic lands. Haddon Hall came through John Manners's marriage to Dorothy Vernon in 1563, and Queen Anne made the 9th Earl Duke of Rutland in 1703.",
+   "role_summary": "No documented direct involvement in slavery. No Manners appears in LBS as claimant, mortgagee or trustee, in the 1672 RAC list, or in the History of Parliament's study of South Sea peers. The National Trust's 2020 report has no Rutland property.",
+   "roleDetail": [
+    {
+     "t": "Negative result.",
+     "d": "LBS 'Rutland' keyword hits are Caribbean estates or people with Rutland addresses, not the ducal family.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Belvoir Castle remains the seat of the 11th Duke; Haddon Hall belongs to his brother Lord Edward Manners.",
+   "legacyDetail": [
+    {
+     "t": "Belvoir's finances.",
+     "d": "The Sunday Times Rich List 2013 put the duke's fortune at £125m; he has sold paintings to fund the castle's upkeep (per Wikipedia).",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Sir Robert Manners & Eleanor de Ros",
+     "relation": "founders",
+     "years": "15th c.",
+     "note": "Marriage brought Belvoir.",
+     "basis": "documented"
+    },
+    {
+     "name": "Thomas Manners, 1st Earl of Rutland",
+     "relation": "descendant",
+     "years": "c. 1492–1543",
+     "note": "Created earl 1525; gained monastic lands.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Manners, 1st Duke of Rutland",
+     "relation": "descendant",
+     "years": "1638–1711",
+     "note": "Created duke 1703.",
+     "basis": "documented"
+    },
+    {
+     "name": "David Manners, 11th Duke of Rutland",
+     "relation": "heir",
+     "years": "b. 1959",
+     "note": "Present duke since 1999.",
+     "basis": "documented"
+    }
+   ],
+   "today": "David Manners, 11th Duke of Rutland, owns Belvoir Castle and its estate, run as a visitor and events business. No slavery link has been documented.",
+   "today_people": [
+    {
+     "name": "David Manners, 11th Duke of Rutland",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner of Belvoir Castle",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — David Manners, 11th Duke of Rutland",
+      "url": "https://en.wikipedia.org/wiki/David_Manners,_11th_Duke_of_Rutland"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Rutland Gate (Knightsbridge)",
+    "Granby Street and Marquis of Granby pubs (for the 18th-century Marquess of Granby)"
+   ],
+   "oldWealth": {
+    "holdings": "Belvoir Castle and estate (Leicestershire); Haddon Hall (Derbyshire, held by Lord Edward Manners)",
+    "value": "Duke of Rutland c. £125m (Sunday Times Rich List 2013); no later published figure found",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched: LBS (Manners surname; 'Rutland', 'Belvoir' keywords), the 1672 RAC subscriber list, the History of Parliament South Sea peerage study and the National Trust 2020 report. No ownership, compensation, trusteeship or slave-company holding was found.",
+    "source": {
+     "label": "Wikipedia — Duke of Rutland",
+     "url": "https://en.wikipedia.org/wiki/Duke_of_Rutland"
+    }
+   },
+   "sources": [
+    {
+     "label": "Wikipedia — Duke of Rutland",
+     "url": "https://en.wikipedia.org/wiki/Duke_of_Rutland"
+    },
+    {
+     "label": "Wikipedia — David Manners, 11th Duke of Rutland",
+     "url": "https://en.wikipedia.org/wiki/David_Manners,_11th_Duke_of_Rutland"
+    },
+    {
+     "label": "Wikipedia — List of officials and shareholders in the Royal African Company, 1672 (from the charter)",
+     "url": "https://en.wikipedia.org/wiki/List_of_officials_and_shareholders_in_the_Royal_African_Company,_1672"
+    }
+   ],
+   "connections": [
+    {
+     "id": "queen-anne-great-britain",
+     "type": "charter",
+     "label": "created Duke of Rutland in 1703"
+    },
+    {
+     "id": "church-of-england",
+     "type": "parallel",
+     "label": "estate partly from Dissolution grants"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "aristocratic landowner"
+    }
+   ]
+  },
+  {
+   "id": "spencer-family-althorp",
+   "name": "Spencer family (Earls Spencer, Althorp)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "The tie is the 3rd Earl of Sunderland, First Lord of the Treasury during the 1720 South Sea scheme (the asiento company), who was given unpaid-for stock by its cashier and was cleared by the Commons in 1721.",
+   "start": 1718,
+   "end": 1721,
+   "lifespan": "1508–present",
+   "base": "Althorp, Northamptonshire",
+   "geo": [
+    52.281,
+    -1.001
+   ],
+   "aliases": [
+    "Earls of Sunderland",
+    "Spencer House"
+   ],
+   "origins": "John Spencer, a sheep farmer and grazier, bought Althorp in 1508. His descendants became Barons Spencer (1603) and Earls of Sunderland (1643). Charles Spencer, 3rd Earl of Sunderland, married Anne Churchill, daughter of the Duke of Marlborough, in 1700; their younger son John inherited Althorp and Sarah Churchill's fortune, and his son became 1st Earl Spencer in 1765.",
+   "role_summary": "No slave-ownership or LBS claim was found for the Spencers. The documented tie is political finance: as First Lord of the Treasury, the 3rd Earl of Sunderland backed the 1720 South Sea scheme. The South Sea Company held the asiento to supply enslaved Africans to Spanish America. Its cashier Robert Knight assigned him fictitious stock; after the crash Walpole shielded him, the Commons acquitted him, and he resigned in 1721.",
+   "roleDetail": [
+    {
+     "t": "South Sea patron.",
+     "d": "Per the History of Parliament, Knight granted Sunderland stock that did not exist, to be sold back once the price rose; Sunderland argued for the scheme in the Lords in April 1720.",
+     "basis": "documented"
+    },
+    {
+     "t": "No Spencer claims.",
+     "d": "LBS has no Earl Spencer as claimant; 'Earl Spencer' keyword hits refer only to the 2nd Earl's role as First Lord of the Admiralty.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Althorp has been the Spencer seat since 1508; Diana, Princess of Wales, is buried there. Spencer House in St James's is leased out.",
+   "legacyDetail": [
+    {
+     "t": "Shared ancestry.",
+     "d": "The 3rd Earl of Sunderland and Anne Churchill are ancestors of both the Earls Spencer and the Dukes of Marlborough.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "John Spencer",
+     "relation": "founder",
+     "years": "d. 1522",
+     "note": "Bought Althorp in 1508 with sheep-farming wealth.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Spencer, 3rd Earl of Sunderland",
+     "relation": "descendant",
+     "years": "1675–1722",
+     "note": "First Lord of the Treasury in the South Sea crisis; married Anne Churchill.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Spencer",
+     "relation": "son",
+     "years": "1708–1746",
+     "note": "Inherited Althorp and much of Sarah Churchill's fortune.",
+     "basis": "documented"
+    },
+    {
+     "name": "John Spencer, 1st Earl Spencer",
+     "relation": "grandson",
+     "years": "1734–1783",
+     "note": "Created earl 1765; built Spencer House.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Spencer, 9th Earl Spencer",
+     "relation": "heir",
+     "years": "b. 1964",
+     "note": "Present earl since 1992; historian and broadcaster.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Charles Spencer, 9th Earl Spencer, owns Althorp and writes popular history. He has not publicly addressed the Sunderland–South Sea link, and no slavery-derived wealth is documented for the family.",
+   "today_people": [
+    {
+     "name": "Charles Spencer, 9th Earl Spencer",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner of Althorp; historian, author and broadcaster",
+     "sector": "Culture & media",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Charles Spencer, 9th Earl Spencer",
+      "url": "https://en.wikipedia.org/wiki/Charles_Spencer,_9th_Earl_Spencer"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Spencer House (St James's)",
+    "Althorp",
+    "Sunderland House (Mayfair)"
+   ],
+   "oldWealth": {
+    "holdings": "The Althorp estate (Northamptonshire) and the freehold of Spencer House, London",
+    "value": "No recent published Rich List estimate found",
+    "slaveryLink": "indirect",
+    "linkSummary": "No LBS claim, plantation or RAC holding found. The 3rd Earl of Sunderland, as First Lord of the Treasury, promoted the 1720 South Sea scheme and was given fictitious South Sea stock by its cashier; the company held the asiento slave-supply contract. The Commons acquitted him in 1721.",
+    "source": {
+     "label": "History of Parliament — 'A Trojan horse in the House of Lords? The South Sea Company and the peerage' (2020)",
+     "url": "https://historyofparliament.com/2020/01/09/south-sea-company-and-peerage/"
+    }
+   },
+   "sources": [
+    {
+     "label": "History of Parliament — 'A Trojan horse in the House of Lords? The South Sea Company and the peerage' (2020)",
+     "url": "https://historyofparliament.com/2020/01/09/south-sea-company-and-peerage/"
+    },
+    {
+     "label": "Wikipedia — Charles Spencer, 3rd Earl of Sunderland",
+     "url": "https://en.wikipedia.org/wiki/Charles_Spencer,_3rd_Earl_of_Sunderland"
+    },
+    {
+     "label": "Wikipedia — Charles Spencer, 9th Earl Spencer",
+     "url": "https://en.wikipedia.org/wiki/Charles_Spencer,_9th_Earl_Spencer"
+    }
+   ],
+   "connections": [
+    {
+     "id": "south-sea-company",
+     "type": "political",
+     "label": "3rd Earl of Sunderland promoted the 1720 scheme"
+    },
+    {
+     "id": "spencer-churchill-family-marlborough",
+     "type": "family",
+     "label": "shared descent from Sunderland and Anne Churchill"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "political",
+     "label": "First Lord of the Treasury under George I"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "aristocratic landowner"
+    }
+   ]
+  },
+  {
+   "id": "spencer-churchill-family-marlborough",
+   "name": "Spencer-Churchill family (Dukes of Marlborough, Blenheim)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "Sarah, Duchess of Marlborough, made a well-documented profit by selling South Sea stock before the 1720 crash; no LBS claim or plantation was found for any duke.",
+   "start": 1720,
+   "end": 1720,
+   "lifespan": "1702–present",
+   "base": "Blenheim Palace, Oxfordshire",
+   "geo": [
+    51.841,
+    -1.361
+   ],
+   "aliases": [
+    "Churchill family",
+    "Marquesses of Blandford",
+    "Blenheim Palace"
+   ],
+   "origins": "John Churchill was made Duke of Marlborough in 1702; after his victory at Blindheim in 1704 the Crown gave him the royal manor of Woodstock and Parliament paid towards Blenheim Palace. The dukedom passed through his daughter Anne, wife of the 3rd Earl of Sunderland, to their son Charles Spencer, 3rd Duke (1733), whose descendants took the name Spencer-Churchill.",
+   "role_summary": "No documented slave-ownership. The family's link is South Sea speculation: Sarah, Duchess of Marlborough, and the duke bought South Sea stock and sold before the 1720 crash, a gain biographers call her greatest financial coup. The South Sea Company held the asiento to supply enslaved Africans to Spanish America. No Churchill appears in the 1672 RAC subscriber list or in LBS.",
+   "roleDetail": [
+    {
+     "t": "Sarah's South Sea exit.",
+     "d": "Sarah persuaded the duke to sell their South Sea shares before the collapse and used the proceeds to buy estates such as Wimbledon (Wikipedia; Herts Memories).",
+     "basis": "documented"
+    },
+    {
+     "t": "No RAC or LBS entries.",
+     "d": "Neither the 1672 RAC charter list nor LBS contains a Churchill or Marlborough duke.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Blenheim Palace, a UNESCO World Heritage Site and Winston Churchill's birthplace in 1874, is run by charitable foundations and the family. The 9th Duke's 1895 marriage to Consuelo Vanderbilt brought American railway money that restored it.",
+   "legacyDetail": [
+    {
+     "t": "Royal grant estate.",
+     "d": "Woodstock was a Crown gift, an example of land acquired through royal favour rather than purchase.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "John Churchill, 1st Duke of Marlborough & Sarah Jennings",
+     "relation": "founders",
+     "years": "1650–1722 / 1660–1744",
+     "note": "Royal grant of Woodstock; Sarah's South Sea profits.",
+     "basis": "documented"
+    },
+    {
+     "name": "Anne Churchill & Charles Spencer, 3rd Earl of Sunderland",
+     "relation": "daughter & son-in-law",
+     "years": "m. 1700",
+     "note": "Carried the dukedom to the Spencers.",
+     "basis": "documented"
+    },
+    {
+     "name": "Charles Spencer, 3rd Duke of Marlborough",
+     "relation": "grandson",
+     "years": "1706–1758",
+     "note": "Succeeded his aunt Henrietta in 1733.",
+     "basis": "documented"
+    },
+    {
+     "name": "Sir Winston Churchill",
+     "relation": "descendant",
+     "years": "1874–1965",
+     "note": "Grandson of the 7th Duke; born at Blenheim.",
+     "basis": "documented"
+    },
+    {
+     "name": "James Spencer-Churchill, 12th Duke of Marlborough",
+     "relation": "heir",
+     "years": "b. 1955",
+     "note": "Present duke since 2014.",
+     "basis": "documented"
+    }
+   ],
+   "today": "James Spencer-Churchill, 12th Duke of Marlborough, holds the title; Blenheim is run by the Blenheim Palace foundations. No slavery-derived wealth has been documented.",
+   "today_people": [
+    {
+     "name": "James Spencer-Churchill, 12th Duke of Marlborough",
+     "relation": "titleholder (peerage records)",
+     "role": "Duke of Marlborough; family head at Blenheim Palace",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — James Spencer-Churchill, 12th Duke of Marlborough",
+      "url": "https://en.wikipedia.org/wiki/James_Spencer-Churchill,_12th_Duke_of_Marlborough"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Blenheim Palace",
+    "Marlborough House (London)"
+   ],
+   "oldWealth": {
+    "holdings": "Blenheim Palace and its Oxfordshire estate (Woodstock)",
+    "value": "No recent published Rich List estimate found",
+    "slaveryLink": "indirect",
+    "linkSummary": "No LBS claim, plantation or 1672 RAC subscription found. Sarah and the 1st Duke made a documented profit on South Sea stock (the asiento company) by selling before the 1720 crash, and the line descends from the 3rd Earl of Sunderland, the First Lord of the Treasury who backed the scheme.",
+    "source": {
+     "label": "Wikipedia — Sarah Churchill, Duchess of Marlborough",
+     "url": "https://en.wikipedia.org/wiki/Sarah_Churchill,_Duchess_of_Marlborough"
+    }
+   },
+   "sources": [
+    {
+     "label": "Wikipedia — Sarah Churchill, Duchess of Marlborough",
+     "url": "https://en.wikipedia.org/wiki/Sarah_Churchill,_Duchess_of_Marlborough"
+    },
+    {
+     "label": "Herts Memories — Sarah Churchill and her Finances",
+     "url": "https://www.hertsmemories.org.uk/?p=30577"
+    },
+    {
+     "label": "Wikipedia — James Spencer-Churchill, 12th Duke of Marlborough",
+     "url": "https://en.wikipedia.org/wiki/James_Spencer-Churchill,_12th_Duke_of_Marlborough"
+    }
+   ],
+   "connections": [
+    {
+     "id": "south-sea-company",
+     "type": "finance",
+     "label": "Sarah and the duke traded South Sea stock (1720)"
+    },
+    {
+     "id": "spencer-family-althorp",
+     "type": "family",
+     "label": "shared descent from Sunderland and Anne Churchill"
+    },
+    {
+     "id": "queen-anne-great-britain",
+     "type": "charter",
+     "label": "Woodstock granted by Queen Anne"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "aristocratic landowner"
+    }
+   ]
+  },
+  {
+   "id": "thynne-family-bath",
+   "name": "Thynne family (Marquesses of Bath, Longleat)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No Thynne compensation claim found; the 3rd Marquess married in 1830 a daughter of Alexander Baring, a beneficiary of St Kitts compensation claims (LBS); the 1st Marquess was Southern Secretary over the colonies (1768–70, 1775–79).",
+   "start": 1768,
+   "end": 1836,
+   "lifespan": "1541–present",
+   "base": "Longleat, Wiltshire",
+   "geo": [
+    51.186,
+    -2.276
+   ],
+   "aliases": [
+    "Viscounts Weymouth",
+    "Longleat Enterprises",
+    "Thynn"
+   ],
+   "origins": "Sir John Thynne, steward to Protector Somerset, bought the dissolved Longleat Priory in 1541 and built Longleat House (completed c. 1580). His descendants became Viscounts Weymouth (1682) and Marquesses of Bath (1789).",
+   "role_summary": "No documented direct involvement in slavery. The cross-check found two indirect ties: Thomas Thynne, 3rd Viscount Weymouth (later 1st Marquess), served as Secretary of State for the Southern Department, which oversaw the colonies; and in 1830 Henry Thynne, later 3rd Marquess and ancestor of the present line, married Harriet Baring. Her father Alexander Baring appears in LBS as a beneficiary of three St Kitts claims.",
+   "roleDetail": [
+    {
+     "t": "Baring marriage.",
+     "d": "LBS lists Alexander Baring (Lord Ashburton) as beneficiary on St Kitts claims 336, 724 and 206 and records his daughter Harriet's marriage to the 3rd Marquess of Bath.",
+     "basis": "documented"
+    },
+    {
+     "t": "'Earl of Bath' is a different family.",
+     "d": "The 'John, Earl of Bath' in the 1672 RAC list is John Granville, not a Thynne.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "Longleat opened to the public in 1949 and its safari park in 1966, the first outside Africa. The 8th Marquess runs the estate's leisure businesses.",
+   "legacyDetail": [
+    {
+     "t": "Dissolution estate.",
+     "d": "Longleat stands on the site of an Augustinian priory bought after the Dissolution.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Sir John Thynne",
+     "relation": "founder",
+     "years": "c. 1515–1580",
+     "note": "Bought Longleat Priory in 1541; built Longleat House.",
+     "basis": "documented"
+    },
+    {
+     "name": "Thomas Thynne, 1st Marquess of Bath",
+     "relation": "descendant",
+     "years": "1734–1796",
+     "note": "Southern Secretary 1768–70 and 1775–79; created marquess 1789.",
+     "basis": "documented"
+    },
+    {
+     "name": "Henry Thynne, 3rd Marquess & Harriet Baring",
+     "relation": "spouse",
+     "years": "m. 1830",
+     "note": "Married a daughter of Alexander Baring, a St Kitts compensation beneficiary (LBS).",
+     "basis": "documented"
+    },
+    {
+     "name": "Alexander Thynn, 7th Marquess",
+     "relation": "descendant",
+     "years": "1932–2020",
+     "note": "Artist and politician; ran Longleat.",
+     "basis": "documented"
+    },
+    {
+     "name": "Ceawlin Thynn, 8th Marquess of Bath",
+     "relation": "heir",
+     "years": "b. 1974",
+     "note": "Present marquess since 2020.",
+     "basis": "documented"
+    }
+   ],
+   "today": "Ceawlin Thynn, 8th Marquess of Bath, runs Longleat and its safari park. No public statement on the Baring marriage or colonial office is known, and no slavery-derived wealth is documented.",
+   "today_people": [
+    {
+     "name": "Ceawlin Thynn, 8th Marquess of Bath",
+     "relation": "titleholder (peerage records)",
+     "role": "Owner-manager of Longleat and its businesses",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Ceawlin Thynn, 8th Marquess of Bath",
+      "url": "https://en.wikipedia.org/wiki/Ceawlin_Thynn,_8th_Marquess_of_Bath"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Longleat",
+    "Weymouth Street, Marylebone (for Viscount Weymouth, brother-in-law of the 3rd Duke of Portland)"
+   ],
+   "oldWealth": {
+    "holdings": "The Longleat estate (Wiltshire), including Longleat House and safari park",
+    "value": "No recent published Rich List estimate found",
+    "slaveryLink": "indirect",
+    "linkSummary": "Searched: LBS (Thynne, 'Marquess of Bath', Longleat), the 1672 RAC list (its 'Earl of Bath' was a Granville) and South Sea peerage studies. No Thynne ownership or claim found. The ties are by marriage and office only: in 1830 the 3rd Marquess married Harriet Baring, whose father Alexander Baring is listed in LBS as a beneficiary of three St Kitts claims; and the 1st Marquess served as Southern Secretary, responsible for the colonies.",
+    "source": {
+     "label": "UCL LBS — Alexander Baring",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/-1411131717"
+    }
+   },
+   "sources": [
+    {
+     "label": "UCL LBS — Alexander Baring",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/-1411131717"
+    },
+    {
+     "label": "Wikipedia — Ceawlin Thynn, 8th Marquess of Bath",
+     "url": "https://en.wikipedia.org/wiki/Ceawlin_Thynn,_8th_Marquess_of_Bath"
+    },
+    {
+     "label": "Wikipedia — List of officials and shareholders in the Royal African Company, 1672 (from the charter)",
+     "url": "https://en.wikipedia.org/wiki/List_of_officials_and_shareholders_in_the_Royal_African_Company,_1672"
+    }
+   ],
+   "connections": [
+    {
+     "id": "baring-family",
+     "type": "family",
+     "label": "3rd Marquess married Harriet Baring (1830)"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "political",
+     "label": "1st Marquess as Southern Secretary under George III"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS entry for Alexander Baring"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "aristocratic landowner"
+    }
+   ]
+  },
+  {
+   "id": "leveson-gower-family-sutherland",
+   "name": "Leveson-Gower family (Dukes of Sutherland)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Minor",
+   "scaleBasis": "documented",
+   "scaleNote": "No documented slave-ownership found; Harriet, Duchess of Sutherland, led the 1853 Stafford House anti-slavery address (National Trust 2020, Cliveden entry).",
+   "start": 1833,
+   "end": 1853,
+   "lifespan": "c. 1500–present",
+   "base": "Dunrobin Castle, Sutherland (historic seat)",
+   "geo": [
+    57.982,
+    -3.946
+   ],
+   "aliases": [
+    "Sutherland-Leveson-Gower",
+    "Egerton (Ellesmere line)",
+    "Marquesses of Stafford",
+    "Earls Gower"
+   ],
+   "origins": "The Leveson and Gower families of Staffordshire and Yorkshire combined at Trentham. George Granville Leveson-Gower inherited the Bridgewater canal fortune in 1803 and married Elizabeth, Countess of Sutherland, owner of most of the county; created Duke of Sutherland in 1833, he and his wife carried out the Highland Clearances. In 1883 the 3rd Duke held 1.36 million acres.",
+   "role_summary": "No documented direct involvement in slavery: no LBS claim, RAC or South Sea holding was found. The family's public role was abolitionist. Harriet, Duchess of Sutherland, wife of the 2nd Duke, hosted the 1853 Stafford House meeting at which British women addressed their 'sisters' in the United States against slavery, and she patronised Harriet Beecher Stowe. Critics, Marx among them, noted the family's own Highland Clearances.",
+   "roleDetail": [
+    {
+     "t": "Stafford House Address.",
+     "d": "The National Trust's Cliveden entry describes the Duchess's petition and the US reply by former First Lady Julia Tyler.",
+     "basis": "documented"
+    },
+    {
+     "t": "Clearances.",
+     "d": "The 1st Duke and Duchess removed Highland tenants to the coast between c. 1807 and 1821, a separate injustice that critics set against the Duchess's anti-slavery stance.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The dukedom passed in 1963 to the Egerton (Ellesmere) line, which holds the Bridgewater art collection; major Titians were sold to the National Galleries of Scotland and London in 2009 and 2012. Dunrobin and the Sutherland estates went with the earldom to the Countess of Sutherland's line.",
+   "legacyDetail": [
+    {
+     "t": "Stafford House is now Lancaster House.",
+     "d": "The family's London palace became a government venue.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Francis Egerton, 3rd Duke of Bridgewater",
+     "relation": "great-uncle / benefactor",
+     "years": "1736–1803",
+     "note": "Canal builder whose fortune passed to his Leveson-Gower nephew.",
+     "basis": "documented"
+    },
+    {
+     "name": "George Granville Leveson-Gower, 1st Duke of Sutherland & Elizabeth, Countess of Sutherland",
+     "relation": "founders",
+     "years": "m. 1785",
+     "note": "Joined the Bridgewater and Sutherland fortunes; Highland Clearances.",
+     "basis": "documented"
+    },
+    {
+     "name": "Harriet, Duchess of Sutherland",
+     "relation": "daughter-in-law",
+     "years": "1806–1868",
+     "note": "Led the 1853 anti-slavery Stafford House Address.",
+     "basis": "documented"
+    },
+    {
+     "name": "Francis Egerton, 7th Duke of Sutherland",
+     "relation": "heir",
+     "years": "b. 1940",
+     "note": "Present duke (Ellesmere line).",
+     "basis": "documented"
+    }
+   ],
+   "today": "Francis Egerton, 7th Duke of Sutherland, heads the ducal line; Dunrobin Castle belongs to the Earls of Sutherland. The family's documented slavery-era stance is abolitionist.",
+   "today_people": [
+    {
+     "name": "Francis Egerton, 7th Duke of Sutherland",
+     "relation": "titleholder (peerage records)",
+     "role": "Duke of Sutherland; heir to the Bridgewater collection",
+     "sector": "Land & estates",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "Wikipedia — Francis Egerton, 7th Duke of Sutherland",
+      "url": "https://en.wikipedia.org/wiki/Francis_Egerton,_7th_Duke_of_Sutherland"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Lancaster House (former Stafford House)",
+    "Trentham Gardens",
+    "Sutherland Avenue",
+    "Golspie's 'Mannie' statue of the 1st Duke"
+   ],
+   "oldWealth": {
+    "holdings": "Historically 1,358,545 acres (Bateman, 1883); today the ducal Mertoun estate and the Bridgewater collection, with the Sutherland estates and Dunrobin held by the Earl of Sutherland's line",
+    "value": "No current published Sunday Times Rich List or Forbes figure found",
+    "slaveryLink": "none found",
+    "linkSummary": "Searched: LBS (Leveson-Gower, Gower, Sutherland, Stafford, Trentham), the 1672 RAC list, South Sea peerage studies and the National Trust 2020 report (Cliveden). No ownership or claim found. Marriages took some daughters into claimant families, such as the Pitt-Rivers line, which did not bring money to the dukes. The documented role is abolitionist (1853).",
+    "source": {
+     "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+     "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+    }
+   },
+   "sources": [
+    {
+     "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+     "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+    },
+    {
+     "label": "Wikipedia — Duke of Sutherland",
+     "url": "https://en.wikipedia.org/wiki/Duke_of_Sutherland"
+    },
+    {
+     "label": "Wikipedia — Francis Egerton, 7th Duke of Sutherland",
+     "url": "https://en.wikipedia.org/wiki/Francis_Egerton,_7th_Duke_of_Sutherland"
+    }
+   ],
+   "connections": [
+    {
+     "id": "slavery-abolition-act-1833",
+     "type": "political",
+     "label": "created duke the year of the Act; family supported abolition"
+    },
+    {
+     "id": "grosvenor-family-westminster",
+     "type": "family",
+     "label": "1st Duke of Westminster married Lady Constance Leveson-Gower"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "once Britain's largest landowner"
+    }
+   ]
+  },
+  {
+   "id": "brydges-family-chandos",
+   "name": "Brydges family (Dukes of Chandos)",
+   "category": "European Families",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Significant",
+   "scaleBasis": "documented",
+   "scaleNote": "The 1st Duke sat on the Royal African Company board (1720–25), years in which it shipped over 12,000 enslaved Africans, three voyages on the ship 'Chandos' carrying 1,473 people; the 3rd Duke was joint owner of Hope Estate, Jamaica (1777–89), whose 1836 compensation (£6,630) went to his grandson (LBS; NT 2020).",
+   "start": 1720,
+   "end": 1836,
+   "lifespan": "1554–1789 (dukedom extinct; heirs to 1889)",
+   "base": "Cannons, Edgware, Middlesex",
+   "geo": [
+    51.607,
+    -0.296
+   ],
+   "aliases": [
+    "Dukes of Chandos",
+    "Temple-Nugent-Brydges-Chandos-Grenville",
+    "Dukes of Buckingham and Chandos"
+   ],
+   "origins": "The Brydges were Barons Chandos from 1554. James Brydges made an enormous fortune — reportedly c. £600,000 — as Paymaster of the Forces (1705–13) during Marlborough's wars, built Cannons at Edgware and was created Duke of Chandos in 1719.",
+   "role_summary": "In the 1720 investor wave the 1st Duke took a large stake in the Royal African Company and joined its board (1720–25). In those five years the company transported over 12,000 enslaved Africans, including 1,473 on three voyages of the ship 'Chandos', named for him. He also speculated heavily in South Sea stock. His son's son James, 3rd Duke, married Anna Eliza Elletson, widow of a Jamaican enslaver, and became joint owner of Hope Estate. Through their daughter, Hope passed to the Dukes of Buckingham and Chandos; the 2nd Duke of Buckingham received its 1836 compensation and chaired the West India Committee.",
+   "roleDetail": [
+    {
+     "t": "RAC director.",
+     "d": "St Andrews' Legacies of Empire project: Chandos's 'large personal stake gave him a seat on the board', 1720–25; the 'Chandos' made three voyages with 1,473 people, about 10% of whom died.",
+     "basis": "documented"
+    },
+    {
+     "t": "South Sea.",
+     "d": "Per the History of Parliament, he realised £30,000 selling stock in March 1720, held c. £300,000 by May and lost heavily in the crash.",
+     "basis": "documented"
+    },
+    {
+     "t": "Hope Estate, Jamaica.",
+     "d": "LBS: the 3rd Duke was joint owner of Hope Estate (St Andrew) 1777–89; in 1836 compensation of £6,630 5s 6d for its enslaved people went to his grandson Richard, later 2nd Duke of Buckingham and Chandos (NT 2020, Stowe).",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The money did not last. Cannons was sold and demolished in 1747; the dukedom became extinct in 1789; the Grenville heirs went bankrupt and sold the contents of Stowe in 1848, and the Buckingham dukedom ended in 1889. Stowe is now a school with National Trust gardens. Chandos's £1,000 endowment of St Andrews' Chandos Chair (1720), now in abeyance, is under review by the university's legacies project.",
+   "legacyDetail": [
+    {
+     "t": "Where the money went.",
+     "d": "Into Cannons (demolished), South Sea losses, the Cavendish Square scheme and, through the Hope Estate inheritance, to the Grenvilles of Stowe, whose debts ended in the 1848 'great Stowe sale'.",
+     "basis": "documented"
+    },
+    {
+     "t": "Chandos Chair.",
+     "d": "The Chandos Chair of Medicine and Anatomy at St Andrews (1722) has been in abeyance since January 2020.",
+     "basis": "documented"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "James Brydges, 1st Duke of Chandos",
+     "relation": "founder",
+     "years": "1674–1744",
+     "note": "Paymaster's fortune; RAC director 1720–25; built Cannons.",
+     "basis": "documented"
+    },
+    {
+     "name": "Henry Brydges, 2nd Duke",
+     "relation": "son",
+     "years": "1708–1771",
+     "note": "Sold off Cannons (1747).",
+     "basis": "documented"
+    },
+    {
+     "name": "James Brydges, 3rd Duke & Anna Eliza Elletson",
+     "relation": "spouse",
+     "years": "m. 1777",
+     "note": "Joint owner of Hope Estate, Jamaica (LBS); dukedom extinct on his death in 1789.",
+     "basis": "documented"
+    },
+    {
+     "name": "Richard Temple-Nugent-Brydges-Chandos-Grenville, 1st Duke of Buckingham and Chandos",
+     "relation": "son-in-law",
+     "years": "1776–1839",
+     "note": "Opposed abolition; three unsuccessful 1836 claims (NT 2020).",
+     "basis": "documented"
+    },
+    {
+     "name": "Richard Plantagenet, 2nd Duke of Buckingham and Chandos",
+     "relation": "grandson",
+     "years": "1797–1861",
+     "note": "Awarded Hope Estate compensation; chaired the West India Committee; bankrupt, Stowe sale 1848.",
+     "basis": "documented"
+    }
+   ],
+   "today": "No publicly documented descendants hold the Chandos titles; the dukedoms are extinct (1789, 1889). The wealth was spent or lost — on Cannons, in the South Sea crash and in the 1848 Stowe bankruptcy. Stowe House is now Stowe School, and its landscape gardens belong to the National Trust.",
+   "today_people": [],
+   "placesNamed": [
+    "Chandos Street (Marylebone, by Cavendish Square)",
+    "Canons Park (Edgware)",
+    "Chandos Place (Covent Garden, for the Brydges Barons Chandos)",
+    "Chandos Chair (University of St Andrews)"
+   ],
+   "oldWealth": {
+    "holdings": "Historically Cannons (Middlesex), Cavendish Square plots and, via the heiress, Hope Estate, Jamaica; nothing survives as a family estate",
+    "value": "Not applicable — titles extinct; the 1st Duke's fortune was reported at c. £600,000 in 1713 (Southgate Green Association history)",
+    "slaveryLink": "documented",
+    "linkSummary": "The 1st Duke was an RAC director and major shareholder (1720–25), and a company ship named 'Chandos' carried 1,473 captives. The 3rd Duke gained Hope Estate, Jamaica, by his 1777 marriage to Anna Eliza Elletson, widow of its enslaver-owner. Their daughter's son, the 2nd Duke of Buckingham and Chandos, was beneficiary of the 1836 award of £6,630 for 379 people, paid to trustees of his marriage settlement (LBS; NT 2020). The titles are extinct and no family estate survives.",
+    "source": {
+     "label": "University of St Andrews, Legacies of Empire — James Brydges (1673–1744) and the Chandos Chair",
+     "url": "https://legacies-of-empire.wp.st-andrews.ac.uk/2024/01/12/james-brydges-1673-1744-and-the-chandos-chair-by-aileen-fyfe/"
+    }
+   },
+   "sources": [
+    {
+     "label": "University of St Andrews, Legacies of Empire — James Brydges and the Chandos Chair",
+     "url": "https://legacies-of-empire.wp.st-andrews.ac.uk/2024/01/12/james-brydges-1673-1744-and-the-chandos-chair-by-aileen-fyfe/"
+    },
+    {
+     "label": "UCL LBS — James Brydges, 3rd Duke of Chandos",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146640767"
+    },
+    {
+     "label": "UCL LBS — Richard Plantagenet Temple-Nugent-Brydges-Chandos-Grenville, 2nd Duke of Buckingham and Chandos",
+     "url": "https://lbs.ucl.ac.uk/lbs/person/view/-989281059"
+    },
+    {
+     "label": "History of Parliament — 'A Trojan horse in the House of Lords? The South Sea Company and the peerage' (2020)",
+     "url": "https://historyofparliament.com/2020/01/09/south-sea-company-and-peerage/"
+    },
+    {
+     "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+     "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+    }
+   ],
+   "connections": [
+    {
+     "id": "royal-african-company",
+     "type": "ownership",
+     "label": "1st Duke — director and shareholder 1720–25"
+    },
+    {
+     "id": "south-sea-company",
+     "type": "finance",
+     "label": "speculated heavily in 1720"
+    },
+    {
+     "id": "slavery-abolition-act-1833",
+     "type": "plantation",
+     "label": "Hope Estate compensation 1836"
+    },
+    {
+     "id": "ucl-legacies-of-british-slavery",
+     "type": "legacy",
+     "label": "LBS entries for the 3rd Duke and his heirs"
+    },
+    {
+     "id": "howard-de-walden-family",
+     "type": "parallel",
+     "label": "both tied to Cavendish Square's 1720s development"
+    },
+    {
+     "id": "cape-coast-castle",
+     "type": "trade",
+     "label": "RAC headquarters during his directorship"
+    }
+   ]
+  },
+  {
+   "id": "british-crown-estate-duchies",
+   "name": "The Crown, the Crown Estate & the Duchies of Cornwall and Lancaster (House of Windsor)",
+   "category": "Crowns & Explorers",
+   "role": "Landed & Old Wealth",
+   "nation": "Britain",
+   "scale": "Major",
+   "scaleBasis": "documented",
+   "scaleNote": "Charles II chartered the Company of Royal Adventurers (1660/1663) and the Royal African Company (1672) with his brother James as governor; William III received £1,000 of RAC stock (1689); the Crown's landholdings descend from these monarchs.",
+   "start": 1660,
+   "end": null,
+   "lifespan": "1066–present (Duchy of Cornwall 1337; Duchy of Lancaster 1399; Crown Estate 1760)",
+   "base": "London (Buckingham Palace)",
+   "geo": [
+    51.501,
+    -0.142
+   ],
+   "aliases": [
+    "Charles II",
+    "The Crown Estate",
+    "Duchy of Cornwall",
+    "Duchy of Lancaster",
+    "House of Windsor",
+    "the monarchy"
+   ],
+   "origins": "The monarch's lands are held in three ways today. The Crown Estate holds hereditary Crown lands surrendered to the Treasury by George III in 1760 in return for the Civil List. The Duchy of Lancaster (1399) is the sovereign's private income, and the Duchy of Cornwall (1337) is the heir's. The Stuart restoration of 1660 put the Crown at the centre of the English slave trade.",
+   "role_summary": "Charles II granted the charters of the Company of Royal Adventurers into Africa and, in 1672, the Royal African Company, with his brother James, Duke of York, as governor and largest shareholder. Royal family members were founding subscribers. In 1689 Edward Colston transferred £1,000 of RAC stock to William III, and Queen Anne's government took a share in the 1713 asiento. King Charles III backed independent research into the monarchy's links to slavery in 2023.",
+   "roleDetail": [
+    {
+     "t": "Royal charters.",
+     "d": "The 1672 RAC charter names James, Duke of York, and Prince Rupert among officers and subscribers.",
+     "basis": "documented"
+    },
+    {
+     "t": "Royal shareholding.",
+     "d": "The 1689 Colston-to-William III RAC share transfer was found by historian Brooke Newman and published by the Guardian in 2023.",
+     "basis": "documented"
+    },
+    {
+     "t": "Research under way.",
+     "d": "A University of Manchester / Historic Royal Palaces PhD (Camilla de Koning, from 2022) has full access to the Royal Archives; completion was expected in 2026, and findings had not been published as of late 2026.",
+     "basis": "documented"
+    }
+   ],
+   "legacy": "The Crown Estate (portfolio c. £15bn) pays its profits to the Treasury, part of which returns as the Sovereign Grant; the Duchy of Lancaster provides the King's private income and the Duchy of Cornwall the Prince of Wales's. Shrubsole estimates the Crown holds c. 1.4% of England.",
+   "legacyDetail": [
+    {
+     "t": "Royal statements.",
+     "d": "Charles III expressed 'personal sorrow' at slavery (Kigali, 2022); in Jamaica in 2022 Prince William expressed 'profound sorrow', without a formal apology.",
+     "basis": "documented"
+    },
+    {
+     "t": "Reparations debate.",
+     "d": "Caribbean reparations campaigners, including CARICOM's Reparations Commission, have pressed the British state and monarchy for a formal apology.",
+     "basis": "interpretive"
+    }
+   ],
+   "lineage": [
+    {
+     "name": "Charles II",
+     "relation": "chartering monarch",
+     "years": "1630–1685",
+     "note": "Chartered the Royal Adventurers (1660/63) and the RAC (1672).",
+     "basis": "documented"
+    },
+    {
+     "name": "James, Duke of York (James II)",
+     "relation": "brother; RAC governor",
+     "years": "1633–1701",
+     "note": "Governor and largest shareholder of the RAC.",
+     "basis": "documented",
+     "id": "james-duke-of-york"
+    },
+    {
+     "name": "William III and Mary II",
+     "relation": "successors",
+     "years": "r. 1689–1702",
+     "note": "William received £1,000 of RAC stock from Edward Colston (1689).",
+     "basis": "documented",
+     "id": "william-iii-and-mary-ii"
+    },
+    {
+     "name": "Queen Anne",
+     "relation": "successor",
+     "years": "r. 1702–1714",
+     "note": "Her government took a share in the 1713 asiento via the South Sea Company.",
+     "basis": "documented",
+     "id": "queen-anne-great-britain"
+    },
+    {
+     "name": "George III",
+     "relation": "Hanoverian",
+     "years": "r. 1760–1820",
+     "note": "Surrendered Crown lands (the Crown Estate) for the Civil List in 1760.",
+     "basis": "documented",
+     "id": "house-of-hanover"
+    },
+    {
+     "name": "King Charles III",
+     "relation": "descendant",
+     "years": "b. 1948",
+     "note": "Backed research into the monarchy's slavery links (2023).",
+     "basis": "documented"
+    }
+   ],
+   "today": "King Charles III draws private income from the Duchy of Lancaster; William, Prince of Wales, holds the Duchy of Cornwall. The Crown Estate is run independently, and its profits go to the Treasury. In 2023 the King backed research into the monarchy's historic links to slavery, and the palace granted access to the Royal Archives.",
+   "today_people": [
+    {
+     "name": "King Charles III",
+     "relation": "reigning monarch; descendant of the Stuart and Hanoverian monarchs (published royal genealogy)",
+     "role": "King of the United Kingdom; Duke of Lancaster; backed slavery-links research (2023)",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "WTVR — Research reveals extent of British Crown's ties to slavery (2023)",
+      "url": "https://www.wtvr.com/news/local-news/research-reveals-extent-of-british-crowns-ties-to-slavery-may-9-2023"
+     }
+    },
+    {
+     "name": "William, Prince of Wales",
+     "relation": "heir apparent; Duke of Cornwall (royal genealogy)",
+     "role": "Holder of the Duchy of Cornwall; expressed 'profound sorrow' for slavery in Jamaica (2022)",
+     "sector": "Royalty & titles",
+     "year": 2026,
+     "basis": "documented",
+     "source": {
+      "label": "CBS News — King Charles supports research into monarchy's slavery links",
+      "url": "https://www.cbsnews.com/news/king-charles-slavery-investigation-monarchy/"
+     }
+    }
+   ],
+   "placesNamed": [
+    "Carolina (for Charles I/II)",
+    "Charleston (Charles Town, 1670)",
+    "New York and Albany (for James, Duke of York and Albany)",
+    "Regent Street and Regent's Park (Crown Estate)",
+    "Poundbury (Duchy of Cornwall)",
+    "King's Lynn, Kingston and countless 'King Street's"
+   ],
+   "oldWealth": {
+    "holdings": "Crown Estate (c. 191,000 acres in England, Regent Street, St James's, the seabed and foreshore); Duchy of Cornwall (c. 130,000 acres, mostly in south-west England); Duchy of Lancaster (urban and rural estates)",
+    "value": "Crown Estate net assets £15.0bn (annual report 2024/25); Duchy of Lancaster net assets £687.3m (year to March 2026); Duchy of Cornwall net assets c. £1.2bn (2025/26, royal.uk); the King £680m, 230th (Sunday Times Rich List 2026, as reported by BusinessCloud, 15 May 2026)",
+    "slaveryLink": "documented",
+    "linkSummary": "Charles II chartered the Royal Adventurers and the RAC (1672); James, Duke of York, governed the RAC; William III received £1,000 of RAC stock in 1689 (Guardian/Newman, 2023); Queen Anne's government shared in the asiento. These monarchs are collateral relatives of today's royal family. The direct line is George I, an ancestor of Charles III, who became Governor of the South Sea Company, holder of the asiento, in 1718. All of these are crown offices and royal shareholdings. No direct line from slave profits into today's Crown Estate or duchy holdings has been published.",
+    "source": {
+     "label": "CBS News — King Charles supports research into monarchy's slavery links",
+     "url": "https://www.cbsnews.com/news/king-charles-slavery-investigation-monarchy/"
+    }
+   },
+   "sources": [
+    {
+     "label": "CBS News — King Charles supports research into monarchy's slavery links",
+     "url": "https://www.cbsnews.com/news/king-charles-slavery-investigation-monarchy/"
+    },
+    {
+     "label": "Wikipedia — List of officials and shareholders in the Royal African Company, 1672 (from the charter)",
+     "url": "https://en.wikipedia.org/wiki/List_of_officials_and_shareholders_in_the_Royal_African_Company,_1672"
+    },
+    {
+     "label": "GOV.UK — The Crown Estate annual report and accounts 2024 to 2025",
+     "url": "https://www.gov.uk/government/publications/the-crown-estate-annual-report-and-accounts-2024-to-2025"
+    },
+    {
+     "label": "Duchy of Lancaster — Annual report and accounts, year ended 31 March 2026",
+     "url": "https://www.duchyoflancaster.co.uk/news-updates/duchy-of-lancaster-annual-report-and-accounts-year-ended-31st-march-2026/"
+    }
+   ],
+   "connections": [
+    {
+     "id": "royal-african-company",
+     "type": "charter",
+     "label": "Charles II chartered the RAC (1672)"
+    },
+    {
+     "id": "company-of-royal-adventurers",
+     "type": "charter",
+     "label": "chartered 1660/1663"
+    },
+    {
+     "id": "james-duke-of-york",
+     "type": "family",
+     "label": "RAC governor; brother of Charles II"
+    },
+    {
+     "id": "william-iii-and-mary-ii",
+     "type": "ownership",
+     "label": "William III received RAC stock (1689)"
+    },
+    {
+     "id": "queen-anne-great-britain",
+     "type": "charter",
+     "label": "asiento share via the South Sea Company (1713)"
+    },
+    {
+     "id": "house-of-hanover",
+     "type": "family",
+     "label": "George III created the Crown Estate arrangement (1760)"
+    },
+    {
+     "id": "caricom-reparations-commission",
+     "type": "legacy",
+     "label": "Caribbean reparations campaign addresses the monarchy"
+    },
+    {
+     "id": "who-owns-england",
+     "type": "legacy",
+     "label": "Crown c. 1.4% of England (Shrubsole)"
+    }
+   ]
+  },
+  {
+   "id": "who-owns-england",
+   "name": "Who Owns England? (Guy Shrubsole, 2019)",
+   "type": "entity",
+   "kind": "Book / dataset",
+   "description": "Campaigner Guy Shrubsole's book and website (whoownsengland.org), based on Land Registry data, FOI requests and estate maps, estimated in 2019 that about half of England is owned by under 1% of the population — c. 25,000 landowners, mainly aristocrats and corporations. By his estimate, aristocracy and gentry own c. 30% of England; corporations c. 18%; 'new money' oligarchs, City financiers and industrialists c. 17%; the public sector c. 8.5%; homeowners c. 5%; conservation charities c. 2%; the Crown c. 1.4%; and the Church of England c. 0.5%. Roughly 17% is unregistered and so unaccounted for. This round's cross-check found documented slavery links for a minority of the largest old landed families (Cadogan, Howard de Walden, the Chandos heirs, the Crown) and indirect or no links for most others.",
+   "start": 2019,
+   "connections": [
+    {
+     "id": "montagu-douglas-scott-buccleuch",
+     "type": "legacy",
+     "label": "Boughton estate named in the data"
+    },
+    {
+     "id": "russell-family-bedford",
+     "type": "legacy",
+     "label": "Woburn estate named in the data"
+    },
+    {
+     "id": "british-crown-estate-duchies",
+     "type": "legacy",
+     "label": "Crown c. 1.4% of England"
+    },
+    {
+     "id": "church-of-england",
+     "type": "legacy",
+     "label": "Church c. 0.5% of England"
+    },
+    {
+     "id": "grosvenor-family-westminster",
+     "type": "legacy",
+     "label": "London great estate (interpretive grouping)"
+    },
+    {
+     "id": "percy-family-northumberland",
+     "type": "legacy",
+     "label": "major aristocratic landowner (interpretive grouping)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "lovemoney — Who owns England's land: 1% lay claim to half the country (2019)",
+     "url": "https://www.lovemoney.com/news/amp/84194/who-owns-englands-land-ownership-biggest-owners"
+    },
+    {
+     "label": "The Land Is Ours — 'Who Owns England' confirms half of England owned by less than 1%",
+     "url": "https://tlio.org.uk/new-book-who-owns-england/"
+    },
+    {
+     "label": "Who Owns England — The 50 companies that own over a million acres of England & Wales",
+     "url": "https://whoownsengland.org/2016/12/12/the-50-companies-that-own-over-a-million-acres-of-england-wales/"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "year": 1547,
+   "title": "Woburn Abbey granted to the Russells",
+   "text": "After the Dissolution of the Monasteries, John Russell received Woburn Abbey (1547) and later Covent Garden (1552) — monastic land that became the Bedford estates.",
+   "ids": [
+    "russell-family-bedford",
+    "church-of-england"
+   ],
+   "source": {
+    "label": "Wikipedia — Andrew Russell, 15th Duke of Bedford",
+    "url": "https://en.wikipedia.org/wiki/Andrew_Russell,_15th_Duke_of_Bedford"
+   }
+  },
+  {
+   "year": 1672,
+   "title": "Charles II charters the Royal African Company",
+   "text": "The charter names James, Duke of York, Prince Rupert and c. 200 subscribers; none of the great ducal families examined here appears among them.",
+   "ids": [
+    "british-crown-estate-duchies",
+    "royal-african-company",
+    "james-duke-of-york",
+    "portman-family"
+   ],
+   "source": {
+    "label": "Wikipedia — List of officials and shareholders in the Royal African Company, 1672 (from the charter)",
+    "url": "https://en.wikipedia.org/wiki/List_of_officials_and_shareholders_in_the_Royal_African_Company,_1672"
+   }
+  },
+  {
+   "year": 1677,
+   "title": "Grosvenor–Davies marriage brings Mayfair",
+   "text": "Sir Thomas Grosvenor married the heiress Mary Davies, whose manor of Ebury became Mayfair and Belgravia.",
+   "ids": [
+    "grosvenor-family-westminster"
+   ],
+   "source": {
+    "label": "Grosvenor — Our history",
+    "url": "https://www.grosvenor.com/about-us/our-history"
+   }
+  },
+  {
+   "year": 1712,
+   "title": "Hans Sloane buys the manor of Chelsea",
+   "text": "Sloane, whose income included his wife's Jamaican sugar plantations, bought Chelsea; it passed to the Cadogans through his daughter's 1717 marriage.",
+   "ids": [
+    "cadogan-family"
+   ],
+   "source": {
+    "label": "London Society — Chelsea, Sir Hans Sloane and the slavery connection",
+    "url": "https://londonsociety.org.uk/post/chelsea-and-sir-hans-sloane-connection"
+   }
+  },
+  {
+   "year": 1720,
+   "title": "Peers in the South Sea Bubble",
+   "text": "Sunderland (First Lord of the Treasury), Chandos and the 1st Duke of Portland were deep in South Sea stock; Sarah, Duchess of Marlborough, sold before the crash.",
+   "ids": [
+    "spencer-family-althorp",
+    "spencer-churchill-family-marlborough",
+    "brydges-family-chandos",
+    "howard-de-walden-family",
+    "south-sea-company"
+   ],
+   "source": {
+    "label": "History of Parliament — 'A Trojan horse in the House of Lords? The South Sea Company and the peerage' (2020)",
+    "url": "https://historyofparliament.com/2020/01/09/south-sea-company-and-peerage/"
+   }
+  },
+  {
+   "year": 1720,
+   "title": "Duke of Chandos joins the RAC board",
+   "text": "Chandos's large stake gave him a directorship (1720–25), while the company shipped over 12,000 enslaved Africans, 1,473 of them on the ship 'Chandos'.",
+   "ids": [
+    "brydges-family-chandos",
+    "royal-african-company"
+   ],
+   "source": {
+    "label": "St Andrews Legacies of Empire — James Brydges and the Chandos Chair",
+    "url": "https://legacies-of-empire.wp.st-andrews.ac.uk/2024/01/12/james-brydges-1673-1744-and-the-chandos-chair-by-aileen-fyfe/"
+   }
+  },
+  {
+   "year": 1722,
+   "title": "Montagu's St Lucia and St Vincent grant",
+   "text": "George I granted the islands to the 2nd Duke of Montagu; his settlers were driven out by the French within weeks, and the Montagu estates later passed to Buccleuch.",
+   "ids": [
+    "montagu-douglas-scott-buccleuch",
+    "house-of-hanover"
+   ],
+   "source": {
+    "label": "Wikipedia — Nathaniel Uring",
+    "url": "https://en.wikipedia.org/wiki/Nathaniel_Uring"
+   }
+  },
+  {
+   "year": 1726,
+   "title": "Duke of Portland dies Governor of Jamaica",
+   "text": "Henry Bentinck, 1st Duke of Portland, ancestor of the Portland line that held Marylebone, died in Spanish Town owning 287 enslaved people (LBS).",
+   "ids": [
+    "howard-de-walden-family"
+   ],
+   "source": {
+    "label": "UCL LBS — Henry Bentinck, 1st Duke of Portland",
+    "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146662185"
+   }
+  },
+  {
+   "year": 1774,
+   "title": "Cadogan mortgage on a Grenada estate",
+   "text": "Charles Sloane Cadogan, later 1st Earl Cadogan, lent £20,500 to buy a 320-acre Grenada estate with its enslaved people (LBS).",
+   "ids": [
+    "cadogan-family"
+   ],
+   "source": {
+    "label": "UCL LBS — Charles Sloane Cadogan, 1st Earl Cadogan",
+    "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146648147"
+   }
+  },
+  {
+   "year": 1807,
+   "title": "Erle-Drax-Grosvenor opposes abolition",
+   "text": "Richard Erle-Drax-Grosvenor, owner of Drax Hall and nephew of the 1st Earl Grosvenor, strongly opposed the bill abolishing the slave trade (LBS).",
+   "ids": [
+    "grosvenor-family-westminster",
+    "drax-family",
+    "slave-trade-act-1807"
+   ],
+   "source": {
+    "label": "UCL LBS — Richard Erle Drax Grosvenor [I]",
+    "url": "https://lbs.ucl.ac.uk/lbs/person/view/2146643055"
+   }
+  },
+  {
+   "year": 1833,
+   "title": "Stanley carries the Abolition Act",
+   "text": "Colonial Secretary Edward Stanley, later 14th Earl of Derby, drew up the Abolition of Slavery Bill with £20m compensation for owners.",
+   "ids": [
+    "stanley-family-derby",
+    "slavery-abolition-act-1833"
+   ],
+   "source": {
+    "label": "University of Nottingham — 14th Earl of Derby",
+    "url": "https://www.nottingham.ac.uk/manuscriptsandspecialcollections/learning/biographies/edwardgeorgegeoffreysmithstanley,14thearlofderby(1799-1869).aspx"
+   }
+  },
+  {
+   "year": 1836,
+   "title": "Compensation to Seaford and the Chandos heirs",
+   "text": "Lord Seaford (father of the 6th Baron Howard de Walden) received five Jamaican awards, and Hope Estate's £6,630 went to the future 2nd Duke of Buckingham and Chandos.",
+   "ids": [
+    "howard-de-walden-family",
+    "brydges-family-chandos",
+    "slavery-abolition-act-1833"
+   ],
+   "source": {
+    "label": "UCL LBS — Charles Rose Ellis, Lord Seaford",
+    "url": "https://lbs.ucl.ac.uk/lbs/person/view/13399"
+   }
+  },
+  {
+   "year": 1853,
+   "title": "Stafford House anti-slavery address",
+   "text": "Harriet, Duchess of Sutherland, hosted British women's petition against American slavery and patronised Harriet Beecher Stowe.",
+   "ids": [
+    "leveson-gower-family-sutherland"
+   ],
+   "source": {
+    "label": "National Trust — Interim Report on Connections between Colonialism and Properties now in its Care (2020)",
+    "url": "https://www.nationaltrust.org.uk/who-we-are/research/addressing-our-histories-of-colonialism-and-historic-slavery"
+   }
+  },
+  {
+   "year": 2019,
+   "title": "'Who Owns England?' published",
+   "text": "Guy Shrubsole estimated that c. 25,000 landowners own about half of England, with aristocracy and gentry holding c. 30%.",
+   "ids": [
+    "who-owns-england"
+   ],
+   "source": {
+    "label": "lovemoney — Who owns England's land",
+    "url": "https://www.lovemoney.com/news/amp/84194/who-owns-englands-land-ownership-biggest-owners"
+   }
+  },
+  {
+   "year": 2023,
+   "title": "King backs research into royal slavery links",
+   "text": "After the publication of the 1689 Colston–William III RAC share transfer, Charles III backed a Manchester/Historic Royal Palaces study with access to the Royal Archives.",
+   "ids": [
+    "british-crown-estate-duchies",
+    "william-iii-and-mary-ii"
+   ],
+   "source": {
+    "label": "CBS News — King Charles supports research into monarchy's slavery links",
+    "url": "https://www.cbsnews.com/news/king-charles-slavery-investigation-monarchy/"
+   }
+  }
+ ]
+}
